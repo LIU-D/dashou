@@ -43,7 +43,7 @@
       <script src="/dashou/Public/Home/js/html5shiv.js"></script>
       <script src="/dashou/Public/Home/js/respond.min.js"></script>
     <![endif]-->
-
+	<script src="/dashou/Public/Home/js/info.js"></script>
 </head>
 	
 <body>
@@ -151,7 +151,7 @@
 								 <a href="<?php echo U('Index/newsList');?>">行业资讯</a>
 								 </li>
 				 
-								<li class="dropdown active">
+								<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
 										<ul class="dropdown-menu" role="menu">
 											   <li><a href="<?php echo U('Index/personal');?>">个人客户</a></li>
@@ -159,7 +159,7 @@
 										</ul>
 								</li>
 				 
-							   <li class="dropdown">
+							   <li class="dropdown  active">
 							   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
 								 <ul class="dropdown-menu" role="menu">
 										<li><a href="<?php echo U('Index/personalService');?>">个人客户中心</a></li>
@@ -285,36 +285,54 @@
 
 			<div class="gap-30"></div>
 
+
+			<div  class="row">
+				<h3>请选择所在省市（区）: </h3>
+				<form action="<?php echo U('searchAgent');?>" method="post">
+				<select style="font-size:18px;display: inline;width: 220px;margin-right: 30px" class="form-control" name="province" id="province" onchange="getCity()">
+                        <option value="">省份</option>
+                         <!-- 利用js把省份添加到下拉列表里-->
+                           <script type="text/javascript"> 
+                            for(var i=0;i<provinceArr.length;i++)    
+                            {
+                                document.write("<option name='province' value='"+provinceArr[i]+"' >"+provinceArr[i]+"</option>");
+                                
+                            }
+                        </script>
+				</select>
+				<select style="font-size:18px;display: inline;width: 270px" class="form-control" name="city" id="city">
+                        <option name='city' value="">市（区）</option>
+                       
+				</select>
+				<div style="float: right;"><input class="btn btn-primary" type="submit" value="查询"></div>
+				</form>
+			</div>
+
+			<div class="gap-30"></div>
+
+
+
 			<div class="row">
-				<h3>Opening Positions : </h3>
+				<h3>营业点 : </h3>
 				<table class="table table-striped career-table">
 				   <thead>
 				      <tr>
-				         <th>Requisition Title</th>
-				         <th>Location</th>
-				         <th>Remote Worker Option</th>
-				         <th>Actions</th>
+				         <th>名称</th>
+				         <th>地址</th>
+						 <th>联系电话</th>
+						 <th>负责人</th>
 				      </tr>
 				   </thead>
 				   <tbody>
-				      <tr>
-				         <th scope="row"><a href="career-single.html">Risk Manager</a></th>
-				         <td>United States</td>
-				         <td>No</td>
-				         <td><a class="btn btn-primary" href="career-single.html">Apply</a></td>
-				      </tr>
-				      <tr>
-				         <th scope="row"><a href="career-single.html">Assistant Director</a></th>
-				         <td>United States-Washington</td>
-				         <td>Yes</td>
-				         <td><a class="btn btn-primary" href="career-single.html">Apply</a></td>
-				      </tr>
-				      <tr>
-				         <th scope="row"><a href="career-single.html"> Manager, Print Production</a></th>
-				         <td>Multiple Locations</td>
-				         <td>Yes</td>
-				         <td><a class="btn btn-primary" href="career-single.html">Apply</a></td>
-				      </tr>
+
+					<?php if(is_array($agent_list)): foreach($agent_list as $key=>$agent): ?><tr>
+				         <th scope="row"><a href="#"><?php echo ($agent["agent_name"]); ?></a></th>
+				         <td><?php echo ($agent["agent_address"]); ?></td>
+				         <td><?php echo ($agent["agent_phone"]); ?></td>
+				         <td><?php echo ($agent["agent_master"]); ?></td>
+					  </tr><?php endforeach; endif; ?>
+
+				     
 				   </tbody>
 				</table>
 			</div><!-- Content row 2 end -->
@@ -475,6 +493,37 @@
 	<!--<script type="text/javascript" src="/dashou/Public/Home/js/gmap3.min.js"></script>-->
 	<!-- Template custom -->
 	<script type="text/javascript" src="/dashou/Public/Home/js/custom.js"></script>
+
+
+	<script>
+			//当省份的选择发生变化时调用 该方法   将市县加载到下拉选择框
+		  function getCity()
+	  {
+		  //1.获取省份选择框的对象
+		  var provincesobj=document.getElementById("province");
+		  //2.获取市县选择框的对象
+		  var cityobj=document.getElementById("city");
+		  //3.获取被选择的省份的索引
+		  var index=provincesobj.selectedIndex;
+		  
+		  //alert(provincesobj[index].value+","+provincesobj[index].text);
+		  ////4.通过省份的索引获取它的value值，value值也是它在数组的索引值
+		  var value=provincesobj[index].index-1;
+		  
+		  //5.获取对应省份的市县数组
+		  var cityName=cityArr[value];
+		  //6.将下拉框清楚索引为0之后的，只保留第一个
+		  cityobj.length=1;
+		  //通过循环遍历市县元素给下拉框赋值
+		  for(var i=1;i<cityArr[value].length;i++)
+		  {
+			  cityobj.options[cityobj.options.length]=new Option(cityName[i],cityName[i]);
+		  }
+		  
+	  }
+   
+  </script>
+  
 	
 	</div><!-- Body inner end -->
 </body>

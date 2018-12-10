@@ -233,105 +233,39 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-
-					<div class="post">
+					
+					<!-- foreach -->
+					<?php if(is_array($news_list)): foreach($news_list as $key=>$new): ?><div class="post">
 						<div class="post-media post-image">
-							<img src="/dashou/Public/Home/images/news/news1.jpg" class="img-responsive" alt="">
+							<img src="/dashou<?php echo ($new["news_image"]); ?>" class="img-responsive" alt="">
 						</div>
 
 						<div class="post-body">
 							<div class="entry-header">
-								<span class="post-meta-date"><i class="fa fa fa-clock-o"></i> 7 March 2015</span>
+								<span class="post-meta-date"><i class="fa fa fa-clock-o"></i> <?php echo ($new["news_addtime"]); ?></span>
    							<h2 class="entry-title">
-					 				<a href="#">Judge rules open to punitive ignition switch recalls</a>
+					 				<a href="#"><?php echo ($new["news_title"]); ?></a>
 					 			</h2>
 					 			<div class="post-meta">
 									<span class="post-author">
-   									Posted By <a href="#">Admin</a>
+   									Posted By <a href="#"><?php echo ($new["news_author"]); ?></a>
    								</span>
-									<span class="post-cat">
-   									Posted In: <a href="#">Insurance, Policy</a>
-   								</span>
-									<span class="post-comment">03<a href="#" class="comments-link">Comments</a></span>
 								</div>
 							</div><!-- header end -->
 
 							<div class="entry-content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur  ...</p>
+								<p style="height: 90px; display: -webkit-box; -webkit-box-orient: vertical;-webkit-line-clamp: 4;overflow: hidden;">
+									<?php echo ($new["news_content"]); ?>
+								</p>
 							</div>
 
 							<div class="post-footer">
-								<a href="<?php echo U('Index/newsSingle');?>" class="btn btn-primary">Continue Reading</a>
+								<a href="<?php echo U('Index/newsSingle');?>?id=<?php echo ($new["news_id"]); ?>" class="btn btn-primary">Continue Reading</a>
 							</div>
 
 						</div><!-- post-body end -->
-					</div><!-- 1st post end -->
+					</div><!-- 1st post end --><?php endforeach; endif; ?><!-- foreach end -->
 
-					<div class="post">
-							<div class="post-media post-image">
-								<img src="/dashou/Public/Home/images/news/news4.jpg" class="img-responsive" alt="">
-							</div>
-		
-							<div class="post-body">
-								<div class="entry-header">
-									<span class="post-meta-date"><i class="fa fa fa-clock-o"></i> 7 March 2015</span>
-								   <h2 class="entry-title">
-										 <a href="#">Judge rules open to punitive ignition switch recalls</a>
-									 </h2>
-									 <div class="post-meta">
-										<span class="post-author">
-										   Posted By <a href="#">Admin</a>
-									   </span>
-										<span class="post-cat">
-										   Posted In: <a href="#">Insurance, Policy</a>
-									   </span>
-										<span class="post-comment">03<a href="#" class="comments-link">Comments</a></span>
-									</div>
-								</div><!-- header end -->
-		
-								<div class="entry-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur  ...</p>
-								</div>
-		
-								<div class="post-footer">
-									<a href="<?php echo U('Index/newsSingle');?>" class="btn btn-primary">Continue Reading</a>
-								</div>
-		
-							</div><!-- post-body end -->
-					</div><!-- 2nd post end -->
-
-					<div class="post">
-						<div class="post-media post-image">
-							<img src="/dashou/Public/Home/images/news/news2.jpg" class="img-responsive" alt="">
-						</div>
-
-						<div class="post-body">
-							<div class="entry-header">
-								<span class="post-meta-date"><i class="fa fa fa-clock-o"></i> 7 March 2015</span>
-   							<h2 class="entry-title">
-					 				<a href="#">Judge rules open to punitive ignition switch recalls</a>
-					 			</h2>
-					 			<div class="post-meta">
-									<span class="post-author">
-   									Posted By <a href="#">Admin</a>
-   								</span>
-									<span class="post-cat">
-   									Posted In: <a href="#">Insurance, Policy</a>
-   								</span>
-									<span class="post-comment">03<a href="#" class="comments-link">Comments</a></span>
-								</div>
-							</div><!-- header end -->
-
-							<div class="entry-content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur  ...</p>
-							</div>
-
-							<div class="post-footer">
-								<a href="<?php echo U('Index/newsSingle');?>" class="btn btn-primary">Continue Reading</a>
-							</div>
-
-						</div><!-- post-body end -->
-					</div><!-- 3rd post end -->
 
 					<div class="paging text-center">
 		            <ul class="pagination">

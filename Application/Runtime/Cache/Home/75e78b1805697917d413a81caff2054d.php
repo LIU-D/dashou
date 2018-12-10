@@ -236,39 +236,24 @@
 
 					<div class="post-content">
 						<div class="post-media post-image">
-							<img src="/dashou/Public/Home/images/news/news1.jpg" class="img-responsive" alt="">
+							<img src="/dashou<?php echo ($news["news_image"]); ?>" class="img-responsive" alt="">
 						</div>
 
 						<div class="post-body">
 							<div class="entry-header">
-								<span class="post-meta-date"><i class="fa fa fa-clock-o"></i> 7 March 2015</span>
+								<span class="post-meta-date"><i class="fa fa fa-clock-o"></i><?php echo ($news["news_addtime"]); ?></span>
    							<h2 class="entry-title">
-					 				<a href="#">Judge rules open to punitive ignition switch recalls</a>
+					 				<a href="#"><?php echo ($news["news_title"]); ?></a>
 					 			</h2>
 					 			<div class="post-meta">
 									<span class="post-author">
-   									Posted By <a href="#">Admin</a>
+   									Posted By <a href="#"><?php echo ($news["news_author"]); ?></a>
    								</span>
-									<span class="post-cat">
-   									Posted In: <a href="#">Insurance, Policy</a>
-   								</span>
-									<span class="post-comment">03<a href="#" class="comments-link">Comments</a></span>
 								</div>
 							</div><!-- header end -->
 
 							<div class="entry-content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-								<p>Kucididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-
-								<p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. </p>
-
-								<blockquote>
-								<p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.<cite>- Anger Mathe</cite></p>
-
-								</blockquote>
-
-								<p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos quira tione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ue magnam aliquam quaerat voluptatem.</p>
+									<?php echo ($news["news_content"]); ?>
 							</div>
 
 							<div class="tags-area clearfix">
@@ -303,93 +288,7 @@
 						</div>
 					</div> <!-- Author box end -->
 
-					<!-- Post comment start -->
-					<div id="comments" class="comments-area">
-						<h3 class="comments-heading">37 Comments</h3>
 
-						<ul class="comments-list">
-							<li>
-								<div class="comment">
-									<img class="comment-avatar pull-left" alt="" src="/dashou/Public/Home/images/news/avator2.jpg">
-									<div class="comment-body">
-										<div class="meta-data">
-											<span class="comment-author">Michelle Aimber</span>
-											<span class="comment-date pull-right">January 17, 2016 at 1:38 pm</span>
-										</div>
-										<div class="comment-content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p></div>
-										<div class="text-left">
-											<a class="comment-reply" href="#">Reply</a>
-										</div>	
-									</div>
-								</div><!-- Comments end -->
-
-								<ul class="comments-reply">
-									<li>
-										<div class="comment">
-											<img class="comment-avatar pull-left" alt="" src="/dashou/Public/Home/images/news/avator3.jpg">
-											<div class="comment-body">
-												<div class="meta-data">
-													<span class="comment-author">Tom Harnandez</span>
-													<span class="comment-date pull-right">January 17, 2016 at 1:38 pm</span>
-												</div>
-												<div class="comment-content">
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p></div>
-												<div class="text-left">
-													<a class="comment-reply" href="#">Reply</a>
-												</div>	
-											</div>
-										</div><!-- Comments end -->
-									</li>
-								</ul><!-- comments-reply end -->
-									<div class="comment last">
-										<img class="comment-avatar pull-left" alt="" src="/dashou/Public/Home/images/news/avator4.jpg">
-										<div class="comment-body">
-											<div class="meta-data">
-												<span class="comment-author">Genelia Dusteen</span>
-												<span class="comment-date pull-right">January 17, 2016 at 1:38 pm</span>
-											</div>
-											<div class="comment-content">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen.</p></div>
-											<div class="text-left">
-												<a class="comment-reply" href="#">Reply</a>
-											</div>	
-										</div>
-									</div><!-- Comments end -->
-							</li><!-- Comments-list li end -->
-						</ul><!-- Comments-list ul end -->
-					</div><!-- Post comment end -->
-
-					<div class="comments-form border-box">
-						<h3 class="title-normal">Add a comment</h3>
-
-						<form role="form">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<textarea class="form-control required-field" id="message" placeholder="Your Comment" rows="8" required></textarea>
-									</div>
-								</div><!-- Col 6 end -->
-								<div class="col-md-6">
-									<div class="form-group">
-										<input class="form-control" name="name" id="name" placeholder="Your Name" type="text" required>
-									</div>
-
-									<div class="form-group">
-										<input class="form-control" name="email" id="email" placeholder="Your Email" type="email" required>
-									</div>
-
-									<div class="form-group">
-										<input class="form-control" placeholder="Your Website" type="text" required>
-									</div>
-
-								</div><!-- Col 6 end -->
-							</div><!-- Form row end -->
-							<div class="clearfix">
-								<button class="btn btn-primary" type="submit">Post Comment</button> 
-							</div>
-						</form><!-- Form end -->
-					</div><!-- Comments form end -->
 
 			
 

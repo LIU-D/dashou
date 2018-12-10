@@ -291,70 +291,22 @@
 			</div><!-- Isotope filter end -->
 
 			<div class="row">
+				
 				<div id="isotope" class="isotope">
-					<div class="col-sm-4 col-xs-12 life isotope-item">
+
+				<!-- foreach -->
+				<?php if(is_array($insurance_list)): foreach($insurance_list as $key=>$insurance): ?><div class="col-sm-4 col-xs-12 <?php echo ($insurance["insurance_categories"]); ?> isotope-item">
 						<div class="isotop-img-conatiner">
-							<img class="img-responsive" src="/dashou/Public/Home/images/insurance/life-insurance.jpg" alt="">	
+							<img class="img-responsive" src="/dashou<?php echo ($insurance["insurance_image"]); ?>" alt="">	
 							<div class="isotope-item-info">
-								<h3 class="isotope-item-title"><a href="life-insurance.html">Life Insurance</a></h3>
+								<h3 class="isotope-item-title"><a href="life-insurance.html"><?php echo ($insurance["insurance_title"]); ?></a></h3>
 								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
 							</div>
 						</div>
-					</div><!-- Isotope item 1 end -->
-
-					<div class="col-sm-4 col-xs-12 home isotope-item">
-						<div class="isotop-img-conatiner">
-							<img class="img-responsive" src="/dashou/Public/Home/images/insurance/home-insurance.jpg" alt="">	
-							<div class="isotope-item-info">
-								<h3 class="isotope-item-title"><a href="life-insurance.html">Home Insurance</a></h3>
-								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
-							</div>
-						</div>
-					</div><!-- Isotope item 2 end -->
-
-					<div class="col-sm-4 col-xs-12 auto isotope-item">
-						<div class="isotop-img-conatiner">
-							<img class="img-responsive" src="/dashou/Public/Home/images/insurance/auto-insurance.jpg" alt="">	
-							<div class="isotope-item-info">
-								<h3 class="isotope-item-title"><a href="life-insurance.html">Auto Insurance</a></h3>
-								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
-							</div>
-						</div>
-					</div><!-- Isotope item 3 end -->
-
-					<div class="col-sm-4 col-xs-12 bike isotope-item">
-						<div class="isotop-img-conatiner">
-							<img class="img-responsive" src="/dashou/Public/Home/images/insurance/bike-insurance.jpg" alt="">	
-							<div class="isotope-item-info">
-								<h3 class="isotope-item-title"><a href="life-insurance.html">Bike Insurance</a></h3>
-								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
-							</div>
-						</div>
-					</div><!-- Isotope item 4 end -->
-
-					<div class="col-sm-4 col-xs-12 boat isotope-item">
-						<div class="isotop-img-conatiner">
-							<img class="img-responsive" src="/dashou/Public/Home/images/insurance/boat-insurance.jpg" alt="">	
-							<div class="isotope-item-info">
-								<h3 class="isotope-item-title"><a href="life-insurance.html">Boat Insurance</a></h3>
-								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
-							</div>
-						</div>
-					</div><!-- Isotope item 5 end -->
-
-					<div class="col-sm-4 col-xs-12 pet isotope-item">
-						<div class="isotop-img-conatiner">
-							<img class="img-responsive" src="/dashou/Public/Home/images/insurance/pet-insurance.jpg" alt="">	
-							<div class="isotope-item-info">
-								<h3 class="isotope-item-title"><a href="life-insurance.html">Pet Insurance</a></h3>
-								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
-							</div>
-						</div>
-					</div><!-- Isotope item 5 end -->
-
-
+					</div><!-- Isotope item 1 end --><?php endforeach; endif; ?><!-- foreach end -->
 
 				</div><!-- Isotope end -->
+				
 			</div><!-- Content Row -->
 
 		</div><!--/ Container end -->
@@ -595,70 +547,30 @@
 				</h3>
 			</div><!--/ Title row end -->
 
+
+			
 			<div class="row">
-				<div class="col-md-4 col-xs-12">
+			<!-- foreach -->
+			<?php if(is_array($news_list)): foreach($news_list as $key=>$new): ?><div class="col-md-4 col-xs-12">
 					<div class="latest-post">
-						<img class="img-responsive" src="/dashou/Public/Home/images/news/news1.jpg" alt="img">
+						<div style="overflow: hidden;;height: 216px"><img class="img-responsive" src="/dashou<?php echo ($new["news_image"]); ?>" alt="img"></div>
 						<div class="post-body">
-							<h4 class="post-title">
-								<a href="#">Saifway Approves Estimated $1.7 Billion Payout for Policyowners</a>
+							<h4 class="post-title" style="height: 48px; display: -webkit-box; -webkit-box-orient: vertical;-webkit-line-clamp: 4;overflow: hidden;">
+								<a href="#"><?php echo ($new["news_title"]); ?></a>
 							</h4>
 							<span class="post-item-date">
-								<i class="fa fa-clock-o"></i> December 11, 2015
+								<i class="fa fa-clock-o"></i> <?php echo ($new["news_addtime"]); ?>
 							</span>
 							<span class="post-item-author">
-								<i class="fa fa-user"></i> Admin
+								<i class="fa fa-user"></i> <?php echo ($new["news_author"]); ?>
 							</span>
 							<div class="post-text">
-								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some  Ut urna dui, interdum non blandit sed.</p>
+								<p style="height: 100px; display: -webkit-box; -webkit-box-orient: vertical;-webkit-line-clamp: 4;overflow: hidden;"><?php echo ($new["news_content"]); ?></p>
 							</div>
 						</div>	
-						<a href="#" class="btn btn-primary">Read More</a>
+						<a href="<?php echo U('Index/newsSingle');?>?id=<?php echo ($new["news_id"]); ?>" class="btn btn-primary">Read More</a>
 					</div><!-- Latest post end -->
-				</div><!-- 1st post col end -->
-
-				<div class="col-md-4 col-xs-12">
-					<div class="latest-post">
-						<img class="img-responsive" src="/dashou/Public/Home/images/news/news2.jpg" alt="img">
-						<div class="post-body">
-							<h4 class="post-title">
-								<a href="#">Saifway Enhanced Customer Self Service Experience</a>
-							</h4>
-							<span class="post-item-date">
-								<i class="fa fa-clock-o"></i> December 11, 2015
-							</span>
-							<span class="post-item-author">
-								<i class="fa fa-user"></i> Admin
-							</span>
-							<div class="post-text">
-								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some  Ut urna dui, interdum non blandit sed.</p>
-							</div>
-						</div>	
-						<a href="#" class="btn btn-primary">Read More</a>
-					</div><!-- Latest post end -->
-				</div><!-- 2nd post col end -->
-
-				<div class="col-md-4 col-xs-12">
-					<div class="latest-post">
-						<img class="img-responsive" src="/dashou/Public/Home/images/news/news3.jpg" alt="img">
-						<div class="post-body">
-							<h4 class="post-title">
-								<a href="#">Technological changes reshaping reinsurance industry</a>
-							</h4>
-							<span class="post-item-date">
-								<i class="fa fa-clock-o"></i> December 11, 2015
-							</span>
-							<span class="post-item-author">
-								<i class="fa fa-user"></i> Admin
-							</span>
-							<div class="post-text">
-								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some  Ut urna dui, interdum non blandit sed.</p>
-							</div>
-						</div>	
-						<a href="#" class="btn btn-primary">Read More</a>
-					</div><!-- Latest post end -->
-				</div><!-- 3rd post col end -->
-
+				</div><!-- 1st post col end --><?php endforeach; endif; ?><!-- foreach end -->
 			</div><!--/ Content row end -->
 		</div><!--/ Container end -->
 	</section><!--/ News end -->
