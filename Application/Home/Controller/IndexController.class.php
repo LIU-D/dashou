@@ -29,6 +29,71 @@ class IndexController extends Controller {
         $this->display();
     }
 
+    public function newsList(){
+        $this->display();
+    }
+
+    public function newsSingle(){
+        $this->display();
+    }
+
+    public function personal(){
+        $this->display();
+    }
+
+    public function firm(){
+        $this->display();
+    }
+
+    public function personalService(){
+        $this->display();
+    }
+    public function firmService(){
+        $this->display();
+    }
+    public function searchAgent(){
+        $this->display();
+    }
+    public function message(){
+        $this->display();
+    }
+    public function call(){
+        $this->display();
+    }
+    public function firmInfo(){
+        $this->display();
+    }
+    public function outlook(){
+        $this->display();
+    }
+    public function showAgent(){
+        $this->display();
+    }
+    public function joinInfo(){
+        $this->display();
+    }
+    public function personalInfo(){
+        $this->display();
+    }
+    public function historyBuss(){
+        $this->display();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function showList(){
         $article_model = D('Article');
         $article_list = $article_model
@@ -58,4 +123,7 @@ class IndexController extends Controller {
     public function error404(){
         $this->display();
     }
+
+    
+
 }

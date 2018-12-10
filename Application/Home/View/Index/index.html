@@ -1,386 +1,899 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="__PUBLIC__/Home/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="__PUBLIC__/Home/css/form.css" rel="stylesheet" type="text/css" media="all" />
-<!--<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>-->
-<script type="text/javascript" src="__PUBLIC__/Home/js/jquery1.min.js"></script>
-<!-- start menu -->
-<link href="__PUBLIC__/Home/css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="__PUBLIC__/Home/js/megamenu.js"></script>
-<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-<!--start slider -->
-    <link rel="stylesheet" href="__PUBLIC__/Home/css/fwslider.css" media="all">
-    <script src="__PUBLIC__/Home/js/jquery-ui.min.js"></script>
-    <script src="__PUBLIC__/Home/js/css3-mediaqueries.js"></script>
-    <script src="__PUBLIC__/Home/js/fwslider.js"></script>
-<!--end slider -->
-<script src="__PUBLIC__/Home/js/jquery.easydropdown.js"></script>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+   <title>Saifway - Insurance Agency Html Template</title>
+
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Favicons
+	================================================== -->
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="__PUBLIC__/Home/images/favicon/favicon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="__PUBLIC__/Home/images/favicon/favicon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="__PUBLIC__/Home/images/favicon/favicon-54x54.png">
+	
+	<!-- CSS
+	================================================== -->
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/bootstrap.min.css">
+	<!-- Template styles-->
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/style.css">
+	<!-- Responsive styles-->
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/responsive.css">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/font-awesome.min.css">
+	<!-- Animation -->
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/animate.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/owl.carousel.css">
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/owl.theme.css">
+	<!-- Colorbox -->
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/colorbox.css">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="__PUBLIC__/Home/js/html5shiv.js"></script>
+      <script src="__PUBLIC__/Home/js/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+	
 <body>
-     <div class="header-top">
-	   <div class="wrap"> 
-			  <div class="header-top-left">
-			  	   <div class="box">
-   				      <select tabindex="4" class="dropdown">
-							<option value="" class="label" value="">Language :</option>
-							<option value="1">English</option>
-							<option value="2">French</option>
-							<option value="3">German</option>
-					  </select>
-   				    </div>
 
-   				    <div class="clear"></div>
-   			 </div>
-			 <div class="cssmenu">
-				<ul>
-					<li><a href="{:U('Admin/index/index')}">管理员登陆</a></li>
-					<!--<li><a href="register.html">Sign Up</a></li>-->
-				</ul>
-			</div>
-			<div class="clear"></div>
- 		</div>
-	</div>
-	<div class="header-bottom">
-	    <div class="wrap">
-			<div class="header-bottom-left">
-				<div class="logo">
-					<a href=""><img src="__PUBLIC__/Home/images/logo.png" alt=""/></a>
+	<div class="body-inner">
+
+	<!-- Header start -->
+	<header id="header" class="header-white">
+		<div class="container">
+			<div class="row">
+				<div class="navbar-header">
+					<div class="logo">
+	                <a href="index.html">
+	                	<img src="__PUBLIC__/Home/images/logo2.png" alt="">
+	                </a>
+         		</div><!-- logo end -->
 				</div>
-				<div class="menu">
-	            <ul class="megamenu skyblue">
-                 <!--导航-->
-			    <li class="active grid"><a href="{:U('Index/index')}">首页</a></li>
-				<li><a class="color6" href="{:U('Index/showList')}">资讯</a></li>
-                <li><a class="color6" href="{:U('Index/about')}">关于我们</a></li>
-			</ul>
+
+
+				<div class="site-nav-inner">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+	    			</button>
+
+	    			<nav class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
+
+	    				<ul class="nav navbar-nav">
+
+						<li class="dropdown active">
+							<a href="{:U('Index/index')}">首页</a>
+						</li>
+						
+						<li class="dropdown">
+						 <a href="{:U('Index/newsList')}">行业资讯</a>
+						 </li>
+		 
+						<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown-menu" role="menu">
+									   <li><a href="{:U('Index/personal')}">个人客户</a></li>
+									   <li><a href="{:U('Index/firm')}">企业客户</a></li>
+								</ul>
+						</li>
+		 
+					   <li class="dropdown">
+					   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
+						 <ul class="dropdown-menu" role="menu">
+								<li><a href="{:U('Index/personalService')}">个人客户中心</a></li>
+								<li><a href="{:U('Index/firmService')}">企业客户中心</a></li>
+								<li class="dropdown-submenu">
+								   <a href="#">联系服务人员</a>
+								   <ul class="dropdown-menu">
+									   <li><a href="{:U('Index/searchAgent')}">查询营业网点</a></li>
+									   <li><a href="{:U('Index/message')}">在线客服</a></li>
+									 <li><a href="#">智能客服</a></li>
+									 <li><a href="{:U('Index/call')}">电话查询</a></li>
+                      				</ul>
+                      			</li>
+		                  </ul>
+		               </li>
+
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu" role="menu">
+									<li><a href="{:U('Index/firmInfo')}">公司简介</a></li>
+								<li><a href="{:U('Index/outlook')}">行业前景</a></li>
+								<li><a href="{:U('Index/showAgent')}">优秀代理点</a></li>
+								<li><a href="{:U('Index/joinInfo')}">递交申请</a></li>
+							</ul>
+						</li>
+								
+						<li class="dropdown">
+		                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown-menu" role="menu">
+                           <li><a href="{:U('Index/personalInfo')}">个人信息</a></li>
+                           <li><a href="{:U('Index/historyBuss')}">历史业务</a></li>
+		                  </ul>
+		               </li>
+
+		            </ul><!--/ Nav ul end -->
+
+	    			</nav><!--/ Collapse end -->
+
+				</div><!-- Site nav inner end -->
+
+            	
+			</div><!-- Row end -->
+		</div><!-- Container end -->
+	</header><!--/ Header end -->
+
+	<div id="box-slide" class="owl-carousel owl-theme box-slide">
+		<div class="item" style="background-image:url(__PUBLIC__/Home/images/slider-main/bg3.jpg)">
+			<div class="container">
+				<div class="box-slider-content">
+					<div class="box-slider-text">
+						<h2 class="box-slide-title"> A Guarantee For Life &amp; <br/> 
+							Level Premium For Life Time Protection
+						</h2>
+                	<p class="box-slide-desc">We have been providing stability and reliability to our clients since 1859 to help them live their lives with confidence give them peace of mind.</p>	
+                	<a href="#" class="slider btn btn-primary">Learn More</a>
+					</div>    
+        		</div>
 			</div>
-		</div>
-	   <div class="header-bottom-right">
-         <div class="search">	  
-				<input type="text" name="s" class="textbox" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}">
-				<input type="submit" value="Subscribe" id="submit" name="submit">
-				<div id="response"> </div>
-		 </div>
+			
+		</div><!-- Item 1 end -->
+
+		<div class="item" style="background-image:url(__PUBLIC__/Home/images/slider-main/bg2.jpg)">
+			<div class="container">
+				<div class="box-slider-content">
+					<div class="box-slider-text">
+						<h2 class="box-slide-title"> Saving For The Future <br/> 
+ 								Premium For Life Time Protection 
+						</h2>
+                	<p class="box-slide-desc">We have been providing stability and reliability to our clients since 1859 to help them live their lives with confidence give them peace of mind.</p>	
+                	<a href="#" class="slider btn btn-primary">Learn More</a>
+					</div>    
+        		</div>
+			</div>
+		</div><!-- Item 2 end -->
+
+		<div class="item" style="background-image:url(__PUBLIC__/Home/images/slider-main/bg4.jpg)">
+			<div class="container">
+				<div class="box-slider-content">
+					<div class="box-slider-text">
+						<h2 class="box-slide-title"> A Flexible Solutions
+							<br /> Secure The Future, Protects What's Important
+						</h2>
+                	<p class="box-slide-desc">We have been providing stability and reliability to our clients since 1859 to help them live their lives with confidence give them peace of mind.</p>	
+                	<a href="#" class="slider btn btn-primary">Learn More</a>
+					</div>    
+        		</div>
+			</div>
+		</div><!-- Item 3 end -->
+	</div><!-- Owl carousel -->
+
+	<section class="call-action-all no-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="action-text">
+						<h2>Get Immediate Free Consultation !</h2>
+					</div>
+					<p class="action-btn"><a class="btn btn-primary" href="#">Get A Quote</a></p>
+				</div>
+			</div>
+		</div><!--/ Container end -->
+    </section><!-- Call to Action end -->
 
 
-    </div>
-     <div class="clear"></div>
-     </div>
-	</div>
-     <!--轮播图-->
-  <!-- start slider -->
-    <div id="fwslider">
-        <div class="slider_container">
-            <!--<div class="slide"> -->
-                <!--&lt;!&ndash; Slide image &ndash;&gt;-->
-                    <!--<img src="__PUBLIC__/Home/images/slider/wall5.jpg" alt=""/>-->
-                <!--&lt;!&ndash; /Slide image &ndash;&gt;-->
-                <!--&lt;!&ndash; Texts container &ndash;&gt;-->
-                <!--<div class="slide_content">-->
-                    <!--<div class="slide_content_wrap">-->
-                        <!--&lt;!&ndash; Text title &ndash;&gt;-->
-                        <!--<h4 class="title">Aluminium Club</h4>-->
-                        <!--&lt;!&ndash; /Text title &ndash;&gt;-->
-                        <!---->
-                        <!--&lt;!&ndash; Text description &ndash;&gt;-->
-                        <!--<p class="description">Experiance ray ban</p>-->
-                        <!--&lt;!&ndash; /Text description &ndash;&gt;-->
-                    <!--</div>-->
-                <!--</div>-->
-                 <!--&lt;!&ndash; /Texts container &ndash;&gt;-->
-            <!--</div>-->
+	<section id="ts-features" class="features-area">
+		<div class="container">
+			<div class="row text-center">
+				<h2 class="title">
+					We Have Thoughts
+					<span class="title-head">Why Choose Us</span>
+				</h2>
+			</div><!--/ Title row end -->
 
-            <!-- /Duplicate to create more slides -->
-			<foreach name="slide_list" item="v">
-				<div class="slide">
-					<img src="/sztaekwondo{$v.img_logo}" alt=""/>
-					<div class="slide_content">
-						<div class="slide_content_wrap">
-							<h4 class="title">{$v.img_title}</h4>
-							<p class="description">Taekondo</p>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="ts-service-box">
+						<span class="ts-service-icon">
+							<i class="fa fa-line-chart"></i>
+						</span>
+						<div class="ts-service-box-content">
+							<h3>Competitive pricing</h3>
+							<ul>
+								<li>Get insurance quote</li>
+								<li>Get insurance</li>
+								<li>Manage your Insurance</li>
+								<li>Learn about insurance</li>
+								<li>Products &amp; services</li>
+							</ul>
 						</div>
 					</div>
-				</div>
-			</foreach>
+				</div> <!-- Col 1 end -->
 
-            <!--/slide -->
-
-            <!--&lt;!&ndash; /Duplicate to create more slides &ndash;&gt;-->
-            <!--<div class="slide">-->
-                <!--<img src="__PUBLIC__/Home/images/slider/wall3.jpg" alt=""/>-->
-                <!--<div class="slide_content">-->
-                    <!--<div class="slide_content_wrap">-->
-                        <!--<h4 class="title">consectetuer adipiscing </h4>-->
-                        <!--<p class="description">diam nonummy nibh euismod</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--&lt;!&ndash;/slide &ndash;&gt;-->
-            <!--&lt;!&ndash; /Duplicate to create more slides &ndash;&gt;-->
-            <!--<div class="slide">-->
-                <!--<img src="__PUBLIC__/Home/images/slider/wall4.jpg" alt=""/>-->
-                <!--<div class="slide_content">-->
-                    <!--<div class="slide_content_wrap">-->
-                        <!--<h4 class="title">consectetuer adipiscing </h4>-->
-                        <!--<p class="description">diam nonummy nibh euismod</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--&lt;!&ndash;/slide &ndash;&gt;-->
-            <!--&lt;!&ndash; /Duplicate to create more slides &ndash;&gt;-->
-            <!--<div class="slide">-->
-                <!--<img src="__PUBLIC__/Home/images/slider/wall1.jpg" alt=""/>-->
-                <!--<div class="slide_content">-->
-                    <!--<div class="slide_content_wrap">-->
-                        <!--<h4 class="title">consectetuer adipiscing </h4>-->
-                        <!--<p class="description">diam nonummy nibh euismod</p>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--&lt;!&ndash;/slide &ndash;&gt;-->
-        </div>
-        <div class="timers"></div>
-        <div class="slidePrev"><span></span></div>
-        <div class="slideNext"><span></span></div>
-    </div>
-    <!--/slider -->
-<div class="main">
-	<div class="wrap">
-		<div class="section group">
-		  <div class="cont span_2_of_3">
-              <!--图片展示栏-->
-		  	<h2 class="head">图片展示</h2>
-			<div class="top-box">
-			 <!--<div class="col_1_of_3 span_1_of_3"> -->
-			   <!--<a href="single.html">-->
-				<!--<div class="inner_content clearfix">-->
-					<!--<div class="product_image">-->
-						<!--<img src="__PUBLIC__/Home/images/showbox/box1.jpg" alt=""/>-->
-					<!--</div>-->
-                    <!--<div class="sale-box"><span class="on_sale title_shop">左测试</span></div>-->
-                    <!--<div class="price">-->
-					   <!--<div class="cart-left">-->
-							<!--<p class="title">一只白熊</p>-->
-							<!--<div class="price1">-->
-							  <!--<span class="actual">2018-3-13</span>-->
-							<!--</div>-->
-						<!--</div>-->
-						<!--&lt;!&ndash;<div class="cart-right"> </div>&ndash;&gt;-->
-						<!--<div class="clear"></div>-->
-					 <!--</div>				-->
-                   <!--</div>-->
-                 <!--</a>-->
-				<!--</div>-->
-			   <!--<div class="col_1_of_3 span_1_of_3">-->
-			   	 <!--<a href="single.html">-->
-					<!--<div class="inner_content clearfix">-->
-					<!--<div class="product_image">-->
-						<!--<img src="__PUBLIC__/Home/images/showbox/box2.jpg" alt=""/>-->
-					<!--</div>-->
-                    <!--<div class="price">-->
-					   <!--<div class="cart-left">-->
-							<!--<p class="title">另一只白熊</p>-->
-							<!--<div class="price1">-->
-							  <!--<span class="actual">2017-12-22</span>-->
-							<!--</div>-->
-						<!--</div>-->
-						<!--&lt;!&ndash;<div class="cart-right"> </div>&ndash;&gt;-->
-						<!--<div class="clear"></div>-->
-					 <!--</div>				-->
-                   <!--</div>-->
-                   <!--</a>-->
-				<!--</div>-->
-				<foreach name="showbox_list" item="v">
-					<div class="col_1_of_3 span_1_of_3">
-							<div class="inner_content clearfix">
-								<div class="product_image">
-									<img src="/sztaekwondo{$v.img_logo}" alt=""/>
-								</div>
-								<!--<div class="sale-box1"><span class="on_sale title_shop"></span></div>-->
-								<div class="price">
-									<div class="cart-left">
-										<p class="title">{$v.img_title}</p>
-										<div class="price1">
-											<!--<span class="reducedfrom">$66.00</span>-->
-											<span class="actual">{$v.pubtime}</span>
-										</div>
-									</div>
-									<!--<div class="cart-right"> </div>-->
-									<div class="clear"></div>
-								</div>
-							</div>
-					</div>
-				</foreach>
-				<div class="clear"></div>
-			</div>
-
-
-              <div class="top-border"> </div>
-              <div class="sidebar-bottom">
-				<foreach name="article_list" item="a">
-                  <!--标题-->
-					<a href="{:U('Index/article')}?id={$a.article_id}">
-						<h2 class="m_1">{$a.article_title}</h2>
-					</a>
-
-                  <!--内容-->
-                  <p class="m_text">{$a.article_summary}</p>
-				  <hr>
-				</foreach>
-              </div>
-				<div class="clear"></div>
-			</div>			 						 			    
-		  </div>
-
-
-
-
-
-			<div class="rsidebar span_1_of_left">
-				<div class="top-border"> </div>
-				 <div class="border">
-	             <link href="__PUBLIC__/Home/css/default.css" rel="stylesheet" type="text/css" media="all" />
-	             <link href="__PUBLIC__/Home/css/nivo-slider.css" rel="stylesheet" type="text/css" media="all" />
-				  <script src="__PUBLIC__/Home/js/jquery.nivo.slider.js"></script>
-				    <script type="text/javascript">
-				    $(window).load(function() {
-				        $('#slider').nivoSlider();
-				    });
-				    </script>
-		    <div class="slider-wrapper theme-default">
-              <div id="slider" class="nivoSlider">
-				  <foreach name="member_list" item="v">
-					  <img src="/sztaekwondo{$v.img_logo}"  alt="" />
-				  </foreach>
-                <!--<img src="__PUBLIC__/Home/images/t-img1.jpg"  alt="" />-->
-               	<!--<img src="__PUBLIC__/Home/images/t-img2.jpg"  alt="" />-->
-                <!--<img src="__PUBLIC__/Home/images/t-img3.jpg"  alt="" />-->
-                  <!--<img src="__PUBLIC__/Home/images/t-img3.jpg"  alt="" />-->
-                  <!--<img src="__PUBLIC__/Home/images/t-img3.jpg"  alt="" />-->
-              </div>
-             </div>
-              <div class="btn"><a href="{:U('Index/about')}">About us</a></div>
-             </div>
-           <div class="top-border"> </div>
-			<div class="sidebar-bottom">
-			    <h2 class="m_1">Information<br> Signup</h2>
-			    <p class="m_text">a website about taekwondo</p>
-			    <div class="subscribe">
-					 <form>
-					    <input name="userName" type="text" class="textbox">
-					    <input type="submit" value="Subscribe">
-					 </form>
-	  			</div>
-			</div>
-	    </div>
-	   <div class="clear"></div>
-	</div>
-	</div>
-	</div>
-
-   <div class="footer">
-		<div class="footer-middle">
-			<div class="wrap">
-			 <div class="section group example">
-			  <div class="col_1_of_f_1 span_1_of_f_1">
-				 <div class="section group example">
-				   <div class="col_1_of_f_2 span_1_of_f_2">
-				      <h3>山庄跆拳道，欢迎您</h3>
-						<script>(function(d, s, id) {
-						  var js, fjs = d.getElementsByTagName(s)[0];
-						  if (d.getElementById(id)) return;
-						  js = d.createElement(s); js.id = id;
-						  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-						  fjs.parentNode.insertBefore(js, fjs);
-						}(document, 'script', 'facebook-jssdk'));</script>
-						<div class="like_box">	
-							<div class="fb-like-box" data-href="http://www.xwcms.net" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+				<div class="col-md-4">
+					<div class="ts-service-box">
+						<span class="ts-service-icon">
+							<i class="fa fa-diamond"></i>
+						</span>
+						<div class="ts-service-box-content">
+							<h3>Truly Experienced</h3>
+							<ul>
+								<li>Get insurance quote</li>
+								<li>Get insurance</li>
+								<li>Manage your Insurance</li>
+								<li>Learn about insurance</li>
+								<li>Products &amp; services</li>
+							</ul>
 						</div>
- 				  </div>
-				  <div class="col_1_of_f_2 span_1_of_f_2">
-						<h3>跆拳道微博</h3>
-				       <div class="recent-tweet">
-							<div class="recent-tweet-icon">
-								<span> </span>
-							</div>
-							<div class="recent-tweet-info">
-								<p>如果你想了解更多关于山庄跆拳道社团的各类动态，请点击<a href="https://weibo.com/">山庄跆拳道微博</a> 山庄跆拳道欢迎您</p>
-							</div>
-							<div class="clear"> </div>
-					   </div>
-					   <div class="recent-tweet">
-							<div class="recent-tweet-icon">
-								<span> </span>
-							</div>
-							<div class="recent-tweet-info">
-								<p>如果你想了解更多关于山庄跆拳道社团的各类动态，请点击<a href="https://weibo.com/">山庄跆拳道微博</a> 山庄跆拳道欢迎您</p>
-							</div>
-							<div class="clear"> </div>
-					  </div>
+					</div>
+				</div> <!-- Col 2 end -->
+
+				<div class="col-md-4">
+					<div class="ts-service-box">
+						<span class="ts-service-icon">
+							<i class="fa fa-recycle"></i>
+						</span>
+						<div class="ts-service-box-content">
+							<h3>Cover Your Needs</h3>
+							<ul>
+								<li>Get insurance quote</li>
+								<li>Get insurance</li>
+								<li>Manage your Insurance</li>
+								<li>Learn about insurance</li>
+								<li>Products &amp; services</li>
+							</ul>
+						</div>
+					</div>
+				</div> <!-- Col 3 end -->
+	
+			</div><!-- Content row end -->
+		</div><!--/ Container end -->
+	</section><!-- About us end -->
+
+
+
+	<section id="product-area" class="product-area" style="background-image:url(__PUBLIC__/Home/images/product-bg.jpg)">
+		<div class="container">
+			<div class="row text-center">
+				<h2 class="title">
+					We've Got You Covered
+					<span class="title-head">保险项目</span>
+				</h2>
+			</div><!--/ Title row end -->
+
+			<!--Isotope filter start -->
+			<div class="row text-center">
+				<div class="isotope-nav" data-isotope-nav="isotope">
+					<ul>
+						<li><a href="#" class="active" data-filter="*">All</a></li>
+						<li><a href="#" data-filter=".life">Life</a></li>
+						<li><a href="#" data-filter=".home">Home</a></li>
+						<li><a href="#" data-filter=".auto">Auto</a></li>
+						<li><a href="#" data-filter=".bike">Bike</a></li>
+						<li><a href="#" data-filter=".boat">Boat</a></li>
+						<li><a href="#" data-filter=".pet">Pet</a></li>
+					</ul>
 				</div>
-				<div class="clear"></div>
-		      </div>
- 			 </div>
-			 <div class="col_1_of_f_1 span_1_of_f_1">
-			   <div class="section group example">
-				 <div class="col_1_of_f_2 span_1_of_f_2">
-				    <h3>友情链接</h3>
-						<ul class="f-list1">
-						    <li><a href="http://www.chntkd.org.cn/">中国跆拳道协会</a></li>
-				            <li><a href="http://www.chntkd.org.cn/">河北跆拳道协会</a></li>
-				            <li><a href="http://www.chntkd.org.cn/">山东跆拳道协会</a></li>
-				             <li><a href="http://www.chntkd.org.cn/">北京跆拳道协会</a></li>
-				            <li><a href="http://www.chntkd.org.cn/">天津跆拳道协会</a></li>
-				            <li><a href="http://www.chntkd.org.cn/">跆拳道协会</a></li>
-			         	</ul>
- 				 </div>
-				 <div class="col_1_of_f_2 span_1_of_f_2">
-				   <h3>联系我们</h3>
-						<div class="company_address">
-					                <p>河北省承德市</p>
-							   		<p>承德市，双桥区，河北民族师范学院</p>
-							   		<p>中国</p>
-					   		<p>Phone:(0014) 222 666 444</p>
-					   		<p>Fax: (0314) 000 00 00 0</p>
-					 	 	<p>Email: <span>shanzhuangtaiquandao@nicai.com</span></p>
-					   		
-					   </div>
-					   <div class="social-media">
-						     <ul>
-						        <li> <span class="simptip-position-bottom simptip-movable" data-tooltip="Google"><a href="#" target="_blank"> </a></span></li>
-						        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Linked in"><a href="#" target="_blank"> </a> </span></li>
-						        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Rss"><a href="#" target="_blank"> </a></span></li>
-						        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Facebook"><a href="#" target="_blank"> </a></span></li>
-						    </ul>
-					   </div>
+			</div><!-- Isotope filter end -->
+
+			<div class="row">
+				<div id="isotope" class="isotope">
+					<div class="col-sm-4 col-xs-12 life isotope-item">
+						<div class="isotop-img-conatiner">
+							<img class="img-responsive" src="__PUBLIC__/Home/images/insurance/life-insurance.jpg" alt="">	
+							<div class="isotope-item-info">
+								<h3 class="isotope-item-title"><a href="life-insurance.html">Life Insurance</a></h3>
+								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
+							</div>
+						</div>
+					</div><!-- Isotope item 1 end -->
+
+					<div class="col-sm-4 col-xs-12 home isotope-item">
+						<div class="isotop-img-conatiner">
+							<img class="img-responsive" src="__PUBLIC__/Home/images/insurance/home-insurance.jpg" alt="">	
+							<div class="isotope-item-info">
+								<h3 class="isotope-item-title"><a href="life-insurance.html">Home Insurance</a></h3>
+								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
+							</div>
+						</div>
+					</div><!-- Isotope item 2 end -->
+
+					<div class="col-sm-4 col-xs-12 auto isotope-item">
+						<div class="isotop-img-conatiner">
+							<img class="img-responsive" src="__PUBLIC__/Home/images/insurance/auto-insurance.jpg" alt="">	
+							<div class="isotope-item-info">
+								<h3 class="isotope-item-title"><a href="life-insurance.html">Auto Insurance</a></h3>
+								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
+							</div>
+						</div>
+					</div><!-- Isotope item 3 end -->
+
+					<div class="col-sm-4 col-xs-12 bike isotope-item">
+						<div class="isotop-img-conatiner">
+							<img class="img-responsive" src="__PUBLIC__/Home/images/insurance/bike-insurance.jpg" alt="">	
+							<div class="isotope-item-info">
+								<h3 class="isotope-item-title"><a href="life-insurance.html">Bike Insurance</a></h3>
+								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
+							</div>
+						</div>
+					</div><!-- Isotope item 4 end -->
+
+					<div class="col-sm-4 col-xs-12 boat isotope-item">
+						<div class="isotop-img-conatiner">
+							<img class="img-responsive" src="__PUBLIC__/Home/images/insurance/boat-insurance.jpg" alt="">	
+							<div class="isotope-item-info">
+								<h3 class="isotope-item-title"><a href="life-insurance.html">Boat Insurance</a></h3>
+								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
+							</div>
+						</div>
+					</div><!-- Isotope item 5 end -->
+
+					<div class="col-sm-4 col-xs-12 pet isotope-item">
+						<div class="isotop-img-conatiner">
+							<img class="img-responsive" src="__PUBLIC__/Home/images/insurance/pet-insurance.jpg" alt="">	
+							<div class="isotope-item-info">
+								<h3 class="isotope-item-title"><a href="life-insurance.html">Pet Insurance</a></h3>
+								<p><a href="life-insurance.html" class="btn btn-primary">Read More</a></p>
+							</div>
+						</div>
+					</div><!-- Isotope item 5 end -->
+
+
+
+				</div><!-- Isotope end -->
+			</div><!-- Content Row -->
+
+		</div><!--/ Container end -->
+		<div class="down-arrow-white"></div>
+	</section><!-- Product area end -->
+
+	<section id="featured-tab-area" class="featured-tab-area">
+		<div class="container">
+			<div class="row text-center">
+				<h3 class="title">
+					We Are A Dedicated Firm
+					<span class="title-head">Why Choose Us</span>
+				</h3>
+			</div><!--/ Title row end -->
+
+
+			<div class="row">
+				<div class="featured-tab clearfix">
+					<ul class="nav nav-tabs col-sm-12 col-xs-12">
+					  	<li class="active">
+					  		<a class="animated fadeIn" href="#tab_a" data-toggle="tab">
+					  			<span class="tab-head">
+									<i class="fa fa-globe pull-left">&nbsp;</i>
+									<span class="tab-text-title">Trusted Since 1976</span>					
+								</span>
+					  		</a>
+					  	</li>
+					  	<li>
+						  	<a class="animated fadeIn" href="#tab_b" data-toggle="tab">
+						  		<span class="tab-head">
+									<i class="fa fa-users pull-left">&nbsp;</i>
+									<span class="tab-text-title">2.9M Users Never Wrong</span>					
+								</span>
+						  	</a>
+						</li>
+					 	<li>
+						  	<a class="animated fadeIn" href="#tab_c" data-toggle="tab">
+						  		<span class="tab-head">
+									<i class="fa fa-android pull-left">&nbsp;</i>
+									<span class="tab-text-title">Easy Quotes and Apps</span>					
+								</span>
+						  	</a>
+						</li>
+
+						<li>
+						  	<a class="animated fadeIn" href="#tab_d" data-toggle="tab">
+						  		<span class="tab-head">
+									<i class="fa fa-life-ring pull-left">&nbsp;</i>
+									<span class="tab-text-title">Secure and Stable</span>					
+								</span>
+						  	</a>
+						</li>
+
+						<li>
+						  	<a class="animated fadeIn" href="#tab_e" data-toggle="tab">
+						  		<span class="tab-head">
+									<i class="fa fa-user-secret pull-left">&nbsp;</i>
+									<span class="tab-text-title">24/7 With Real Person</span>					
+								</span>
+						  	</a>
+						</li>
+
+					</ul>
+					<div class="tab-content col-sm-12 col-xs-12">
+				        <div class="tab-pane active animated fadeInRight" id="tab_a">
+				        	<img class="img-responsive pull-right" src="__PUBLIC__/Home/images/tab/featured-tab1.jpg" alt="">
+				        	<div class="tab-wrapper">
+				        		<h3 class="tab-content-title">A History of Trust and Dependability</h3>
+					         <p>None quis nibh vel erat tincidunt pretium. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend. Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit.</p>
+					         <ul class="list-round-arrow">
+									<li>There are many variations of passages of Lorem Ipsum</li>
+									<li>All the Lorem Ipsum generators on the Internet</li>
+									<li>Tend to repeat predefined chunks as necessary</li>
+									<li>The point of using Lorem Ipsum is thatl</li>
+								</ul>
+				        	</div>
+				        </div>
+
+				        <div class="tab-pane animated fadeInLeft" id="tab_b">
+				            <img class="img-responsive pull-left" src="__PUBLIC__/Home/images/tab/featured-tab2.png" alt="">
+				            <h3>Harmony from the World heart</h3>
+				            <h4>Simply dummy text of the printing</h4>
+								<p>None quis nibh vel erat tincidunt pretium. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>		
+								<p>Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.</p>					 
+				        </div>
+
+				        	<div class="tab-pane animated fadeInLeft" id="tab_c">
+				            <p class="tab-icon pull-left"><i class="fa fa-android">&nbsp;</i></p>
+				            <h3>Harmony from the World heart</h3>
+								<h4>Simply dummy text of the printing</h4>
+								<p>None quis nibh vel erat tincidunt pretium. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>
+								<p>Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.</p>
+				        	</div>	
+
+				        	<div class="tab-pane animated fadeInLeft" id="tab_d">
+				            <p><img class="pull-right img-responsive" src="__PUBLIC__/Home/images/tab/featured-tab3.png" alt=""></p>
+								<h3>Harmony from the World heart</h3>
+								<p>None quis nibh vel erat tincidunt pretium. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>
+								<p>Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.</p>
+				        	</div>
+
+				        	<div class="tab-pane animated fadeInLeft" id="tab_e">
+				            <p><img class="pull-left img-responsive" src="__PUBLIC__/Home/images/tab/featured-tab4.png" alt=""></p>
+								<h3>Harmony from the World heart</h3>
+								<p>None quis nibh vel erat tincidunt pretium. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>
+								<p>Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.</p>
+				        	</div>
+		
+					</div><!-- tab content -->
+	    		</div><!-- Featured tab end -->
+			</div><!--/ Content row end -->
+
+		</div><!--/ Container end -->
+	</section><!-- Featured tab end -->
+
+	<section id="ts-content" class="ts-content no-padding">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 ts-padding left">
+					<h2>We are Here to Help</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+					<div class="row">
+						<div class="col-md-6 service-box"><i class="fa fa-pie-chart">&nbsp;</i>
+							<div class="service-box-content">
+								<h3>Financial Security</h3>
+								<p>Aliquam posuere gravida tristique. Vestibulum dolor turpis, gravida vitae euismod at, consectetur quis felis.</p>
+							</div>
+						</div><!--/ Box 1 end -->
+						
+						<div class="col-md-6 service-box"><i class="fa fa-line-chart">&nbsp;</i>
+							<div class="service-box-content">
+								<h3>Savings and Investing</h3>
+								<p>Aliquam posuere gravida tristique. Vestibulum dolor turpis, gravida vitae euismod at, consectetur quis felis.</p>
+							</div>
+						</div><!--/ Box 2 end -->
+					</div><!-- 1st row end -->
+
+					<div class="row">
+						<div class="col-md-6 service-box"><i class="fa fa-briefcase">&nbsp;</i>
+							<div class="service-box-content">
+								<h3>Business Goals</h3>
+								<p>Aliquam posuere gravida tristique. Vestibulum dolor turpis, gravida vitae euismod at, consectetur quis felis.</p>
+							</div>
+						</div><!--/ Box 3 end -->
+					
+						<div class="col-md-6 service-box"><i class="fa fa-graduation-cap">&nbsp;</i>
+							<div class="service-box-content">
+								<h3>Paying for Education</h3>
+								<p>Aliquam posuere gravida tristique. Vestibulum dolor turpis, gravida vitae euismod at, consectetur quis felis.</p>
+							</div>
+						</div><!--/ Box 4 end -->
+					</div>
+				</div><!-- Content left -->
+
+				<div class="col-md-6 ts-padding right" style="height:600px;background:url(__PUBLIC__/Home/images/content-bg.jpg) 50% 50% / cover no-repeat;">
+					<a class='popup' href="http://player.vimeo.com/video/100195272?autoplay=1&amp;loop=1" style="position: relative;">
+                  <div class="video-icon">
+                  	<i class="fa fa-play"></i>
+                  	<h2>Watch Our Video</h2>
+               	</div>
+            	</a>
+				</div><!-- Content right -->
+
+
+			</div><!--/ Content row end -->
+		</div><!--/ Container end -->
+	</section><!-- Content end -->
+
+	<section id="facts" class="facts no-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 class="intro-title">
+						sucessful Milestone Area
+						<span class="title-head"> The Importance Of Being Covered</span>
+					</h2>
+					<p>We have been providing stability and reliability to our clients since 1859 to help them live their lives with confidence, to give them peace of mind, and enable them to realize their dreams for their loved ones and their legacy.We have been providing stability and reliability to our clients since 1859 to help them live their lives with confidence, to give them peace of mind, and enable them to realize their dreams for their loved ones and their legacy.</p>
+					<p><a class="btn btn-dark" href="#">Talk to Us</a></p>
+
+				</div><!-- Col end -->
+
+				<div class="col-md-6">
+					<div class="facts-wrapper">
+						<div class="col-md-6 ts-facts">
+							<div class="ts-facts-icon">
+								<i class="fa fa-umbrella"></i>
+							</div>
+							<div class="ts-facts-content">
+								<h2 class="ts-facts-num"><span class="counterUp">7968</span></h2>
+								<h3 class="ts-facts-title">Insurance Policies</h3>
+							</div>
+						</div><!-- Col end -->
+
+						<div class="col-md-6 ts-facts">
+							<div class="ts-facts-icon">
+								<i class="fa fa-globe"></i>
+							</div>
+							<div class="ts-facts-content">
+								<h2 class="ts-facts-num"><span class="counterUp">127</span></h2>
+								<h3 class="ts-facts-title">Countries World Wide</h3>
+							</div>
+						</div><!-- Col end -->
+
+						<div class="col-md-6 ts-facts">
+							<div class="ts-facts-icon">
+								<i class="fa fa-smile-o"></i>
+							</div>
+							<div class="ts-facts-content">
+								<h2 class="ts-facts-num"><span class="counterUp">2979</span></h2>
+								<h3 class="ts-facts-title">Happy Customers</h3>
+							</div>
+						</div><!-- Col end -->
+
+						<div class="col-md-6 ts-facts">
+							<div class="ts-facts-icon">
+								<i class="fa fa-street-view"></i>
+							</div>
+							<div class="ts-facts-content">
+								<h2 class="ts-facts-num"><span class="counterUp">1798</span></h2>
+								<h3 class="ts-facts-title">Insurance Agencies</h3>
+							</div>
+						</div>
+					</div> <!-- Facts end -->
+				</div><!-- Col end -->
+			</div><!--/ Content row end -->
+		</div><!--/ Container end -->
+	</section><!-- Facts end -->
+
+
+	<section id="news" class="news">
+		<div class="container">
+			<div class="down-arrow-color"></div>
+			<div class="row text-center">
+				<h3 class="title">
+					Get Up to Date
+					<span class="title-head">业内最新资讯</span>
+				</h3>
+			</div><!--/ Title row end -->
+
+			<div class="row">
+				<div class="col-md-4 col-xs-12">
+					<div class="latest-post">
+						<img class="img-responsive" src="__PUBLIC__/Home/images/news/news1.jpg" alt="img">
+						<div class="post-body">
+							<h4 class="post-title">
+								<a href="#">Saifway Approves Estimated $1.7 Billion Payout for Policyowners</a>
+							</h4>
+							<span class="post-item-date">
+								<i class="fa fa-clock-o"></i> December 11, 2015
+							</span>
+							<span class="post-item-author">
+								<i class="fa fa-user"></i> Admin
+							</span>
+							<div class="post-text">
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some  Ut urna dui, interdum non blandit sed.</p>
+							</div>
+						</div>	
+						<a href="#" class="btn btn-primary">Read More</a>
+					</div><!-- Latest post end -->
+				</div><!-- 1st post col end -->
+
+				<div class="col-md-4 col-xs-12">
+					<div class="latest-post">
+						<img class="img-responsive" src="__PUBLIC__/Home/images/news/news2.jpg" alt="img">
+						<div class="post-body">
+							<h4 class="post-title">
+								<a href="#">Saifway Enhanced Customer Self Service Experience</a>
+							</h4>
+							<span class="post-item-date">
+								<i class="fa fa-clock-o"></i> December 11, 2015
+							</span>
+							<span class="post-item-author">
+								<i class="fa fa-user"></i> Admin
+							</span>
+							<div class="post-text">
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some  Ut urna dui, interdum non blandit sed.</p>
+							</div>
+						</div>	
+						<a href="#" class="btn btn-primary">Read More</a>
+					</div><!-- Latest post end -->
+				</div><!-- 2nd post col end -->
+
+				<div class="col-md-4 col-xs-12">
+					<div class="latest-post">
+						<img class="img-responsive" src="__PUBLIC__/Home/images/news/news3.jpg" alt="img">
+						<div class="post-body">
+							<h4 class="post-title">
+								<a href="#">Technological changes reshaping reinsurance industry</a>
+							</h4>
+							<span class="post-item-date">
+								<i class="fa fa-clock-o"></i> December 11, 2015
+							</span>
+							<span class="post-item-author">
+								<i class="fa fa-user"></i> Admin
+							</span>
+							<div class="post-text">
+								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some  Ut urna dui, interdum non blandit sed.</p>
+							</div>
+						</div>	
+						<a href="#" class="btn btn-primary">Read More</a>
+					</div><!-- Latest post end -->
+				</div><!-- 3rd post col end -->
+
+			</div><!--/ Content row end -->
+		</div><!--/ Container end -->
+	</section><!--/ News end -->
+
+	<!-- Partners start -->
+	<section id="partners-area" class="partners-area">
+		<div class="container">
+			<div class="row text-center">
+				<h3 class="title">
+					People Trust Us
+					<span class="title-head">合作伙伴</span>
+				</h3>
+			</div> <!-- Title row end -->
+
+			<div class="row">
+		      <div id="partners-carousel" class="col-sm-12 owl-carousel owl-theme text-center partners">
+		        <figure class="item partner-logo">
+		          <a href="#">
+		            <img class="img-responsive" src="__PUBLIC__/Home/images/partners/partner1.jpg" alt="client">
+		          </a>
+		        </figure>
+
+		        <figure class="item partner-logo">
+		          <a href="#">
+		            <img class="img-responsive" src="__PUBLIC__/Home/images/partners/partner2.jpg" alt="client">
+		          </a>
+		        </figure>
+
+		        <figure class="item partner-logo">
+		          <a href="#">
+		            <img class="img-responsive" src="__PUBLIC__/Home/images/partners/partner3.jpg" alt="client">
+		          </a>
+		        </figure>
+
+		        <figure class="item partner-logo">
+		          <a href="#">
+		            <img class="img-responsive" src="__PUBLIC__/Home/images/partners/partner4.jpg" alt="client">
+		          </a>
+		        </figure>
+
+		        <figure class="item partner-logo">
+		          <a href="#">
+		            <img class="img-responsive" src="__PUBLIC__/Home/images/partners/partner5.jpg" alt="client">
+		          </a>
+		        </figure>
+
+		        <figure class="item partner-logo">
+		          <a href="#">
+		            <img class="img-responsive" src="__PUBLIC__/Home/images/partners/partner6.jpg" alt="client">
+		          </a>
+		        </figure>
+
+		        <figure class="item partner-logo">
+		          <a href="#">
+		            <img class="img-responsive" src="__PUBLIC__/Home/images/partners/partner7.jpg" alt="client">
+		          </a>
+		        </figure>
+
+		        <figure class="item partner-logo">
+		          <a href="#">
+		            <img class="img-responsive" src="__PUBLIC__/Home/images/partners/partner8.jpg" alt="client">
+		          </a>
+		        </figure>
+
+		        <figure class="item partner-logo">
+		          <a href="#">
+		            <img class="img-responsive" src="__PUBLIC__/Home/images/partners/partner9.jpg" alt="client">
+		          </a>
+		        </figure>
+
+		        <figure class="item partner-logo last">
+		          <a href="#">
+		            <img class="img-responsive" src="__PUBLIC__/Home/images/partners/partner10.jpg" alt="client">
+		          </a>
+		        </figure>
+		        
+		      </div><!--/ Owl carousel end -->
+
+	    	</div><!--/ Content row end -->
+		</div><!--/ Container end -->
+	</section><!--/ Partners end -->
+
+	<section class="footer-top no-padding">
+		<div class="container">
+			<div class="footer-top-bg row">
+				<div class="col-md-4 footer-box one">
+					<i class="fa fa-map-marker">&nbsp;</i>
+					<div class="footer-box-content">
+						<h3>Head Office</h3>
+						<p>SaifWay Center, 3021 Horizon Circle Tukwila, WA-98000.</p>
+					</div>
+				</div><!--/ Box 1 end -->
+
+				<div class="col-md-4 footer-box two">
+					<i class="fa fa-phone">&nbsp;</i>
+					<div class="footer-box-content">
+						<h3>Call Center</h3>
+						<p>Mobile: (+8) 847-291-4353</p>
+						<p>Phone: (+8) 847-291-4873</p>
+					</div>
+				</div><!--/ Box 2 end -->
+				
+				<div class="col-md-4 footer-box three">
+					<i class="fa fa-envelope-o">&nbsp;</i>
+					<div class="footer-box-content">
+						<h3>Email</h3>
+						<p>info@saifway.com</p>
+						<p>query@saifway.com</p>
+					</div>
+				</div><!--/ Box 3 end -->
+				
+			</div><!--/ Content row end -->
+		</div><!--/ Container end -->
+	</section><!--/ Footer top end -->
+
+   
+
+   
+
+	<!-- Footer start -->
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-12 footer-widget footer-about">
+					<div class="footer-logo">
+						<img src="__PUBLIC__/Home/images/footer-logo.png" alt="">
+					</div>
+
+					<p>Saifway Insurance company Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat.</p>
+					<p>We are a awward winning multinational company. We believe in quality and standard worldwide.</p>
+					<p><strong>Mon/Friday</strong> 10.00 - 13.00 / 14.00 - 18.00</p>
+				</div><!-- About us end -->
+
+				<div class="col-md-4 col-sm-12 footer-widget">
+					<h3 class="widget-title">Important Links</h3>
+
+					<ul class="list-arrow">
+						<li><a href="#">Get insurance</a></li>
+						<li><a href="#">Manage Insurance</a></li>
+						<li><a href="#">Learn insurance</a></li>
+						<li><a href="#">Products &amp; services</a></li>
+						<li><a href="#">Why SaifWay</a></li>
+						<li><a href="#">How claims work</a></li>
+						<li><a href="#">Why use an adviser?</a></li>
+						<li><a href="#">The risk</a></li>
+						<li><a href="#">Underinsurance</a></li>
+						<li><a href="#">Manage Insurance</a></li>
+						<li><a href="#">Learn insurance</a></li>
+						<li><a href="#">Insurance Quotes</a></li>
+						<li><a href="#">Product Disclosure</a></li>
+					</ul>
 				</div>
-				<div class="clear"></div>
-		    </div>
-		   </div>
-		  <div class="clear"></div>
-		    </div>
-		  </div>
-		</div>
-		<div class="footer-bottom">
-			<div class="wrap">
-	             <div class="copy">
-			        <p>Copyright &copy; 2018.洋²艳鼎旭 All rights reserved.<a href='http://www.hbun.net' title='HOME'>HBUN</a></p>
-		         </div>
-				<div class="f-list2">
-				 <ul>
-					<li class="active"><a href="{:U('Index/about')}">关于我们</a></li> |
-					<li><a href="{:U('Index/about')}">Delivery & Returns</a></li> |
-					<li><a href="{:U('Index/about')}">Terms & Conditions</a></li> |
-					<li><a href="{:U('Index/about')}">联系我们</a></li> 
-				 </ul>
-			    </div>
-			    <div class="clear"></div>
-		      </div>
-	     </div>
-	</div>
+
+				<div class="col-md-4 col-sm-12 footer-widget">
+					<h3 class="widget-title">Subscribe with us</h3>
+					<div class="newsletter-introtext">
+						Subscribe with our newsletters and receive news about our discounts.
+					</div>
+					<form action="#" method="post" id="newsletter-form" class="newsletter-form">
+						<div class="form-group">
+							<input type="email" name="email" id="newsletter-form-email" class="form-control form-control-lg" placeholder="Your Email Here" autocomplete="off">
+							<button class="btn btn-primary">Subscribe</button>
+						</div>
+					</form>
+
+					<div class="footer-social">
+						<h3 class="widget-title">Stay Connected</h3>
+						<ul>
+							<li><a href="#"><i class="fa fa-rss"></i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+						</ul>
+					</div><!-- Footer social end -->
+				</div>
+			</div><!--/ Content row end -->
+
+			<div class="row copyright">
+				<div class="col-xs-12 col-sm-5">
+					<div class="copyright-info">
+						<span>Copyright © 2016 Saifway. All Rights Reserved.</span>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-push-1">
+					<div class="footer-menu">
+						<ul class="nav unstyled">
+							<li><a href="#">About</a></li>
+							<li><a href="#">© Saifway</a></li>
+							<li><a href="#">Legal</a></li>
+							<li><a href="#">Privacy Statement</a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- Copyright end -->
+
+			<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+				<button class="btn btn-primary" title="Back to Top">
+					<i class="fa fa-angle-double-up"></i>
+				</button>
+			</div>
+
+		</div><!--/ Container end -->
+	</footer><!-- Footer end -->
+
+	
+
+	<!-- Javascript Files
+	================================================== -->
+
+	<!-- initialize jQuery Library -->
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.js"></script>
+	<!-- Bootstrap jQuery -->
+	<script type="text/javascript" src="__PUBLIC__/Home/js/bootstrap.min.js"></script>
+	<!-- Owl Carousel -->
+	<script type="text/javascript" src="__PUBLIC__/Home/js/owl.carousel.min.js"></script>
+	<!-- Counter -->
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.counterup.min.js"></script>
+	<!-- Waypoints -->
+	<script type="text/javascript" src="__PUBLIC__/Home/js/waypoints.min.js"></script>
+	<!-- Color box -->
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.colorbox.js"></script>
+	<!-- Isotope -->
+	<script type="text/javascript" src="__PUBLIC__/Home/js/isotope.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/ini.isotope.js"></script>
+	<!-- Google Map API Key Source -->
+	<!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
+	<!-- For Google Map -->
+	<!-- Doc http://www.mkyong.com/google-maps/google-maps-api-hello-world-example/ -->
+	<!--<script type="text/javascript" src="__PUBLIC__/Home/js/gmap3.min.js"></script>-->
+	<!-- Template custom -->
+	<script type="text/javascript" src="__PUBLIC__/Home/js/custom.js"></script>
+	
+	</div><!-- Body inner end -->
 </body>
 </html>
