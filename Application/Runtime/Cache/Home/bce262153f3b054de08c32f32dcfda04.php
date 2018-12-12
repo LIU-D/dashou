@@ -50,42 +50,6 @@
 
 	<div class="body-inner">
 
-	<div id="top-bar" class="top-bar">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-md-6 col-sm-6 col-xs-12 top-social">
-					<!-- <ul class="unstyled">
-						<li>
-							<a title="Facebook" href="#">
-								<span class="social-icon"><i class="fa fa-facebook"></i></span>
-							</a>
-							<a title="Twitter" href="#">
-								<span class="social-icon"><i class="fa fa-twitter"></i></span>
-							</a>
-							<a title="Google+" href="#">
-								<span class="social-icon"><i class="fa fa-google-plus"></i></span>
-							</a>
-							<a title="Linkdin" href="#">
-								<span class="social-icon"><i class="fa fa-linkedin"></i></span>
-							</a>
-							<a title="instagram" href="#">
-								<span class="social-icon"><i class="fa fa-instagram"></i></span>
-							</a>
-						</li>
-					</ul> -->
-				</div><!--/ Top social end -->
-	
-				<div class="col-md-6 col-sm-6 col-xs-12 top-menu ">
-					<ul class="unstyled">
-						<li><a href="#">注册</a></li>
-						<li><a href="#">登录</a></li>
-					</ul>
-				</div><!--/ Top menu end -->
-	
-			</div><!--/ Content row end -->
-		</div><!--/ Container end -->
-	</div><!--/ Topbar end -->
 	
 	<!-- Header start -->
 	<header id="header" class="header">
@@ -201,7 +165,8 @@
 					</div><!-- Site Navbar inner end -->
 	
 					<div class="find-agent pull-right">
-						<a href="#">Find Agent</a>
+						<?php if(!isset($_SESSION['name'])): ?><a href="<?php echo U('Index/login');?>">点此 登录</a>
+						<?php else: ?><a href="<?php echo U('Index/logout');?>">你好， <?php echo (session('name')); ?> </a><?php endif; ?>
 					</div>
 	
 				</div><!--/ Col end -->

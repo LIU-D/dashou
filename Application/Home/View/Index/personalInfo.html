@@ -50,42 +50,7 @@
 
 	<div class="body-inner">
 
-	<div id="top-bar" class="top-bar">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-md-6 col-sm-6 col-xs-12 top-social">
-					<!-- <ul class="unstyled">
-						<li>
-							<a title="Facebook" href="#">
-								<span class="social-icon"><i class="fa fa-facebook"></i></span>
-							</a>
-							<a title="Twitter" href="#">
-								<span class="social-icon"><i class="fa fa-twitter"></i></span>
-							</a>
-							<a title="Google+" href="#">
-								<span class="social-icon"><i class="fa fa-google-plus"></i></span>
-							</a>
-							<a title="Linkdin" href="#">
-								<span class="social-icon"><i class="fa fa-linkedin"></i></span>
-							</a>
-							<a title="instagram" href="#">
-								<span class="social-icon"><i class="fa fa-instagram"></i></span>
-							</a>
-						</li>
-					</ul> -->
-				</div><!--/ Top social end -->
-	
-				<div class="col-md-6 col-sm-6 col-xs-12 top-menu ">
-					<ul class="unstyled">
-						<li><a href="#">注册</a></li>
-						<li><a href="#">登录</a></li>
-					</ul>
-				</div><!--/ Top menu end -->
-	
-			</div><!--/ Content row end -->
-		</div><!--/ Container end -->
-	</div><!--/ Topbar end -->
+
 	
 	<!-- Header start -->
 	<header id="header" class="header">
@@ -151,7 +116,7 @@
 								 <a href="{:U('Index/newsList')}">行业资讯</a>
 								 </li>
 				 
-								<li class="dropdown active">
+								<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
 										<ul class="dropdown-menu" role="menu">
 											   <li><a href="{:U('Index/personal')}">个人客户</a></li>
@@ -186,7 +151,7 @@
 									</ul>
 								</li>
 										
-								<li class="dropdown">
+								<li class="dropdown active">
 								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <i class="fa fa-angle-down"></i></a>
 										<ul class="dropdown-menu" role="menu">
 								   <li><a href="{:U('Index/personalInfo')}">个人信息</a></li>
@@ -200,7 +165,9 @@
 					</div><!-- Site Navbar inner end -->
 	
 					<div class="find-agent pull-right">
-						<a href="#">Find Agent</a>
+						<if condition="!isset($_SESSION['name'])"><a href="{:U('Index/login')}">点此 登录</a>
+						<else /><a href="{:U('Index/logout')}">你好， {$Think.session.name} </a>
+						</if>
 					</div>
 	
 				</div><!--/ Col end -->
@@ -229,54 +196,90 @@
 	</div><!-- Banner area end --> 
 
 
+
+
 	<section id="main-container" class="main-container">
 		<div class="container">
 
 			<div class="row">
+				<div class="col-md-12">
+					<h2 class="title">
+						Information
+						<span class="title-head">王一</span>
+					</h2>
+					<table style="text-align: center;font-size:17px;" class="table table-striped career-table">
+							<tbody>
+							   <tr>
+								  <td scope="row"><a href="#">性别</a></td>
+								  <td>女</td>
+								</tr>
+								<tr>
+								  <td scope="row"><a href="#">民族</a></td>
+								  <td>回族</td>
+							    </tr>
+							    <tr>
+									<td scope="row"><a href="#">职业</a></td>
+									<td>会计</td>
+								</tr>
+								<tr>
+									<td scope="row"><a href="#">婚否</a></td>
+									<td>未婚</td>
+								</tr>
+								<tr>
+									<td scope="row"><a href="#">身份证号</a></td>
+									<td>136216199712163025</td>
+								</tr>
+								<tr>
+									<td scope="row"><a href="#">出生日期</a></td>
+									<td>1997-12-16</td>
+								</tr>
+								<tr>
+									<td scope="row"><a href="#">手机号码</a></td>
+									<td>13698952358</td>
+								</tr>
+							</tbody>
+						 </table>
+				</div>
 
+				<div class="ts-divider">&nbsp;</div>
+				<div class="col-md-12">
+					<h2 class="title">
+						Historical business
+						<span class="title-head">历史业务</span>
+					</h2>
+				</div>
+
+				<foreach name="policy_list" item="policy">
+
+				<div  class="col-md-12" style="min-height: 200px;background-image:url(/dashou/Public/Home/images/banner/banner{$key+1}.jpg)">
+					<div class="banner-text text-center">
+						<div class="container">
+						   <div class="row">
+							   <div class="col-xs-12">
+								   <div class="banner-heading">
+									   <h1 class="banner-title"style="line-height: 100px;">{$policy.insurance_title}</h1>
+								   </div>
+							   </div>
+						   </div>
+					  </div>
+				   </div>
+				</div>
 				<div class="col-md-6">
-					<h3 class="title-normal">Accordion</h3>
-
+					<h3></h3>
 					<div class="panel-group" id="accordion">
 		              	<div class="panel panel-default">
 			                <div class="panel-heading">
 				                <h4 class="panel-title"> 
-				                	<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Collapsible Group Item # 1</a> 
+				                	<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">{$policy.insurance_title}</a> 
 				                </h4>
 			                </div>
-			                <div id="collapseOne" class="panel-collapse collapse in">
+			                <div id="collapseOne" class="panel-collapse collapse">
 			                  <div class="panel-body">
-			                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor</p>
+			                    <p>{$policy.insurance_content}</p>
 			                  </div>
 			                </div>
 		              	</div><!--/ Panel 1 end-->
 
-		              	<div class="panel panel-default">
-			                <div class="panel-heading">
-				                <h4 class="panel-title">
-				                	<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseTwo"> Collapsible Group Item # 2</a>
-				            	</h4>
-			                </div>
-			                <div id="collapseTwo" class="panel-collapse collapse">
-			                  <div class="panel-body">
-			                   <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor</p>
-			                  </div>
-			                </div>
-		              	</div><!--/ Panel 2 end-->
-
-
-		              	<div class="panel panel-default">
-			                <div class="panel-heading">
-				                <h4 class="panel-title">
-				                	<a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseTwo"> Collapsible Group Item # 3</a>
-				            	</h4>
-			                </div>
-			                <div id="collapseTwo" class="panel-collapse collapse">
-			                  <div class="panel-body">
-			                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Proin gravida nibh vel velit auctor</p>
-			                  </div>
-			                </div>
-		              	</div><!--/ Panel 3 end-->
 
 	            	</div><!--/ Accordion end -->
 
@@ -285,7 +288,7 @@
 
 		         <!-- Counter Strat -->
 
-		         <h3>Facts</h3>
+		         <h3>参保金额</h3>
 
 					<div class="ts_counter elements no-padding">
 						<div class="row text-center">
@@ -295,8 +298,9 @@
 										<i class="fa fa-line-chart"></i>
 									</div>
 									<div class="ts-facts-content">
-										<h2 class="ts-facts-num"><span class="counterUp">1705</span></h2>
-										<h3 class="ts-facts-title">Million Revenue</h3>
+										<h1 class="ts-facts-num">￥ <span class="counterUp">{$policy.policy_money}</span></h1>
+										<h3 class="ts-facts-title">{$policy.policy_begin}  至  {$policy.policy_end}</h3>
+										
 									</div>
 								</div><!--/ Facts 1 end -->
 							</div>
@@ -307,116 +311,123 @@
 				</div><!--/ Col end -->
 
 				<div class="col-md-6">
-					<h3> Tabs </h3>
+					<h3>  </h3>
 					<div class="featured-tab pages clearfix">
 						<ul class="nav nav-tabs col-sm-12 col-xs-12">
 						  	<li class="active">
-						  		<a class="animated fadeIn" href="#tab_a" data-toggle="tab">
+						  		<a style="min-width: 270px;" class="animated fadeIn" href="#{$key}_{$policy.policyto_idcard}" data-toggle="tab">
 						  			<span class="tab-head">
 										<i class="fa fa-globe pull-left">&nbsp;</i>
-										<span class="tab-text-title">Section 1</span>					
+										<span class="tab-text-title">被保险人</span>					
 									</span>
 						  		</a>
 						  	</li>
-						  	<li>
-							  	<a class="animated fadeIn" href="#tab_b" data-toggle="tab">
-							  		<span class="tab-head">
-										<i class="fa fa-users pull-left">&nbsp;</i>
-										<span class="tab-text-title">Section 2</span>					
-									</span>
-							  	</a>
-							</li>
 						 	<li>
-							  	<a class="animated fadeIn" href="#tab_c" data-toggle="tab">
+							  	<a style="min-width: 270px;" class="animated fadeIn" href="#{$key}_{$policy.beneficiary_idcard}" data-toggle="tab">
 							  		<span class="tab-head">
 										<i class="fa fa-android pull-left">&nbsp;</i>
-										<span class="tab-text-title">Section 3</span>					
+										<span class="tab-text-title">受益人</span>					
 									</span>
 							  	</a>
 							</li>
 
 						</ul>
 						<div class="tab-content col-sm-12 col-xs-12">
-					        <div class="tab-pane active animated fadeInRight" id="tab_a">
+					        <div class="tab-pane active animated fadeInRight" id="{$key}_{$policy.policyto_idcard}">
 					        	<div class="tab-wrapper">
-					        		<h3 class="tab-content-title">A History of Trust and Dependability</h3>
-						         <p>None quis nibh vel erat tincidunt pretium. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						         <ul class="list-round-arrow">
-										<li>There are many variations of passages of Lorem Ipsum</li>
-										<li>All the Lorem Ipsum generators on the Internet</li>
-										<li>Tend to repeat predefined chunks as necessary</li>
-									</ul>
+									<table style="text-align: center;font-size:17px;" class="table table-striped career-table">
+										<tbody>
+											<tr>
+												<td scope="row"><a href="#">姓名</a></td>
+												<td>{$policy.policyto_name}</td>
+											</tr>
+										   <tr>
+											  	<td scope="row"><a href="#">性别</a></td>
+											  	<td>{$policy.policyto_gender}</td>
+											</tr>
+											<tr>
+											  	<td scope="row"><a href="#">民族</a></td>
+											  	<td>{$policy.policyto_nationality}</td>
+											</tr>
+											<tr>
+												<td scope="row"><a href="#">职业</a></td>
+												<td>{$policy.policyto_profession}</td>
+											</tr>
+											<tr>
+												<td scope="row"><a href="#">婚否</a></td>
+												<td>{$policy.policyto_ismarried}</td>
+											</tr>
+											<tr>
+												<td scope="row"><a href="#">身份证号</a></td>
+												<td>{$policy.policyto_idcard}</td>
+											</tr>
+											<tr>
+												<td scope="row"><a href="#">出生日期</a></td>
+												<td>{$policy.policyto_birth}</td>
+											</tr>
+											<tr>
+												<td scope="row"><a href="#">手机号码</a></td>
+												<td>{$policy.policyto_phone}</td>
+											</tr>
+										</tbody>
+									</table>
 					        	</div>
-					        </div>
-
-					        <div class="tab-pane animated fadeInLeft" id="tab_b">
-					            <h3>Harmony from the World heart</h3>
-					            <h4>Simply dummy text of the printing</h4>
-									<p>None quis nibh vel erat tincidunt pretium. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>			 
-					        </div>
-
-					        	<div class="tab-pane animated fadeInLeft" id="tab_c">
-					            <h3>Harmony from the World heart</h3>
-									<h4>Simply dummy text of the printing</h4>
-									<p>None quis nibh vel erat tincidunt pretium. In sit amet massa sapien. Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend.</p>
-					        	</div>	
+							</div>
+							
+					        <div class="tab-pane animated fadeInLeft" id="{$key}_{$policy.beneficiary_idcard}">
+								<table style="text-align: center;font-size:17px;" class="table table-striped career-table">
+									<tbody>
+										<tr>
+											<td scope="row"><a href="#">姓名</a></td>
+											<td>{$policy.beneficiary_name}</td>
+										</tr>
+										<tr>
+										  	<td scope="row"><a href="#">性别</a></td>
+										  	<td>{$policy.beneficiary_gender}</td>
+										</tr>
+										<tr>
+										  	<td scope="row"><a href="#">民族</a></td>
+										  	<td>{$policy.beneficiary_nationality}</td>
+										</tr>
+										<tr>
+											<td scope="row"><a href="#">职业</a></td>
+											<td>{$policy.beneficiary_profession}</td>
+										</tr>
+										<tr>
+											<td scope="row"><a href="#">婚否</a></td>
+											<td>{$policy.beneficiary_ismarried}</td>
+										</tr>
+										<tr>
+											<td scope="row"><a href="#">身份证号</a></td>
+											<td>{$policy.beneficiary_idcard}</td>
+										</tr>
+										<tr>
+											<td scope="row"><a href="#">出生日期</a></td>
+											<td>{$policy.beneficiary_birth}</td>
+										</tr>
+										<tr>
+											<td scope="row"><a href="#">手机号码</a></td>
+											<td>{$policy.beneficiary_phone}</td>
+										</tr>
+									</tbody>
+								</table>
+					        </div>	
 
 						</div><!-- tab content -->
 		    		</div><!-- Featured tab end -->
 
 		    		 <div class="gap-40"></div>
 
-		    		<h3> Testimonial</h3>
-
-		    		<div class="testimonial-classic">
-						<img src="__PUBLIC__/Home/images/clients/testimonial1.png" alt="testimonial">
-						<p class="testimonial-classic-text">Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.</p>
-						<div class="testimonial-classic-author">
-							<h3 class="name">Tahlia Bidmead</h3>
-							<h4 class="desg">Chief Operation Officer</h4>
-						</div>
-					</div><!-- Testimonial content end -->
 
 				</div><!-- Col end -->
 
 				<div class="gap-40"></div>
-
-				<div class="col-md-6">
-					<h3>Feature Box 1</h3>
-
-					<div class="ts-service-wrapper">
-						<div class="ts-service-icon-wrapper">
-							<span class="ts-service-icon"><i class="fa fa-home"></i></span>
-						</div>
-						<div class="ts-service-info">
-							<h3>Home Solutions</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit congue turpis nec finibus.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<h3>Feature Box 2</h3>
-					<div class="ts-service-box">
-						<span class="ts-service-icon">
-							<i class="fa fa-recycle"></i>
-						</span>
-						<div class="ts-service-box-content">
-							<h3>Cover Your Needs</h3>
-							<ul>
-								<li>Get insurance quote</li>
-								<li>Get insurance</li>
-								<li>Manage your Insurance</li>
-								<li>Learn about insurance</li>
-								<li>Products &amp; services</li>
-							</ul>
-						</div>
-					</div>
-				</div> <!-- Col 3 end -->
-			
+				</foreach>
 			</div><!-- Content row -->
 		</div><!-- Conatiner end -->
 	</section><!-- Main container end -->
+
+	
 
 	<section class="footer-top no-padding">
 		<div class="container">

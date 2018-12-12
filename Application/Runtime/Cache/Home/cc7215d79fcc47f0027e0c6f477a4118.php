@@ -50,42 +50,6 @@
 
 	<div class="body-inner">
 
-	<div id="top-bar" class="top-bar">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-md-6 col-sm-6 col-xs-12 top-social">
-					<!-- <ul class="unstyled">
-						<li>
-							<a title="Facebook" href="#">
-								<span class="social-icon"><i class="fa fa-facebook"></i></span>
-							</a>
-							<a title="Twitter" href="#">
-								<span class="social-icon"><i class="fa fa-twitter"></i></span>
-							</a>
-							<a title="Google+" href="#">
-								<span class="social-icon"><i class="fa fa-google-plus"></i></span>
-							</a>
-							<a title="Linkdin" href="#">
-								<span class="social-icon"><i class="fa fa-linkedin"></i></span>
-							</a>
-							<a title="instagram" href="#">
-								<span class="social-icon"><i class="fa fa-instagram"></i></span>
-							</a>
-						</li>
-					</ul> -->
-				</div><!--/ Top social end -->
-	
-				<div class="col-md-6 col-sm-6 col-xs-12 top-menu ">
-					<ul class="unstyled">
-						<li><a href="#">注册</a></li>
-						<li><a href="#">登录</a></li>
-					</ul>
-				</div><!--/ Top menu end -->
-	
-			</div><!--/ Content row end -->
-		</div><!--/ Container end -->
-	</div><!--/ Topbar end -->
 	
 	<!-- Header start -->
 	<header id="header" class="header">
@@ -201,8 +165,9 @@
 					</div><!-- Site Navbar inner end -->
 	
 					<div class="find-agent pull-right">
-						<a href="#">Find Agent</a>
-					</div>
+							<?php if(!isset($_SESSION['name'])): ?><a href="<?php echo U('Index/login');?>">点此 登录</a>
+							<?php else: ?><a href="<?php echo U('Index/logout');?>">你好， <?php echo (session('name')); ?> </a><?php endif; ?>
+						</div>
 	
 				</div><!--/ Col end -->
 			</div><!--/ Row end -->
@@ -240,110 +205,8 @@
 
 					<div class="gap-30">&nbsp;</div>
 
-					<h3>Product </h3>
 
-					<div class="panel-group" id="accordionA">
-	              	<div class="panel panel-default">
-		                <div class="panel-heading">
-			                <h4 class="panel-title"> 
-			                	<a data-toggle="collapse" data-parent="#accordionA, #accordionB" href="#collapseOne">
-									Mauris rhoncus pretium porttitor cras scelerisque commodo odio ?</a> 
-			                </h4>
-		                </div>
-		                <div id="collapseOne" class="panel-collapse collapse in">
-		                  	<div class="panel-body">
-		                    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever printer took a galley of type and scrambled it to make a type specimen book.</p>
-		                 	</div>
-		                </div>
-	              	</div><!--/ Panel 1 end-->
-
-	              	<div class="panel panel-default">
-		                <div class="panel-heading">
-			                <h4 class="panel-title">
-			                	<a data-toggle="collapse" class="collapsed" data-parent="#accordionA, #accordionB" href="#collapseTwo"> lutpat consequat estibulum ante ipsum primis in faucibu ? 	</a>
-			            	</h4>
-		                </div>
-		                <div id="collapseTwo" class="panel-collapse collapse">
-		                  <div class="panel-body">
-		                    <p>Anemi nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupid henderit in voluptate velit esse cillu oris nisi ut aliquip ex ea com matat.</p>
-		                  </div>
-		                </div>
-	              	</div><!--/ Panel 2 end-->
-
-	              	<div class="panel panel-default">
-		               <div class="panel-heading">
-			                <h4 class="panel-title">
-			                <a data-toggle="collapse" class="collapsed" data-parent="#accordionA, #accordionB" href="#collapseThree"> Donec volutpat diam nec quam sagittis uenot egestas libero ? </a> 
-			            	</h4>
-		               </div>
-		               <div id="collapseThree" class="panel-collapse collapse">
-		                  <div class="panel-body">
-		                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-		                  </div>
-		               </div>
-           			</div><!--/ Panel 3 end-->
-
-           			<div class="panel panel-default">
-		               <div class="panel-heading">
-			                <h4 class="panel-title">
-			                <a data-toggle="collapse" class="collapsed" data-parent="#accordionA, #accordionB" href="#collapseFour"> Donec volutpat diam nec quam sagittis uenot egestas libero ? </a> 
-			            	</h4>
-		               </div>
-		               <div id="collapseFour" class="panel-collapse collapse">
-		                  <div class="panel-body">
-		                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-		                  </div>
-		               </div>
-           			</div><!--/ Panel 4 end-->
-
-        			</div><!-- Accordion end -->
-
-        			<div class="gap-40"></div>
-
-        			<h3>Service</h3>
-
-					<div class="panel-group" id="accordionB">
-	              	<div class="panel panel-default">
-		                <div class="panel-heading">
-			                <h4 class="panel-title"> 
-			                	<a data-toggle="collapse" data-parent="#accordionA, #accordionB" href="#collapseA">
-									Mauris rhoncus pretium porttitor cras scelerisque commodo odio ?</a> 
-			                </h4>
-		                </div>
-		                <div id="collapseA" class="panel-collapse collapse in">
-		                  	<div class="panel-body">
-		                    	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever printer took a galley of type and scrambled it to make a type specimen book.</p>
-		                 	</div>
-		                </div>
-	              	</div><!--/ Panel 1 end-->
-
-	              	<div class="panel panel-default">
-		                <div class="panel-heading">
-			                <h4 class="panel-title">
-			                	<a data-toggle="collapse" class="collapsed" data-parent="#accordionA, #accordionB" href="#collapseB"> lutpat consequat estibulum ante ipsum primis in faucibu ? 	</a>
-			            	</h4>
-		                </div>
-		                <div id="collapseB" class="panel-collapse collapse">
-		                  <div class="panel-body">
-		                    <p>Anemi nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com modo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupid henderit in voluptate velit esse cillu oris nisi ut aliquip ex ea com matat.</p>
-		                  </div>
-		                </div>
-	              	</div><!--/ Panel 2 end-->
-
-	              	<div class="panel panel-default">
-		               <div class="panel-heading">
-			                <h4 class="panel-title">
-			                <a data-toggle="collapse" class="collapsed" data-parent="#accordionA, #accordionB" href="#collapseC"> Donec volutpat diam nec quam sagittis uenot egestas libero ? </a> 
-			            	</h4>
-		               </div>
-		               <div id="collapseC" class="panel-collapse collapse">
-		                  <div class="panel-body">
-		                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-		                  </div>
-		               </div>
-           			</div><!--/ Panel 3 end-->
-
-        			</div><!-- Accordion end -->
+					<img src="/dashou/Public/Home/images/call/call.gif" alt="">
 
 
 				</div><!-- Content Col end -->
@@ -381,16 +244,7 @@
 
 						</div><!-- Widget end -->
 
-						<div class="widget box solid">
-							<div class="testimonial-classic">
-								<p class="testimonial-classic-text">Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.</p>
-								<img src="/dashou/Public/Home/images/clients/testimonial1.png" alt="testimonial">
-								<div class="testimonial-classic-author">
-									<h3 class="name">Tahlia Bidmead</h3>
-									<h4 class="desg">Chief Operation Officer</h4>
-								</div>
-							</div>
-						</div><!-- Widget end -->
+	
 
 					</div><!-- Sidebar end -->
 				</div><!-- Sidebar Col end -->

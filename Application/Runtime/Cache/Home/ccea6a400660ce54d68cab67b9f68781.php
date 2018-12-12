@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -15,33 +15,33 @@
 	<!-- Favicons
 	================================================== -->
 	
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="__PUBLIC__/Home/images/favicon/favicon-144x144.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="__PUBLIC__/Home/images/favicon/favicon-72x72.png">
-	<link rel="apple-touch-icon-precomposed" href="__PUBLIC__/Home/images/favicon/favicon-54x54.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/dashou/Public/Home/images/favicon/favicon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/dashou/Public/Home/images/favicon/favicon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="/dashou/Public/Home/images/favicon/favicon-54x54.png">
 	
 	<!-- CSS
 	================================================== -->
 	
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/bootstrap.min.css">
 	<!-- Template styles-->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/style.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/style.css">
 	<!-- Responsive styles-->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/responsive.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/responsive.css">
 	<!-- FontAwesome -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/font-awesome.min.css">
 	<!-- Animation -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/animate.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/animate.css">
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/owl.carousel.css">
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/owl.theme.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/owl.carousel.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/owl.theme.css">
 	<!-- Colorbox -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/colorbox.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/colorbox.css">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
-      <script src="__PUBLIC__/Home/js/html5shiv.js"></script>
-      <script src="__PUBLIC__/Home/js/respond.min.js"></script>
+      <script src="/dashou/Public/Home/js/html5shiv.js"></script>
+      <script src="/dashou/Public/Home/js/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -50,14 +50,14 @@
 
 	<div class="body-inner">
 
-
+		
 		<!-- Header start -->
 		<header id="header" class="header">
 			<div class="container">
 				<div class="row">
 					<div class="logo col-xs-12 col-sm-3">
 					<a href="index.html">
-						<img src="__PUBLIC__/Home/images/logo.png" alt="">
+						<img src="/dashou/Public/Home/images/logo.png" alt="">
 					</a>
 				 </div><!-- logo end -->
 		
@@ -108,53 +108,53 @@
 							<div class="collapse navbar-collapse navbar-responsive-collapse">
 								<ul class="nav navbar-nav">
 									<li class="dropdown ">
-										<a href="{:U('Index/index')}">首页</a>
+										<a href="<?php echo U('Index/index');?>">首页</a>
 									</li>
 									
 									<li class="dropdown">
-									 <a href="{:U('Index/newsList')}">行业资讯</a>
+									 <a href="<?php echo U('Index/newsList');?>">行业资讯</a>
 									 </li>
 					 
-									<li class="dropdown">
+									<li class="dropdown active">
 											<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
 											<ul class="dropdown-menu" role="menu">
-												   <li><a href="{:U('Index/personal')}">个人客户</a></li>
-												   <li><a href="{:U('Index/firm')}">企业客户</a></li>
+												   <li><a href="<?php echo U('Index/personal');?>">个人客户</a></li>
+												   <li><a href="<?php echo U('Index/firm');?>">企业客户</a></li>
 											</ul>
 									</li>
 					 
 								   <li class="dropdown">
 								   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
 									 <ul class="dropdown-menu" role="menu">
-											<li><a href="{:U('Index/personalService')}">个人客户中心</a></li>
-											<li><a href="{:U('Index/firmService')}">企业客户中心</a></li>
+											<li><a href="<?php echo U('Index/personalService');?>">个人客户中心</a></li>
+											<li><a href="<?php echo U('Index/firmService');?>">企业客户中心</a></li>
 											<li class="dropdown-submenu">
 											   <a href="#">联系服务人员</a>
 											   <ul class="dropdown-menu">
-												   <li><a href="{:U('Index/searchAgent')}">查询营业网点</a></li>
-												   <li><a href="{:U('Index/message')}">在线客服</a></li>
+												   <li><a href="<?php echo U('Index/searchAgent');?>">查询营业网点</a></li>
+												   <li><a href="<?php echo U('Index/message');?>">在线客服</a></li>
 												 <li><a href="#">智能客服</a></li>
-												 <li><a href="{:U('Index/call')}">电话查询</a></li>
+												 <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
 												  </ul>
 											  </li>
 									  </ul>
 								   </li>
 			
-									<li class="dropdown active">
+									<li class="dropdown">
 									  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
 										<ul class="dropdown-menu" role="menu">
-												<li><a href="{:U('Index/firmInfo')}">公司简介</a></li>
-											<li><a href="{:U('Index/outlook')}">行业前景</a></li>
-											<li><a href="{:U('Index/showAgent')}">优秀代理点</a></li>
-											<li><a href="{:U('Index/joinInfo')}">递交申请</a></li>
+												<li><a href="<?php echo U('Index/firmInfo');?>">公司简介</a></li>
+											<li><a href="<?php echo U('Index/outlook');?>">行业前景</a></li>
+											<li><a href="<?php echo U('Index/showAgent');?>">优秀代理点</a></li>
+											<li><a href="<?php echo U('Index/joinInfo');?>">递交申请</a></li>
 										</ul>
 									</li>
 											
 									<li class="dropdown">
 									  <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <i class="fa fa-angle-down"></i></a>
 											<ul class="dropdown-menu" role="menu">
-									   <li><a href="{:U('Index/personalInfo')}">个人信息</a></li>
-									   <li><a href="{:U('Index/historyBuss')}">历史业务</a></li>
+									   <li><a href="<?php echo U('Index/personalInfo');?>">个人信息</a></li>
+									   <li><a href="<?php echo U('Index/historyBuss');?>">历史业务</a></li>
 									</ul>
 									</li>
 		
@@ -164,10 +164,8 @@
 						</div><!-- Site Navbar inner end -->
 		
 						<div class="find-agent pull-right">
-								<if condition="!isset($_SESSION['name'])"><a href="{:U('Index/login')}">点此 登录</a>
-								<else /><a href="{:U('Index/logout')}">你好， {$Think.session.name} </a>
-								</if>
-							</div>
+							<a href="<?php echo U('Index/login');?>">点此 登录</a>
+						</div>
 		
 					</div><!--/ Col end -->
 				</div><!--/ Row end -->
@@ -181,80 +179,28 @@
 			<div class="row">
 
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-					<div class="sidebar sidebar-right">
-						<div class="widget">
-							<h3 class="widget-title">Contact us</h3>
 
-							<div class="contact-info-box">
-								<i class="fa fa-map-marker">&nbsp;</i>
-								<div class="contact-info-box-content">
-									<h4>Address</h4>
-									<p>SaifWay Center, 3021 Horizon Circle Tukwila, WA-98000.</p>
-								</div>
-							</div>
-
-							<div class="contact-info-box">
-								<i class="fa fa-phone">&nbsp;</i>
-								<div class="contact-info-box-content">
-									<h4>Phone</h4>
-									<p>+88 0123 4567 890</p>
-									<p>+88 0231 3421 453</p>
-								</div>
-							</div>
-
-							<div class="contact-info-box">
-								<i class="fa fa-envelope">&nbsp;</i>
-								<div class="contact-info-box-content">
-									<h4>Email</h4>
-									<p>support@saifway.com</p>
-									<p>info@saifway.com</p>
-								</div>
-							</div>
-
-						</div><!-- Widget end -->
-
-					</div><!-- Sidebar end -->
-				</div><!-- Sidebar Col end -->
-
-
-				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-
-					<h3 class="contact-form-title">Contact Form</h3>
+					<h3 class="contact-form-title">Information</h3>
 					
-	    			<form id="contact-form" action="contact-form.php" method="post" role="form">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="form-group">
-									<label>Name</label>
-								<input class="form-control" name="name" id="name" placeholder="" type="text" required>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<label>Email</label>
-									<input class="form-control" name="email" id="email" 
-									placeholder="" type="email" required>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<label>Subject</label>
-									<input class="form-control" name="subject" id="subject" 
-									placeholder="" required>
-								</div>
-							</div>
+	    			<form id="contact-form" action="<?php echo U('check');?>" method="post" role="form">
+						<div class="form-group">
+							<label>手机号： </label>
+							<input class="form-control" type="text" name="phone" id="phone" placeholder="" rows="10" required>
 						</div>
 						<div class="form-group">
-							<label>Message</label>
-							<textarea class="form-control" name="message" id="message" placeholder="" rows="10" required></textarea>
+							<label>密&nbsp;&nbsp;&nbsp;&nbsp;码： </label>
+							<input class="form-control" type="password" name="password" id="password" placeholder="" rows="10" required>
 						</div>
-						<div class="text-right"><br>
-							<button class="btn btn-primary solid blank" type="submit">Send Message</button> 
+						<div ><br>
+							<button style="width: 360px;" class="btn btn-primary solid blank" type="submit">登录</button>
 						</div>
 					</form>
 
 				</div><!-- Content col end -->
 				
+				<div style="height: 303px;overflow: hidden;" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+					<img src="/dashou/Public/Home/images/news/news4.jpg" class="img-responsive" alt="">
+				</div>
 			
 			</div><!-- Content row -->
 		</div><!-- Conatiner end -->
@@ -304,7 +250,7 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-12 footer-widget footer-about">
 					<div class="footer-logo">
-						<img src="__PUBLIC__/Home/images/footer-logo.png" alt="">
+						<img src="/dashou/Public/Home/images/footer-logo.png" alt="">
 					</div>
 
 					<p>Saifway Insurance company Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat.</p>
