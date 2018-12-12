@@ -253,7 +253,7 @@
 							</div><!-- header end -->
 
 							<div class="entry-content">
-									<?php echo ($news["news_content"]); ?>
+									<?php echo (stripslashes(htmlspecialchars_decode($news["news_content"]))); ?>
 							</div>
 
 							<div class="tags-area clearfix">

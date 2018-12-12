@@ -204,37 +204,37 @@
 				<div class="col-md-12">
 					<h2 class="title">
 						Information
-						<span class="title-head">王一</span>
+						<span class="title-head"><?php echo ($policy_list[0]["user_name"]); ?></span>
 					</h2>
 					<table style="text-align: center;font-size:17px;" class="table table-striped career-table">
 							<tbody>
 							   <tr>
-								  <td scope="row"><a href="#">性别</a></td>
-								  <td>女</td>
+									  <td scope="row"><a href="#">性别</a></td>
+									  <td><?php echo ($policy_list[0]["user_gender"]); ?></td>
 								</tr>
 								<tr>
-								  <td scope="row"><a href="#">民族</a></td>
-								  <td>回族</td>
-							    </tr>
-							    <tr>
+									  <td scope="row"><a href="#">民族</a></td>
+									  <td><?php echo ($policy_list[0]["user_nationality"]); ?></td>
+								</tr>
+								<tr>
 									<td scope="row"><a href="#">职业</a></td>
-									<td>会计</td>
+									<td><?php echo ($policy_list[0]["user_profession"]); ?></td>
 								</tr>
 								<tr>
 									<td scope="row"><a href="#">婚否</a></td>
-									<td>未婚</td>
+									<td><?php echo ($policy_list[0]["user_ismarried"]); ?></td>
 								</tr>
 								<tr>
 									<td scope="row"><a href="#">身份证号</a></td>
-									<td>136216199712163025</td>
+									<td><?php echo ($policy_list[0]["user_idcard"]); ?></td>
 								</tr>
 								<tr>
 									<td scope="row"><a href="#">出生日期</a></td>
-									<td>1997-12-16</td>
+									<td><?php echo ($policy_list[0]["user_birth"]); ?></td>
 								</tr>
 								<tr>
 									<td scope="row"><a href="#">手机号码</a></td>
-									<td>13698952358</td>
+									<td><?php echo ($policy_list[0]["user_phone"]); ?></td>
 								</tr>
 							</tbody>
 						 </table>
@@ -267,10 +267,10 @@
 		              	<div class="panel panel-default">
 			                <div class="panel-heading">
 				                <h4 class="panel-title"> 
-				                	<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed"><?php echo ($policy["insurance_title"]); ?></a> 
+				                	<a data-toggle="collapse" data-parent="#accordion" href="#<?php echo ($key); ?>_collapse" class="collapsed"><?php echo ($policy["insurance_title"]); ?></a> 
 				                </h4>
 			                </div>
-			                <div id="collapseOne" class="panel-collapse collapse">
+			                <div id="<?php echo ($key); ?>_collapse" class="panel-collapse collapse">
 			                  <div class="panel-body">
 			                    <p><?php echo ($policy["insurance_content"]); ?></p>
 			                  </div>

@@ -53,6 +53,6 @@ class IndexController extends Controller {
     function logout(){
         //清除session
         session(null);
-        $this->success('退出登录成功！',U('index'),3);
+        $this->success('退出登录成功！',U('Home/Index/index'),2);
     }
 }

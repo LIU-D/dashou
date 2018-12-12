@@ -1,11 +1,11 @@
 <?php
 namespace Admin\Controller;
 
-class ArticleController extends CommonController {
+class NewsController extends CommonController {
     public function index(){
-        $article_model = D('Article');
-        $article_list = $article_model->select();
-        $this->assign('article_list',$article_list);
+        $news_model = D('News');
+        $news_list = $news_model->select();
+        $this->assign('news_list',$news_list);
         $this->display();
     }
     public function addArticle(){

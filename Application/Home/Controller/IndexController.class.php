@@ -58,7 +58,8 @@ class IndexController extends Controller {
         //5.调用UsersModel中的checkLogin方法检测用户和密码是否正确
         //如果正确返回true，反之返回false
         if ($user_model->checkLogin($phone,$pwd)){
-            $this->success('登陆成功！',U('index'),2);
+            if($phone == 'admin') $this->success('登陆成功！',U('Admin/Index/index'),2);
+            else $this->success('登陆成功！',U('index'),2);
         }else{
             $this->error('用户名或密码错误，请重新登录！',U('login'),2);
         }
@@ -191,35 +192,35 @@ class IndexController extends Controller {
 
 
 
-    public function showList(){
-        $article_model = D('Article');
-        $article_list = $article_model
-            ->where('article_isdel = "已发布"')
-            ->select();
-        $this->assign('article_list',$article_list);
-        $this->display();
-    }
+    // public function showList(){
+    //     $article_model = D('Article');
+    //     $article_list = $article_model
+    //         ->where('article_isdel = "已发布"')
+    //         ->select();
+    //     $this->assign('article_list',$article_list);
+    //     $this->display();
+    // }
 
-    public function article(){
-        $id = I('get.id');
-        $article_list = D('Article')->find($id);
-        $this->assign('article_list',$article_list);
-        $this->display();
-    }
+    // public function article(){
+    //     $id = I('get.id');
+    //     $article_list = D('Article')->find($id);
+    //     $this->assign('article_list',$article_list);
+    //     $this->display();
+    // }
 
-    public function about(){
-        $img_model = D('Image');
-        $member_list = $img_model
-            ->where('img_typeid = 3 and img_isdel = "已发布"')
-            ->select();
-        $this ->assign('member_list',$member_list);
+    // public function about(){
+    //     $img_model = D('Image');
+    //     $member_list = $img_model
+    //         ->where('img_typeid = 3 and img_isdel = "已发布"')
+    //         ->select();
+    //     $this ->assign('member_list',$member_list);
 
-        $this->display();
-    }
+    //     $this->display();
+    // }
 
-    public function error404(){
-        $this->display();
-    }
+    // public function error404(){
+    //     $this->display();
+    // }
 
     
 

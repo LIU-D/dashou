@@ -253,7 +253,7 @@
 							</div><!-- header end -->
 
 							<div class="entry-content">
-									{$news.news_content}
+									{$news.news_content|htmlspecialchars_decode|stripslashes}
 							</div>
 
 							<div class="tags-area clearfix">
