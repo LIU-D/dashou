@@ -55,8 +55,8 @@ if ( !empty($_REQUEST[ 'debug' ]) ) {
 
 // Settings
 // $targetDir = ini_get("upload_tmp_dir") . DIRECTORY_SEPARATOR . "plupload";
-$targetDir = 'upload_tmp';
-$uploadDir = '../upload';
+$targetDir = '../../../../../../Upload/upload_tmp';
+$uploadDir = '../../../../../../Upload/image/' . date("Ymd");
 
 $cleanupTargetDir = true; // Remove old files
 $maxFileAge = 5 * 3600; // Temp file age in seconds
@@ -74,15 +74,54 @@ if (!file_exists($uploadDir)) {
 
 // Get a file name
 if (isset($_REQUEST["name"])) {
-    $fileName = $_REQUEST["name"];
+    $fileName = date("h-i-sa-") . $_REQUEST["name"];
 } elseif (!empty($_FILES)) {
-    $fileName = $_FILES["file"]["name"];
+    $fileName = date("h-i-sa-") . $_FILES["file"]["name"];
 } else {
-    $fileName = uniqid("file_");
+    $fileName = date("h-i-sa-") . uniqid("file_");
 }
 
 $filePath = $targetDir . DIRECTORY_SEPARATOR . $fileName;
 $uploadPath = $uploadDir . DIRECTORY_SEPARATOR . $fileName;
+
+
+function dbInit(){
+	$link = mysql_connect('localhost','root','741258o');
+	//判断数据库连接是否成功，如果不成功则显示错误信息并终止脚本继续执行
+	if(!$link){
+		die('连接数据库失败！'.mysql_error());
+	}
+	//设置字符集，选择数据库
+	mysql_query('set names utf8');
+	mysql_query('use dashou');
+}
+
+/**
+ * 执行SQL的方法
+ * @param string $sql 待执行的SQL
+ * @return mixed 失败返回false，成功，如果是查询语句返回结果集，如果非查询类返回true
+ */
+function query($sql) {
+
+	if ($result = mysql_query($sql)) {
+		//执行成功
+		return $result;
+	} else {
+		//设定失败
+		echo 'SQL执行失败:<br>';
+		echo '错误的SQL为:', $sql, '<br>';
+		echo '错误的代码为:', mysql_errno(), '<br>';
+		echo '错误的信息为:', mysql_error(), '<br>';
+		die;
+	}
+}
+dbInit();
+$sql = "INSERT INTO `dashou`.`ds_news` (`news_image`) VALUES ($uploadPath)";
+
+//跳转到视图页面
+if(!$res = query($sql)) die('添加图片路径失败！');
+
+
 
 // Chunking might be enabled
 $chunk = isset($_REQUEST["chunk"]) ? intval($_REQUEST["chunk"]) : 0;

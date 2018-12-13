@@ -10694,3 +10694,725 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002309s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002349s ]
 
+[ 2018-12-13T22:11:45+08:00 ] ::1 /dashou/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083294s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2018-12-13T22:11:46+08:00 ] ::1 /dashou/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2018-12-13T22:11:48+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.168153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.168189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001115s ]
+
+[ 2018-12-13T22:11:50+08:00 ] ::1 /dashou/index.php/Admin/News/newsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: article_info D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0078ee407de33466d4932a2de10df4c5.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004803s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006040s ]
+
+[ 2018-12-13T22:14:23+08:00 ] ::1 /dashou/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.182258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.182285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000705s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2018-12-13T22:14:23+08:00 ] ::1 /dashou/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011785s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000545s ]
+
+[ 2018-12-13T22:14:25+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000695s ]
+
+[ 2018-12-13T22:14:27+08:00 ] ::1 /dashou/index.php/Admin/News/newsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: article_info D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0078ee407de33466d4932a2de10df4c5.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2018-12-13T22:15:51+08:00 ] ::1 /dashou/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000879s ]
+
+[ 2018-12-13T22:15:51+08:00 ] ::1 /dashou/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001818s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2018-12-13T22:15:53+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2018-12-13T22:15:56+08:00 ] ::1 /dashou/index.php/Admin/News/newsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: article_info D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0078ee407de33466d4932a2de10df4c5.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.247221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.247245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2018-12-13T22:23:16+08:00 ] ::1 /dashou/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001716s ]
+
+[ 2018-12-13T22:23:16+08:00 ] ::1 /dashou/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005809s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005852s ]
+
+[ 2018-12-13T22:23:19+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+
+[ 2018-12-13T22:23:25+08:00 ] ::1 /dashou/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001060s ]
+
+[ 2018-12-13T22:23:25+08:00 ] ::1 /dashou/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002016s ]
+
+[ 2018-12-13T22:23:30+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2018-12-13T22:23:32+08:00 ] ::1 /dashou/index.php/Admin/News/newsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: article_info D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0078ee407de33466d4932a2de10df4c5.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001002s ]
+
+[ 2018-12-13T22:24:50+08:00 ] ::1 /dashou/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001729s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044552s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2018-12-13T22:24:51+08:00 ] ::1 /dashou/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2018-12-13T22:24:52+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2018-12-13T22:24:54+08:00 ] ::1 /dashou/index.php/Admin/News/newsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: article_info D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0078ee407de33466d4932a2de10df4c5.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2018-12-13T22:26:02+08:00 ] ::1 /dashou/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2018-12-13T22:26:02+08:00 ] ::1 /dashou/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2018-12-13T22:26:04+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2018-12-13T22:26:35+08:00 ] ::1 /dashou/index.php/Admin/News/newsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002624s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002851s ]
+NOTIC: [8] Undefined variable: article_info D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0078ee407de33466d4932a2de10df4c5.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001097s ]
+
+[ 2018-12-13T22:42:37+08:00 ] ::1 /dashou/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2018-12-13T22:42:37+08:00 ] ::1 /dashou/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.302645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.302680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2018-12-13T22:42:40+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2018-12-13T22:42:41+08:00 ] ::1 /dashou/index.php/Admin/News/newsAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: article_info D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0078ee407de33466d4932a2de10df4c5.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
