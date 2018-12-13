@@ -445,7 +445,65 @@
 	</section><!--/ Footer top end -->
 
    
-
+	<section id="facts" class="facts no-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="intro-title">
+							sucessful Milestone Area
+							<span class="title-head"> The Importance Of Being Covered</span>
+						</h2>
+						<p>We have been providing stability and reliability to our clients since 1859 to help them live their lives with confidence, to give them peace of mind, and enable them to realize their dreams for their loved ones and their legacy.We have been providing stability and reliability to our clients since 1859 to help them live their lives with confidence, to give them peace of mind, and enable them to realize their dreams for their loved ones and their legacy.</p>
+						<p><a class="btn btn-dark" href="#">Talk to Us</a></p>
+	
+					</div><!-- Col end -->
+	
+					<div class="col-md-6">
+						<div class="facts-wrapper">
+							<div class="col-md-6 ts-facts">
+								<div class="ts-facts-icon">
+									<i class="fa fa-umbrella"></i>
+								</div>
+								<div class="ts-facts-content">
+									<h2 class="ts-facts-num"><span class="counterUp">7968</span></h2>
+									<h3 class="ts-facts-title">Insurance Policies</h3>
+								</div>
+							</div><!-- Col end -->
+	
+							<div class="col-md-6 ts-facts">
+								<div class="ts-facts-icon">
+									<i class="fa fa-globe"></i>
+								</div>
+								<div class="ts-facts-content">
+									<h2 class="ts-facts-num"><span class="counterUp">127</span></h2>
+									<h3 class="ts-facts-title">Countries World Wide</h3>
+								</div>
+							</div><!-- Col end -->
+	
+							<div class="col-md-6 ts-facts">
+								<div class="ts-facts-icon">
+									<i class="fa fa-smile-o"></i>
+								</div>
+								<div class="ts-facts-content">
+									<h2 class="ts-facts-num"><span class="counterUp">2979</span></h2>
+									<h3 class="ts-facts-title">Happy Customers</h3>
+								</div>
+							</div><!-- Col end -->
+	
+							<div class="col-md-6 ts-facts">
+								<div class="ts-facts-icon">
+									<i class="fa fa-street-view"></i>
+								</div>
+								<div class="ts-facts-content">
+									<h2 class="ts-facts-num"><span class="counterUp">1798</span></h2>
+									<h3 class="ts-facts-title">Insurance Agencies</h3>
+								</div>
+							</div>
+						</div> <!-- Facts end -->
+					</div><!-- Col end -->
+				</div><!--/ Content row end -->
+			</div><!--/ Container end -->
+		</section><!-- Facts end -->
    
 
 	<!-- Footer start -->

@@ -39,8 +39,9 @@
 				<th width="25"><input type="checkbox" value="" name=""></th>
 				<th width="40">ID</th>
 				<th width="90">姓名</th>
+				<th width="90">手机号</th>
 				<th width="300">留言</th>
-				<th width="300">回复</th>
+				<th width="200">回复</th>
 				<th width="70">操作</th>
 			</tr>
 		</thead>
@@ -50,6 +51,7 @@
 				<td><input type="checkbox" value="" name=""></td>
 				<td>{$message.message_id}</td>
 				<td>{$message.user_name}</td>
+				<td>{$message.user_phone}</td>
 				<td>{$message.message_question}</td>
 
 				<if condition="$message.message_answer eq null">

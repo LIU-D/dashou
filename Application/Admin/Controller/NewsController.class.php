@@ -35,8 +35,7 @@ class NewsController extends CommonController {
 
     function editArticle(){
         $id = I('post.id');
-        $article_info = D('Article')->find($id);
-        $this->assign('article_info',$article_info);
+        
         $this->display();
     }
 

@@ -218,40 +218,43 @@
 
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
-					<h3 class="contact-form-title">Contact Form</h3>
-					
-	    			<form id="contact-form" action="contact-form.php" method="post" role="form">
+					<h3 class="contact-form-title">加入我们</h3>
+
+					<?php if($join[0] == null): ?><form id="contact-form" action="<?php echo U('Join/setJoin');?>" method="post" role="form">
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-6">
 								<div class="form-group">
-									<label>Name</label>
-								<input class="form-control" name="name" id="name" placeholder="" type="text" required>
+									<label>姓名</label>
+								<input class="form-control" name="name" id="name" readonly value="<?php echo ($user[0][user_name]); ?>" placeholder="" type="text">
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-6">
 								<div class="form-group">
-									<label>Email</label>
-									<input class="form-control" name="email" id="email" 
-									placeholder="" type="email" required>
+									<label>手机号</label>
+									<input class="form-control" readonly value="<?php echo ($user[0][user_phone]); ?>" name="phone" id="phone" 
+									placeholder="" type="text">
 								</div>
 							</div>
-							<div class="col-md-4">
-								<div class="form-group">
-									<label>Subject</label>
-									<input class="form-control" name="subject" id="subject" 
-									placeholder="" required>
-								</div>
-							</div>
+						
 						</div>
 						<div class="form-group">
-							<label>Message</label>
-							<textarea class="form-control" name="message" id="message" placeholder="" rows="10" required></textarea>
+							<label>申请说明</label>
+							<textarea class="form-control" name="content" id="content" placeholder="" rows="10" required></textarea>
 						</div>
 						<div class="text-right"><br>
-							<button class="btn btn-primary solid blank" type="submit">Send Message</button> 
+							<button class="btn btn-primary solid blank" type="submit">提交申请</button> 
 						</div>
 					</form>
-
+					
+					<?php else: ?>
+					<div class="gap-40"></div>
+					<div class="gap-40"></div>
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="text-right">您的申请正在进行审核，</h3>
+							<h3 class="text-right">请静候结果！</h3>
+						</div>
+					</div><?php endif; ?>	
 				</div><!-- Content col end -->
 				
 			
@@ -387,31 +390,31 @@
 
 	
 
-	<!-- Javascript Files
+<!-- Javascript Files
 	================================================== -->
 
 	<!-- initialize jQuery Library -->
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.js"></script>
 	<!-- Bootstrap jQuery -->
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/bootstrap.min.js"></script>
 	<!-- Owl Carousel -->
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/owl.carousel.min.js"></script>
 	<!-- Counter -->
-	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.counterup.min.js"></script>
 	<!-- Waypoints -->
-	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/waypoints.min.js"></script>
 	<!-- Color box -->
-	<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.colorbox.js"></script>
 	<!-- Isotope -->
-	<script type="text/javascript" src="js/isotope.js"></script>
-	<script type="text/javascript" src="js/ini.isotope.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/isotope.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/ini.isotope.js"></script>
 	<!-- Google Map API Key Source -->
 	<!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
 	<!-- For Google Map -->
 	<!-- Doc http://www.mkyong.com/google-maps/google-maps-api-hello-world-example/ -->
-	<!--<script type="text/javascript" src="js/gmap3.min.js"></script>-->
+	<!--<script type="text/javascript" src="/dashou/Public/Home/js/gmap3.min.js"></script>-->
 	<!-- Template custom -->
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/custom.js"></script>
 	
 	</div><!-- Body inner end -->
 </body>

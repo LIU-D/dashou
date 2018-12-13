@@ -39,8 +39,9 @@
 				<th width="25"><input type="checkbox" value="" name=""></th>
 				<th width="40">ID</th>
 				<th width="90">姓名</th>
+				<th width="90">手机号</th>
 				<th width="300">留言</th>
-				<th width="300">回复</th>
+				<th width="200">回复</th>
 				<th width="70">操作</th>
 			</tr>
 		</thead>
@@ -49,6 +50,7 @@
 				<td><input type="checkbox" value="" name=""></td>
 				<td><?php echo ($message["message_id"]); ?></td>
 				<td><?php echo ($message["user_name"]); ?></td>
+				<td><?php echo ($message["user_phone"]); ?></td>
 				<td><?php echo ($message["message_question"]); ?></td>
 
 				<?php if($message["message_answer"] == null): ?><td style="color: red">等待回复</td>

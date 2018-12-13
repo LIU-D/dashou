@@ -9,8 +9,7 @@ class ImageController extends CommonController {
          $this->display();
     }
     public function addImage(){
-        $type_list = D('Imgtype') -> select();
-        $this->assign('type_list',$type_list);
+        
 
         $this->display();
 }

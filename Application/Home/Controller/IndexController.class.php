@@ -148,6 +148,18 @@ class IndexController extends Controller {
         $this->display();
     }
     public function joinInfo(){
+        $id = $_SESSION['id'];
+        $user_model = D('User');
+        $user = $user_model
+                ->where("user_id='$id'")
+                ->select();
+        $this->assign('user',$user);
+
+        $join_model = D('Join');
+        $join = $join_model
+                ->where("join_user_id='$id' and join_ispass='待审核'")
+                ->select();
+        $this->assign('join',$join);
         $this->display();
     }
     public function personalInfo(){
