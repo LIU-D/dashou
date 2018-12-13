@@ -134,7 +134,7 @@ $(function(){
 		swf: '/dashou/Public/Admin/lib/webuploader/0.1.5/Uploader.swf',
 
 		// 文件接收服务端。
-		server: '/dashou/Public/Admin/lib/ueditor/1.4.3/php/action_upload.php',
+		server: '/dashou/Public/Admin/lib/webuploader/0.1.5/server/fileupload.php',
 
 		// 选择文件的按钮。可选。
 		// 内部根据当前运行是创建，可能是input元素，也可能是flash.
@@ -378,7 +378,7 @@ $(function(){
             swf: '/dashou/Public/Admin/lib/webuploader/0.1.5/Uploader.swf',
             chunked: false,
             chunkSize: 512 * 1024,
-            server: '/dashou/Public/Admin/lib/ueditor/1.4.3/php/action_upload.php',
+            server: '/dashou/Public/Admin/lib/webuploader/0.1.5/server/fileupload.php',
             // runtimeOrder: 'flash',
 
             // accept: {
@@ -701,7 +701,7 @@ $(function(){
                 case 'finish':
                     stats = uploader.getStats();
                     if ( stats.successNum ) {
-                        //alert( '上传成功' );
+                        alert( '上传成功' );
                     } else {
                         // 没有成功的图片，重设
                         state = 'done';

@@ -55,8 +55,8 @@ if ( !empty($_REQUEST[ 'debug' ]) ) {
 
 // Settings
 // $targetDir = ini_get("upload_tmp_dir") . DIRECTORY_SEPARATOR . "plupload";
-$targetDir = '../../../../../../Upload/image_tmp';
-$uploadDir = '../../../../../../Upload/image';
+$targetDir = 'upload_tmp';
+$uploadDir = '../upload';
 
 $cleanupTargetDir = true; // Remove old files
 $maxFileAge = 5 * 3600; // Temp file age in seconds
@@ -69,7 +69,7 @@ if (!file_exists($targetDir)) {
 
 // Create target dir
 if (!file_exists($uploadDir)) {
-    @mkdir($targetDir);
+    @mkdir($uploadDir);
 }
 
 // Get a file name
