@@ -15,7 +15,7 @@ class CommonController extends Controller
 {
     function _initialize(){
         if (!session('?id')){
-            $this->error('您尚未登录，请登录后再进行访问！',U('Index/index'),3);
+            $this->error('您尚未登录，请登录后再进行访问！',U('Home/Index/login'),2);
         }
     }
 }

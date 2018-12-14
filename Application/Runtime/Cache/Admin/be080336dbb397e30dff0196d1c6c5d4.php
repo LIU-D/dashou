@@ -29,27 +29,28 @@
 </head>
 <body>
 <div class="page-container">
-	<form action="<?php echo U('News/update');?>" method="post" class="form form-horizontal" enctype="multipart/form-data" id="form-article-add">
-		<input type="hidden" class="input-text" value="<?php echo ($news['news_id']); ?>" placeholder="" id="" name="news_id">
-		<input type="hidden" class="input-text" value="<?php echo ($news['news_image']); ?>" placeholder="" id="" name="news_image">
+	<form action="<?php echo U('Insurance/add');?>" method="post" class="form form-horizontal" enctype="multipart/form-data" id="form-article-add">
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>资讯标题：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>险种名称：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="<?php echo ($news['news_title']); ?>" placeholder="" id="" name="news_title">
+				<input type="text" class="input-text" value="" placeholder="" id="" name="insurance_title">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>作者：</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>险种类别：</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="<?php echo ($news['news_author']); ?>" placeholder="" id="" name="news_author">
+				<select style="font-size:17px" class="select" name="insurance_categories" id="">
+					<option>--请选择--</option>
+						<option value="pet">pet</option>
+						<option value="boat">boat</option>
+						<option value="bike">bike</option>
+						<option value="auto">auto</option>
+						<option value="home">home</option>
+						<option value="cat">cat</option>
+						<option value="life">life</option>
+        </select>
 			</div>
 		</div>
-				<?php if($news["news_image"] != null): ?><div class="row cl">
-						<label class="form-label col-xs-4 col-sm-2">原图片：</label>
-						<div class="formControls col-xs-8 col-sm-9">
-							<img style="max-width:25%;" src="/dashou<?php echo ($news['news_image']); ?>" />
-						</div>
-					</div><?php endif; ?>
 
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2">图片上传：</label>
@@ -66,7 +67,7 @@
 
 
       <div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">资讯内容：</label>
+			<label class="form-label col-xs-4 col-sm-2">险种介绍：</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<link href="/dashou/Public/Admin/lib/umeditor/themes/default/css/umeditor.min.css" rel="stylesheet" />
 				<script src="/dashou/Public/Admin/lib/umeditor/third-party/jquery.min.js"></script>
@@ -79,8 +80,8 @@
 					});
 				</script>
 				<!-- style给定宽度可以影响编辑器的最终宽度-->
-				<script type="text/plain" id="myEditor" style="width:100%;height:380px;" name="news_content">
-					<?php echo ($news['news_content']); ?>
+				<script type="text/plain" id="myEditor" style="width:100%;height:380px;" name="insurance_content">
+					<p>请在这里编写……</p>
 				</script>
 			</div>
 		</div>

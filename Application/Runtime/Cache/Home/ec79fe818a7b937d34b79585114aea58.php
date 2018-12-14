@@ -14,14 +14,14 @@
 
 	<!-- Favicons
 	================================================== -->
-	
+
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/dashou/Public/Home/img/favicon/favicon-144x144.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/dashou/Public/Home/img/favicon/favicon-72x72.png">
 	<link rel="apple-touch-icon-precomposed" href="/dashou/Public/Home/img/favicon/favicon-54x54.png">
-	
+
 	<!-- CSS
 	================================================== -->
-	
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="/dashou/Public/Home/css/bootstrap.min.css">
 	<!-- Template styles-->
@@ -45,12 +45,12 @@
     <![endif]-->
 
 </head>
-	
+
 <body>
 
 	<div class="body-inner">
 
-	
+
 
 	<!-- Header start -->
 	<header id="header" class="header">
@@ -111,11 +111,11 @@
 								<li class="dropdown ">
 									<a href="<?php echo U('Index/index');?>">首页</a>
 						</li>
-						
+
 						<li class="dropdown active">
 						 <a href="<?php echo U('Index/newsList');?>">行业资讯</a>
 						 </li>
-		 
+
 						<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
 								<ul class="dropdown-menu" role="menu">
@@ -123,7 +123,7 @@
 									   <li><a href="<?php echo U('Index/firm');?>">企业客户</a></li>
 								</ul>
 						</li>
-		 
+
 					   <li class="dropdown">
 					   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
 						 <ul class="dropdown-menu" role="menu">
@@ -150,7 +150,7 @@
 								<li><a href="<?php echo U('Index/joinInfo');?>">递交申请</a></li>
 							</ul>
 						</li>
-								
+
 						<li class="dropdown">
 		                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <i class="fa fa-angle-down"></i></a>
 								<ul class="dropdown-menu" role="menu">
@@ -192,14 +192,14 @@
 	        	</div>
        	</div>
     	</div><!-- Subpage title end -->
-	</div><!-- Banner area end --> 
+	</div><!-- Banner area end -->
 
 
 	<section id="main-container" class="main-container">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-					
+
 					<!-- foreach -->
 					<?php if(is_array($news_list)): foreach($news_list as $key=>$new): ?><div class="post">
 						<div class="post-media post-image">
@@ -221,7 +221,7 @@
 
 							<div class="entry-content">
 								<p style="height: 90px; display: -webkit-box; -webkit-box-orient: vertical;-webkit-line-clamp: 4;overflow: hidden;">
-									<?php echo ($new["news_content"]); ?>
+									<?php echo (stripslashes(htmlspecialchars_decode($new["news_content"]))); ?>
 								</p>
 							</div>
 
@@ -263,7 +263,7 @@
 							<h3 class="widget-title">Recent Posts</h3>
 							<ul class="unstyled clearfix">
 		               	<li>
-		                    <div class="posts-thumb pull-left"> 
+		                    <div class="posts-thumb pull-left">
 		                    		<a href="#"><img alt="img" src="/dashou/Public/Home/images/news/news1.jpg"></a>
 		                    </div>
 		                    <div class="post-info">
@@ -276,7 +276,7 @@
 		                  </li><!-- 1st post end-->
 
 		                  <li>
-		                    <div class="posts-thumb pull-left"> 
+		                    <div class="posts-thumb pull-left">
 		                    		<a href="#"><img alt="img" src="/dashou/Public/Home/images/news/news2.jpg"></a>
 		                    </div>
 		                    <div class="post-info">
@@ -289,7 +289,7 @@
 		                  </li><!-- 1st post end-->
 
 		                  <li>
-		                    <div class="posts-thumb pull-left"> 
+		                    <div class="posts-thumb pull-left">
 		                    		<a href="#"><img alt="img" src="/dashou/Public/Home/images/news/news3.jpg"></a>
 		                    </div>
 		                    <div class="post-info">
@@ -301,7 +301,7 @@
 		                    <div class="clearfix"></div>
 		                  </li><!-- 1st post end-->
 		               </ul>
-							
+
 						</div><!-- Recent post end -->
 
 						<div class="widget">
@@ -366,7 +366,7 @@
 						<p>Phone: (+8) 847-291-4873</p>
 					</div>
 				</div><!--/ Box 2 end -->
-				
+
 				<div class="col-md-4 footer-box three">
 					<i class="fa fa-envelope-o">&nbsp;</i>
 					<div class="footer-box-content">
@@ -375,14 +375,14 @@
 						<p>query@saifway.com</p>
 					</div>
 				</div><!--/ Box 3 end -->
-				
+
 			</div><!--/ Content row end -->
 		</div><!--/ Container end -->
 	</section><!--/ Footer top end -->
 
-   
 
-   
+
+
 
 	<!-- Footer start -->
 	<footer id="footer" class="footer">
@@ -472,7 +472,7 @@
 		</div><!--/ Container end -->
 	</footer><!-- Footer end -->
 
-	
+
 
 	<!-- Javascript Files
 	================================================== -->
@@ -499,7 +499,7 @@
 	<!--<script type="text/javascript" src="/dashou/Public/Home/js/gmap3.min.js"></script>-->
 	<!-- Template custom -->
 	<script type="text/javascript" src="/dashou/Public/Home/js/custom.js"></script>
-	
+
 	</div><!-- Body inner end -->
 </body>
 </html>

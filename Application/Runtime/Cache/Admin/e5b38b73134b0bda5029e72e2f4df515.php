@@ -29,7 +29,9 @@
 <body>
 <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 险种管理 <span class="c-gray en">&gt;</span> 险种列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
-	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> <a class="btn btn-primary radius" onclick="insurance_add('添加险种','<?php echo U("Insurance/addInsurance");?>')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加险种</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l">
+		<a class="btn btn-primary radius" onclick="insurance_add('添加险种','<?php echo U("Insurance/insuranceAdd");?>')" href="javascript:;">
+			<i class="Hui-iconfont">&#xe600;</i> 添加险种</a></span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
 	<div class="mt-20">
 		<table class="table table-border table-bordered table-bg table-hover table-sort">
 			<thead>
@@ -51,7 +53,7 @@
 					<td><?php echo ($insurance["insurance_categories"]); ?></td>
 					<td><img width="210" class="picture-thumb" src="/dashou<?php echo ($insurance["insurance_image"]); ?>"></td>
 					<td class="text-c"><?php echo ($insurance["insurance_title"]); ?></td>
-					<td class="text-c"><?php echo ($insurance["insurance_content"]); ?></td>
+					<td class="text-c"><?php echo (stripslashes(htmlspecialchars_decode($insurance["insurance_content"]))); ?></td>
 					<td class="td-status">
 						<?php if($insurance["insurance_isdel"] == '已发布' ): ?><span class="label label-success radius"><?php echo ($insurance["insurance_isdel"]); ?></span>
 						<?php elseif($insurance["insurance_isdel"] == '未发布' ): ?>
@@ -61,18 +63,18 @@
 
 					</td>
 					<td class="td-manage">
-						<?php if($insurance["insurance_img_isdel"] == '已发布' ): ?><a style="text-decoration:none" onClick="insurance_stop(this,'<?php echo ($insurance[img_id]); ?>')" href="javascript:;" title="下架">
+						<?php if($insurance["insurance_isdel"] == '已发布' ): ?><a style="text-decoration:none" onClick="insurance_stop(this,'<?php echo ($insurance[insurance_id]); ?>')" href="javascript:;" title="下架">
 								<i class="Hui-iconfont">&#xe6de;</i>
 							</a>
 							<?php else: ?>
-							<a style="text-decoration:none" onclick="insurance_start(this,'<?php echo ($insurance[img_id]); ?>')" href="javascript:;" title="发布">
+							<a style="text-decoration:none" onclick="insurance_start(this,'<?php echo ($insurance[insurance_id]); ?>')" href="javascript:;" title="发布">
 								<i class="Hui-iconfont">&#xe603;</i>
 							</a><?php endif; ?>
 
-						<a style="text-decoration:none" class="ml-5" onClick="insurance_edit('图库编辑','insurance-add.html','10001')" href="javascript:;" title="编辑">
+						<a style="text-decoration:none" class="ml-5" onClick="insurance_edit('险种编辑','<?php echo U("Insurance/insuranceEdit");?>?id=<?php echo ($insurance[insurance_id]); ?>')" href="javascript:;" title="编辑">
 							<i class="Hui-iconfont">&#xe6df;</i>
 						</a>
-						<a style="text-decoration:none" class="ml-5" onClick="insurance_del(this,'<?php echo ($insurance[img_id]); ?>')" href="javascript:;" title="删除">
+						<a style="text-decoration:none" class="ml-5" onClick="insurance_del(this,'<?php echo ($insurance[insurance_id]); ?>')" href="javascript:;" title="删除">
 							<i class="Hui-iconfont">&#xe6e2;</i>
 						</a>
 					</td>
@@ -83,14 +85,14 @@
 </div>
 
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="/dashou/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/dashou/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/dashou/Public/Admin/lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="/dashou/Public/Admin/static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="/dashou/Public/Admin/static/h-ui/js/H-ui.min.js"></script>
 <script type="text/javascript" src="/dashou/Public/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="/dashou/Public/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
-<script type="text/javascript" src="/dashou/Public/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="/dashou/Public/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="/dashou/Public/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="/dashou/Public/Admin/lib/laypage/1.2/laypage.js"></script>
 <script type="text/javascript">
 $('.table-sort').dataTable({
@@ -132,40 +134,10 @@ function insurance_add(title,url){
 	layer.full(index);
 }
 
-/*图片-查看*/
-function insurance_show(title,url,id){
-	var index = layer.open({
-		type: 2,
-		title: title,
-		content: url
-	});
-	layer.full(index);
-}
-
-/*图片-审核*/
-function insurance_shenhe(obj,id){
-	layer.confirm('审核文章？', {
-		btn: ['通过','不通过'], 
-		shade: false
-	},
-	function(){
-		$(obj).parents("tr").find(".td-manage").prepend('<a class="c-primary" onClick="insurance_start(this,id)" href="javascript:;" title="申请上线">申请上线</a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
-		$(obj).remove();
-		layer.msg('已发布', {icon:6,time:1000});
-	},
-	function(){
-		$(obj).parents("tr").find(".td-manage").prepend('<a class="c-primary" onClick="insurance_shenqing(this,id)" href="javascript:;" title="申请上线">申请上线</a>');
-		$(obj).parents("tr").find(".td-status").html('<span class="label label-danger radius">未通过</span>');
-		$(obj).remove();
-    	layer.msg('未通过', {icon:5,time:1000});
-	});	
-}
-
 /*图片-发布*/
 function insurance_start(obj,id){
 	layer.confirm('确认要发布吗？',function(index){
-        var url = "<?php echo U('Image/stopImage');?>";
+        var url = "<?php echo U('Insurance/isdel');?>";
         var time = new Date().Format("yyyy-MM-dd HH:mm:ss");
         $.ajax({
             type: 'POST',
@@ -174,13 +146,14 @@ function insurance_start(obj,id){
             data:{
                 id: id,
                 state: '已发布',
-				time:time
+								time:time
             },
             success: function(data){
-                $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="insurance_start(this,id)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe6de;</i></a>');
-                $(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
-                $(obj).remove();
-                layer.msg('已发布!',{icon: 6,time:1000});
+							$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="insurance_stop(this,id)" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>');
+							$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
+							$(obj).remove();
+
+							layer.msg('已发布!',{icon: 6,time:1000});
             },
             error:function(data) {
                 console.log(data.msg);
@@ -192,7 +165,7 @@ function insurance_start(obj,id){
 /*图片-下架*/
 function insurance_stop(obj,id){
 	layer.confirm('确认要取消发布吗？',function(index){
-        var url = "<?php echo U('Image/stopImage');?>";
+        var url = "<?php echo U('Insurance/isdel');?>";
         var time = new Date().Format("yyyy-MM-dd HH:mm:ss");
         $.ajax({
             type: 'POST',
@@ -204,10 +177,10 @@ function insurance_stop(obj,id){
 				time:time
             },
             success: function(data){
-                $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="insurance_stop(this,id)" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>');
-                $(obj).parents("tr").find(".td-status").html('<span class="label label-default radius">已下架</span>');
-                $(obj).remove();
-                layer.msg('已取消发布!',{icon: 5,time:1000});
+							$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="insurance_start(this,id)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe603;</i></a>');
+							$(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">未发布</span>');
+							$(obj).remove();
+							layer.msg('取消发布!',{icon: 5,time:1000});
             },
             error:function(data) {
                 console.log(data.msg);
@@ -217,15 +190,8 @@ function insurance_stop(obj,id){
 	});
 }
 
-/*图片-申请上线*/
-function insurance_shenqing(obj,id){
-	$(obj).parents("tr").find(".td-status").html('<span class="label label-default radius">待审核</span>');
-	$(obj).parents("tr").find(".td-manage").html("");
-	layer.msg('已提交申请，耐心等待审核!', {icon: 1,time:2000});
-}
-
 /*图片-编辑*/
-function insurance_edit(title,url,id){
+function insurance_edit(title,url){
 	var index = layer.open({
 		type: 2,
 		title: title,
@@ -238,7 +204,7 @@ function insurance_edit(title,url,id){
 function insurance_del(obj,id){
     // var url = /dashou/index.php/Admin/Insurance/Image/delImage;
 	layer.confirm('确认要删除吗？',function(index){
-	    var url = "<?php echo U('delImage');?>";
+	    var url = "<?php echo U('Insurance/delete');?>";
 		$.ajax({
 			type: 'POST',
 			url: url,

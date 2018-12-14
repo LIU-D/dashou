@@ -164,7 +164,9 @@
 						</div><!-- Site Navbar inner end -->
 
 						<div class="find-agent pull-right">
-							<a href="{:U('Index/login')}">点此 登录</a>
+								<if condition="!isset($_SESSION['name'])"><a href="{:U('Index/login')}">点此 登录</a>
+								<else /><a href="{:U('Index/logout')}">你好， {$Think.session.name} </a>
+								</if>
 						</div>
 
 					</div><!--/ Col end -->

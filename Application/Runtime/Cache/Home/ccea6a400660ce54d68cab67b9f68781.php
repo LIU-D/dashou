@@ -164,7 +164,8 @@
 						</div><!-- Site Navbar inner end -->
 
 						<div class="find-agent pull-right">
-							<a href="<?php echo U('Index/login');?>">点此 登录</a>
+								<?php if(!isset($_SESSION['name'])): ?><a href="<?php echo U('Index/login');?>">点此 登录</a>
+								<?php else: ?><a href="<?php echo U('Index/logout');?>">你好， <?php echo (session('name')); ?> </a><?php endif; ?>
 						</div>
 
 					</div><!--/ Col end -->
