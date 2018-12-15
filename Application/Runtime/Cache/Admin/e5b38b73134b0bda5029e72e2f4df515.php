@@ -124,7 +124,7 @@ Date.prototype.Format = function (fmt) {
 
 
 
-/*图片-添加*/
+/*添加*/
 function insurance_add(title,url){
 	var index = layer.open({
 		type: 2,
@@ -134,7 +134,7 @@ function insurance_add(title,url){
 	layer.full(index);
 }
 
-/*图片-发布*/
+/*发布*/
 function insurance_start(obj,id){
 	layer.confirm('确认要发布吗？',function(index){
         var url = "<?php echo U('Insurance/isdel');?>";
@@ -162,7 +162,7 @@ function insurance_start(obj,id){
 	});
 }
 
-/*图片-下架*/
+/*架*/
 function insurance_stop(obj,id){
 	layer.confirm('确认要取消发布吗？',function(index){
         var url = "<?php echo U('Insurance/isdel');?>";
@@ -190,7 +190,7 @@ function insurance_stop(obj,id){
 	});
 }
 
-/*图片-编辑*/
+/*编辑*/
 function insurance_edit(title,url){
 	var index = layer.open({
 		type: 2,
@@ -200,7 +200,7 @@ function insurance_edit(title,url){
 	layer.full(index);
 }
 
-/*图片-删除*/
+/*删除*/
 function insurance_del(obj,id){
     // var url = /dashou/index.php/Admin/Insurance/Image/delImage;
 	layer.confirm('确认要删除吗？',function(index){
