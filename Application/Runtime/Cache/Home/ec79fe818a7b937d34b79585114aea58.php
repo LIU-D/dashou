@@ -133,8 +133,7 @@
 								   <a href="#">联系服务人员</a>
 								   <ul class="dropdown-menu">
 									   <li><a href="<?php echo U('Index/searchAgent');?>">查询营业网点</a></li>
-									   <li><a href="<?php echo U('Index/message');?>">在线客服</a></li>
-									 <li><a href="#">智能客服</a></li>
+									   <li><a href="<?php echo U('Index/message');?>">留言板</a></li>
 									 <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
                       				</ul>
                       			</li>
