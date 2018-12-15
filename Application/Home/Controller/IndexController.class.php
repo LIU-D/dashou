@@ -69,11 +69,21 @@ class IndexController extends Controller {
     }
 
     public function personal(){
-        $this->display();
+      $insurance_model = D('Insurance');
+      $insurance_list = $insurance_model
+              ->where('insurance_isdel = "已发布" and insurance_customer="个人客户"')
+              ->select();
+      $this->assign('insurance_list',$insurance_list);
+      $this->display();
     }
 
     public function firm(){
-        $this->display();
+      $insurance_model = D('Insurance');
+      $insurance_list = $insurance_model
+              ->where('insurance_isdel = "已发布" and insurance_customer="企业客户"')
+              ->select();
+      $this->assign('insurance_list',$insurance_list);
+      $this->display();
     }
 
     public function personalService(){

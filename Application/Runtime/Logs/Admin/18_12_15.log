@@ -11770,3 +11770,1051 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
 
+[ 2018-12-15T21:25:37+08:00 ] ::1 /dashou/index.php/Admin/Insurance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003908s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ds_insurance`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2018-12-15T21:25:43+08:00 ] ::1 /dashou/index.php/Admin/Insurance/insuranceEdit.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ds_insurance` WHERE ( insurance_id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2018-12-15T21:26:05+08:00 ] ::1 /dashou/index.php/Admin/Insurance/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Software\Apache24\htdocs\dashou\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0006s ]
+SQL: UPDATE `ds_insurance` SET `insurance_title`='定期人寿保险',`insurance_categories`='人寿保险',`insurance_customer`='个人客户',`insurance_image`='./Upload/InsuranceImages/2018-12-15/5c1500ed3c6a3.jpg',`insurance_content`='&lt;p&gt;&amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;https://baike.baidu.com/item/%E5%AE%9A%E6%9C%9F%E4%BA%BA%E5%AF%BF%E4%BF%9D%E9%99%A9&amp;quot;&amp;gt;定期人寿保险&amp;lt;/a&amp;gt;是以被保险人在保单规定的期间发生死亡，身故受益人有权领取保险金，如果在&amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;https://baike.baidu.com/item/%E4%BF%9D%E9%99%A9%E6%9C%9F%E9%97%B4&amp;quot;&amp;gt;保险期间&amp;lt;/a&amp;gt;内被保险人未死亡，保险人无须支付保险金也不返还保险费，简称“定期寿险”该保险大都是对被保险人在短期内从事较危险的工作提供保障。&lt;/p&gt;' WHERE `insurance_id` = 1 [ RunTime:0.0445s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2018-12-15T21:26:06+08:00 ] ::1 /dashou/index.php/Admin/Insurance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ds_insurance`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2018-12-15T21:26:18+08:00 ] ::1 /dashou/index.php/Admin/Insurance/insuranceEdit.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ds_insurance` WHERE ( insurance_id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2018-12-15T21:27:01+08:00 ] ::1 /dashou/index.php/Admin/Insurance/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Software\Apache24\htdocs\dashou\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0005s ]
+SQL: UPDATE `ds_insurance` SET `insurance_title`='信用保险',`insurance_categories`='信用保险',`insurance_customer`='企业客户',`insurance_image`='./Upload/InsuranceImages/2018-12-15/5c15012521440.jpg',`insurance_content`='&lt;p&gt;信用保险，是指保险人对被保险人信用放款或信用售货，债务人拒绝履行合同或不能清偿债务时，所受到的经济损失承担赔偿责任的保险方式。主要有出口信用保险、抵押信用保险等形式。为防止被保险人因信用保险而懈怠经营，滥施信用，通常均要求被保险人作为共保人承担一定份额的损失，并对信用对象作有一定要求，以防保险人遭受不合理的损失。过错造成货物损坏、灭失的，行纪人不负责任。行纪人在委托事务完成之后，应将办理委托事务所取得的一切收益交付给委托人。委托人的主要义务是向行纪人支付办理委托所需的一切费用并支付约定的酬金。委托人还应及时接受行纪人依信托合同所取得的收益。&lt;/p&gt;' WHERE `insurance_id` = 2 [ RunTime:0.0280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2018-12-15T21:27:03+08:00 ] ::1 /dashou/index.php/Admin/Insurance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ds_insurance`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000729s ]
+
+[ 2018-12-15T21:27:30+08:00 ] ::1 /dashou/index.php/Admin/Insurance/insuranceEdit.html?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ds_insurance` WHERE ( insurance_id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013483s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2018-12-15T21:27:54+08:00 ] ::1 /dashou/index.php/Admin/Insurance/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Software\Apache24\htdocs\dashou\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0005s ]
+SQL: UPDATE `ds_insurance` SET `insurance_title`='信用保险',`insurance_categories`='信用保险',`insurance_customer`='企业客户',`insurance_image`='./Upload/InsuranceImages/2018-12-15/5c15015a2972f.jpg',`insurance_content`='&lt;p&gt;信用保险，是指保险人对被保险人信用放款或信用售货，债务人拒绝履行合同或不能清偿债务时，所受到的经济损失承担赔偿责任的保险方式。主要有出口信用保险、抵押信用保险等形式。为防止被保险人因信用保险而懈怠经营，滥施信用，通常均要求被保险人作为共保人承担一定份额的损失，并对信用对象作有一定要求，以防保险人遭受不合理的损失。过错造成货物损坏、灭失的，行纪人不负责任。行纪人在委托事务完成之后，应将办理委托事务所取得的一切收益交付给委托人。委托人的主要义务是向行纪人支付办理委托所需的一切费用并支付约定的酬金。委托人还应及时接受行纪人依信托合同所取得的收益。&lt;/p&gt;' WHERE `insurance_id` = 2 [ RunTime:0.0332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2018-12-15T21:27:55+08:00 ] ::1 /dashou/index.php/Admin/Insurance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ds_insurance`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2018-12-15T21:28:02+08:00 ] ::1 /dashou/index.php/Admin/Insurance/insuranceEdit.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ds_insurance` WHERE ( insurance_id='3' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2018-12-15T21:28:16+08:00 ] ::1 /dashou/index.php/Admin/Insurance/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Software\Apache24\htdocs\dashou\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0007s ]
+SQL: UPDATE `ds_insurance` SET `insurance_title`='健康保险',`insurance_categories`='人身保险',`insurance_customer`='个人客户',`insurance_image`='./Upload/InsuranceImages/2018-12-15/5c150170567cb.jpg',`insurance_content`='&lt;p&gt;健康保险，又称“疾病保险”。是指在被保险人身体出现疾病时，由保险人向其支付保险金的人身保险。健康保险的支付范围通常包括医疗费用、收入损失、丧葬费及遗属生活费等。此种保险多与伤害保险合办，也有与人寿保险合办的。为防止道德危险，办理健康保险时，保险人通常都规定一段试保期间，对被保险人在此期间后发生疾病造成的损失，保险人方负赔偿责任。&lt;/p&gt;' WHERE `insurance_id` = 3 [ RunTime:0.0282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2018-12-15T21:28:18+08:00 ] ::1 /dashou/index.php/Admin/Insurance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ds_insurance`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2018-12-15T21:28:18+08:00 ] ::1 /dashou/index.php/Admin/Insurance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ds_insurance`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.211641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.211665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2018-12-15T21:28:47+08:00 ] ::1 /dashou/index.php/Admin/Insurance/insuranceEdit.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ds_insurance` WHERE ( insurance_id='1' ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2018-12-15T21:28:50+08:00 ] ::1 /dashou/index.php/Admin/Insurance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ds_insurance`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2018-12-15T21:28:53+08:00 ] ::1 /dashou/index.php/Admin/Insurance/insuranceEdit.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ds_insurance` WHERE ( insurance_id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002017s ]
+
+[ 2018-12-15T21:29:13+08:00 ] ::1 /dashou/index.php/Admin/Insurance/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+NOTIC: [2] finfo_file(): Empty filename or path D:\Software\Apache24\htdocs\dashou\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0005s ]
+SQL: UPDATE `ds_insurance` SET `insurance_title`='定期人寿保险',`insurance_categories`='人寿保险',`insurance_customer`='个人客户',`insurance_image`='./Upload/InsuranceImages/2018-12-15/5c1500ed3c6a3.jpg',`insurance_content`='&lt;p&gt;定期人寿保险是以被保险人在保单规定的期间发生死亡，身故受益人有权领取保险金，如果在保险期间内被保险人未死亡，保险人无须支付保险金也不返还保险费，简称“定期寿险”该保险大都是对被保险人在短期内从事较危险的工作提供保障。&lt;/p&gt;' WHERE `insurance_id` = 1 [ RunTime:0.0556s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2018-12-15T21:29:14+08:00 ] ::1 /dashou/index.php/Admin/Insurance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ds_insurance`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2018-12-15T21:29:20+08:00 ] ::1 /dashou/index.php/Admin/Insurance/insuranceEdit.html?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ds_insurance` WHERE ( insurance_id='6' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2018-12-15T21:29:34+08:00 ] ::1 /dashou/index.php/Admin/Insurance/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [2] finfo_file(): Empty filename or path D:\Software\Apache24\htdocs\dashou\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0008s ]
+SQL: UPDATE `ds_insurance` SET `insurance_title`='企业财产保险',`insurance_categories`='财产保险',`insurance_customer`='企业客户',`insurance_image`='./Upload/InsuranceImages/2018-12-15/5c14fa798e225.jpg',`insurance_content`='&lt;p&gt;财产保险是以国营企业或集体企业的固定资产和流动资产作为保险标的办理的一种保险。根据《企业财产保险条款》规定，保险责任范围包括： (1) 因火灾、雷电、洪水、破坏性地震、爆炸、暴风雨、空中飞行物体的坠落等自然灾害和意外事故造成的经济损失；(2)发生灾害事故时，为了抢救或防止灾害蔓延所采取必要措施而造成保险财产的损失；(3)为抢救保险财产，或者为减少财产损失而进行的必要的保护和整理工作所支付的合理费用。保险责任从约定起保日零时起，到保险期满日的24时止，保险期限一般为一年。被保险人应在保险起保后的15天内，一次缴清保险费。企业财产保险还可附加盗窃保险。&lt;/p&gt;' WHERE `insurance_id` = 6 [ RunTime:0.1703s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2018-12-15T21:29:35+08:00 ] ::1 /dashou/index.php/Admin/Insurance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `ds_insurance`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001532s ]
+
+[ 2018-12-15T21:36:38+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2018-12-15T21:36:41+08:00 ] ::1 /dashou/index.php/Admin/News/newsEdit.html?id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ds_news` WHERE ( news_id='28' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2018-12-15T21:37:45+08:00 ] ::1 /dashou/index.php/Admin/News/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+NOTIC: [2] finfo_file(): Empty filename or path D:\Software\Apache24\htdocs\dashou\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+SQL: UPDATE `ds_news` SET `news_title`='沿着“必由之路”逐梦前行',`news_author`='Bill Lanuer',`news_content`='&lt;p&gt;近年来，华夏保险坚守“听党的话，跟监管走”的根本原则，坚守“客户利益至上”的核心价值观，持续健康快速发展，现有24家分公司，人员队伍超35万。截至2018年10月底，实现规模保费1858亿，市场第五；其中原保险保费1325亿，占规模业务比例升至约71%，市场第四；公司个险新单标准保费年度累计116亿元，实现历史性突破。业务品质优秀，13月继续率行业领先。&lt;/p&gt;&lt;p&gt;好服务，在华夏。华夏保险实施“移动互联”战略，先后推出微信投保、微信核保、微信保全、微信理赔、微信回访等服务，打通线上闭环，成为中国首家实现“服务全微化”的保险企业，引领中国保险“全微时代”，结合柜面及线下服务体验，为客户提供无空间、无时间限制的优质服务。&lt;/p&gt;&lt;p&gt;投保是保险业务的首要环节，是客户接触保险公司服务的第一印象，高效的投保和承保流程，是保险公司运营和服务实力的具体体现。但是在寿险行业，长期以来，客户投保需要大量的纸面操作和等待环节，平均承保时效2-5天。&lt;/p&gt;&lt;p&gt;2015年，华夏保险推出微信投保工具。客户通过微信收取营销员发来的投保链接，独立进行在线投保、核保、交费，只需操作六步即可完成投保，平均承保时效7.8分钟。相比传统投保方式，微信投保无需下载安装APP，在场景销售、沟通、操作使用方面具有天然优势，便于在营销员和客户群体中广泛推广。微信公众平台的标准化开放接口，也节省了大量的开发成本和时间，后续的功能版本得以快速迭代。微信投保工具备受客户欢迎，2015年上线当年，华夏保险微信承保率即达84%，2017年升至88%，到2018年，已达97%，也就是说，几乎绝大部分客户都是通过微信投保。华夏保险超35万营销队伍，微信投保工具使用率高达100%。与此同时，微信投保工具也带来营销员人均产能的显著提高，2017年上半年，活动人均标准保费较2016年上半年提升26%，人均承保件数较2016年提升18%，提升幅度为近年来最高。&lt;/p&gt;&lt;p&gt;微信核保，指的是如果客户提交投保申请后，自动核保未通过，可以通过微信提交核保申请。核保流程全景透明，大幅减少客户等待时间，其中问题件和核保函的处理时间分别从原来的3天和6天，缩短为2小时。&lt;/p&gt;&lt;p&gt;投保成功以后，客户信息与华夏保险微信服务号自动绑定，客户即可在华夏保险微信服务号享受微信保全、微信理赔等后续服务。&lt;/p&gt;&lt;p&gt;微信保全指的是将OCR智能识别、电子单证等技术运用到保全审批业务中，替代人工作业。目前，华夏保险已上线22项微信保全功能，满足客户常见保全功能的业务需求。对于客户来说，通过微信保全，可以显著提高效率，省心省力。对于华夏保险来说，也降低了作业流程中各环节对人力的需求，有效缓解了业务量与人力不匹配的矛盾，降低审批业务量约50%，人均产能提高约43%。&lt;/p&gt;&lt;p&gt;华夏保险的微信理赔服务，涵盖微信报案、理赔申请、进度查询等11项功能，实现客户足不出户办理赔、随时随地了解理赔进度、理赔服务全流程透明公开。不仅如此，微信理赔还简化了客户理赔申请手续，节约了申请理赔的时间成本，提供了良好的理赔服务体验。&lt;/p&gt;&lt;p&gt;以华夏保险首个微信理赔案例为例，2016年10月1日，安徽高某因车祸抢救无效死亡，身前曾投保华夏护身福两全保险(2014)，2016年12月16日，其妻子使用微信理赔服务，通过“身份验证、填写理赔申请信息、上传资料”简单的三个步骤，仅用了2分钟便完成了理赔申请，1小时内便收到了结案短信通知，3个小时左右，100万元理赔款迅速到账。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`news_image`='./Upload/NewsImages/2018-12-14/5c13bebf4837a.jpg' WHERE `news_id` = 28 [ RunTime:0.2912s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2018-12-15T21:37:46+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2018-12-15T21:38:03+08:00 ] ::1 /dashou/index.php/Admin/News/newsEdit.html?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ds_news` WHERE ( news_id='4' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-12-15T21:38:37+08:00 ] ::1 /dashou/index.php/Admin/News/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+NOTIC: [2] finfo_file(): Empty filename or path D:\Software\Apache24\htdocs\dashou\ThinkPHP\Library\Think\Upload.class.php 第 152 行.
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+SQL: UPDATE `ds_news` SET `news_title`='阳光保险全方位护航2018广州马拉松',`news_author`='Millg',`news_content`='&lt;p&gt;12月9日，2018年广州马拉松赛鸣枪开跑，作为本届赛事的官方独家保险赞助商，阳光保险为本次赛事的30000名选手和7000名工作人员提供了全方位保险保障和志愿服务。除了为参赛选手和工作人员提供了人身保险保障，保障比赛过程中可能出现的意外伤害事故或突发急性病（含猝死）事故，阳光保险还为整个赛事提供了公众责任险保障，全面护航广州马拉松赛。
+
+　　为更好地服务赛事及参赛选手，阳光保险为本次赛事开通绿色理赔通道，实施“直赔”、意外医疗“零免赔100%赔付”的理赔举措。比赛当天，阳光保险20名理赔专业人员入驻赛事14家定点医院，处理理赔事宜、解答疑问并协助现场救护工作。
+
+　　赛事当天，9名运动员因身体不适被送往医院治疗，其中有1名选手为外籍人士。阳光保险理赔第一时间进行核实，核实完毕后立即启动“直赔”服务，当天即完成9笔赔付。对于需要留院观察的人员，阳光保险于医院继续陪护跟进理赔事宜。
+
+　　12月6日至8日，阳光保险入驻广马博览会，在阳光保险专属展区开展“阳光下奔跑”主题活动，通过设置一系列健康阳光互动活动，与广大跑步爱好者进行互动，其中，量子检测、有奖大转盘等活动深受欢迎。此外，在广马终点的阳光展台，阳光保险的工作人员为广大跑友提供了号码牌塑封、专业赛后拉伸等贴合跑友实际需求的服务。
+
+　　广马赛事当天，阳光保险特别组织了100余名阳光跑团代表参赛，阳光跑团成员身着统一服装，快乐奔跑，传递“健康阳光”理念，在赛场上形成了上一道靓丽的风景线。阳光跑团作为阳光保险的官方跑步团体，全年在全国范围内已经代表阳光保险参加了五十余场大中型马拉松赛事。
+
+　　自2014年以来，为践行“健康阳光”战略，阳光保险持续开展了“阳光下奔跑”系列活动，先后为北京马拉松、杭州马拉松等110余场比赛的170万余名跑步爱好者提供全方位的保险保障和现场志愿服务，并开通“直赔”服务，为参赛选手提供现场理赔服务。
+
+　　“健康阳光”战略致力于“让人们享受全周期、高品质、最信赖的健康服务”，为让更多人了解“健康阳光”生活理念，阳光保险推出基于运动数据进行差异化定价的定期寿险产品“悦动保”，提倡“保险+健康”理念，保险消费者只要每天坚持运动，不仅能享受到更便宜的保费，更能收获健康的生活方式，提高身体素质与生活品质。&lt;/p&gt;',`news_image`='./Upload/NewsImages/2018-12-14/5c13be62460af.jpg' WHERE `news_id` = 4 [ RunTime:0.2997s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2018-12-15T21:38:38+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2018-12-15T22:47:26+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2018-12-15T22:47:43+08:00 ] ::1 /dashou/index.php/Admin/News/isdel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+SQL: UPDATE `ds_news` SET `news_isdel`='未发布' WHERE `news_id` = 2 [ RunTime:0.0731s ]
+
+[ 2018-12-15T22:47:44+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2018-12-15T22:47:49+08:00 ] ::1 /dashou/index.php/Admin/News/isdel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0002s ]
+SQL: UPDATE `ds_news` SET `news_isdel`='未发布' WHERE `news_id` = 3 [ RunTime:0.0312s ]
+
+[ 2018-12-15T22:47:50+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2018-12-15T22:48:00+08:00 ] ::1 /dashou/index.php/Admin/News/isdel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+SQL: UPDATE `ds_news` SET `news_isdel`='未发布' WHERE `news_id` = 1 [ RunTime:0.0505s ]
+
+[ 2018-12-15T22:48:02+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047272s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047294s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+

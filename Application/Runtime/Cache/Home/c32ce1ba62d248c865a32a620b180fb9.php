@@ -14,14 +14,14 @@
 
 	<!-- Favicons
 	================================================== -->
-	
+
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/dashou/Public/Home/images/favicon/favicon-144x144.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/dashou/Public/Home/images/favicon/favicon-72x72.png">
 	<link rel="apple-touch-icon-precomposed" href="/dashou/Public/Home/images/favicon/favicon-54x54.png">
-	
+
 	<!-- CSS
 	================================================== -->
-	
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="/dashou/Public/Home/css/bootstrap.min.css">
 	<!-- Template styles-->
@@ -45,12 +45,12 @@
     <![endif]-->
 
 </head>
-	
+
 <body>
 
 	<div class="body-inner">
 
-	
+
 	<!-- Header start -->
 	<header id="header" class="header">
 		<div class="container">
@@ -60,7 +60,7 @@
 					<img src="/dashou/Public/Home/images/logo.png" alt="">
 				</a>
 			 </div><!-- logo end -->
-	
+
 				<div class="col-xs-12 col-sm-7 header-right">
 					<ul class="top-info">
 							<li>
@@ -92,7 +92,7 @@
 			</div><!-- Row end -->
 		</div><!-- Container end -->
 	</header><!--/ Header end -->
-	
+
 	<nav class="site-navigation navigation">
 		<div class="container">
 			<div class="row">
@@ -104,17 +104,17 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-	
+
 						<div class="collapse navbar-collapse navbar-responsive-collapse">
 							<ul class="nav navbar-nav">
 								<li class="dropdown ">
 									<a href="<?php echo U('Index/index');?>">首页</a>
 								</li>
-								
+
 								<li class="dropdown">
 								 <a href="<?php echo U('Index/newsList');?>">行业资讯</a>
 								 </li>
-				 
+
 								<li class="dropdown active">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
 										<ul class="dropdown-menu" role="menu">
@@ -122,7 +122,7 @@
 											   <li><a href="<?php echo U('Index/firm');?>">企业客户</a></li>
 										</ul>
 								</li>
-				 
+
 							   <li class="dropdown">
 							   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
 								 <ul class="dropdown-menu" role="menu">
@@ -139,7 +139,7 @@
 										  </li>
 								  </ul>
 							   </li>
-		
+
 								<li class="dropdown">
 								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" role="menu">
@@ -149,7 +149,7 @@
 										<li><a href="<?php echo U('Index/joinInfo');?>">递交申请</a></li>
 									</ul>
 								</li>
-										
+
 								<li class="dropdown">
 								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <i class="fa fa-angle-down"></i></a>
 										<ul class="dropdown-menu" role="menu">
@@ -157,17 +157,17 @@
 								   <li><a href="<?php echo U('Index/historyBuss');?>">历史业务</a></li>
 								</ul>
 								</li>
-	
+
 							</ul><!--/ Nav ul end -->
 						</div><!--/ Collapse end -->
-	
+
 					</div><!-- Site Navbar inner end -->
-	
+
 					<div class="find-agent pull-right">
 						<?php if(!isset($_SESSION['name'])): ?><a href="<?php echo U('Index/login');?>">点此 登录</a>
 						<?php else: ?><a href="<?php echo U('Index/logout');?>">你好， <?php echo (session('name')); ?> </a><?php endif; ?>
 					</div>
-	
+
 				</div><!--/ Col end -->
 			</div><!--/ Row end -->
 		</div><!--/ Container end -->
@@ -191,131 +191,35 @@
 	        	</div>
        	</div>
     	</div><!-- Subpage title end -->
-	</div><!-- Banner area end --> 
+	</div><!-- Banner area end -->
 
 
 	<section id="main-container" class="main-container">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-					<h2 class="page-title">Life Insurance</h2>
+					<h2 class="page-title">Personal Insurance</h2>
 					<p>Master cleanse selvage 3 wolf moon retro. Hella post-ironic before they sold out pitchfork gastropub dreamcatcher. Flannel celiac lomo, kale chips venmo microdosing you probably haven't heard of them four loko cliche cred butcher. Hammock banh mi forage shoreditch austin raw denim.</p>
 
 					<div class="gap-40">&nbsp;</div>
-
-					<div class="insurance-items">
+					<?php if(is_array($insurance_list)): foreach($insurance_list as $key=>$insurance): ?><div class="insurance-items">
 						<div class="row">
-							<div class="col-sm-8 insurance-item-content">
-								<h3>Whole Life Insurance</h3>
-								<h4>Offers:</h4>
-								<ul class="list-round-arrow">
-									<li>There are many variations of passages of Lorem Ipsum</li>
-									<li>All the Lorem Ipsum generators on the Internet</li>
-									<li>Tend to repeat predefined chunks as necessary</li>
-									<li>Soufflé pudding brownie pudding fruitcake</li>
-								</ul>
-								<h4>What's Covered:</h4>
-								<ul class="list-round-arrow">
-									<li>Cover for accessories and add-ons</li>
-									<li>Donec id elit non mi porta ut gravida at eget metus</li>
-									<li>Duis mollis, est non commodo luctus</li>
-									<li>The point of using Lorem Ipsum is thatl</li>
-								</ul>
+							<div class="col-sm-7 insurance-item-content">
+								<h3><?php echo ($insurance['insurance_title']); ?></h3>
+								<h4>Info: </h4>
+								<?php echo (stripslashes(htmlspecialchars_decode($insurance['insurance_content']))); ?>
 							</div>
-							<div class="col-sm-4 insurance-item-img">
-								<img class="img-responsive" src="/dashou/Public/Home/images/insurance/details1.jpg" alt="">
+							<div class="col-sm-5 insurance-item-img">
+								<img class="img-responsive" src="/dashou<?php echo ($insurance['insurance_image']); ?>" alt="">
 							</div>
 						</div><!--/ insurance items row end -->
 					</div><!-- Insruance item end -->
 
-					<div class="ts-divider">&nbsp;</div>
-
-
-					<div class="insurance-items">
-						<div class="row">
-							<div class="col-sm-4 insurance-item-img">
-								<img class="img-responsive" src="/dashou/Public/Home/images/insurance/details2.jpg" alt="">
-							</div>
-							<div class="col-sm-8 insurance-item-content">
-								<h3>Family Life Insurance</h3>
-								<h4>Offers:</h4>
-								<ul class="list-round-arrow">
-									<li>There are many variations of passages of Lorem Ipsum</li>
-									<li>All the Lorem Ipsum generators on the Internet</li>
-									<li>Tend to repeat predefined chunks as necessary</li>
-									<li>Soufflé pudding brownie pudding fruitcake</li>
-								</ul>
-								<h4>What's Covered:</h4>
-								<ul class="list-round-arrow">
-									<li>Cover for accessories and add-ons</li>
-									<li>Donec id elit non mi porta ut gravida at eget metus</li>
-									<li>Duis mollis, est non commodo luctus</li>
-									<li>The point of using Lorem Ipsum is thatl</li>
-								</ul>
-							</div>
-						</div><!--/ insurance items row end -->
-					</div><!-- Insruance item end -->
-
-					<div class="ts-divider">&nbsp;</div>
-
-					<div class="insurance-items">
-						<div class="row">
-							<div class="col-sm-8 insurance-item-content">
-								<h3>Serious Illness Insurance</h3>
-								<h4>Offers:</h4>
-								<ul class="list-round-arrow">
-									<li>There are many variations of passages of Lorem Ipsum</li>
-									<li>All the Lorem Ipsum generators on the Internet</li>
-									<li>Tend to repeat predefined chunks as necessary</li>
-									<li>Soufflé pudding brownie pudding fruitcake</li>
-								</ul>
-								<h4>What's Covered:</h4>
-								<ul class="list-round-arrow">
-									<li>Cover for accessories and add-ons</li>
-									<li>Donec id elit non mi porta ut gravida at eget metus</li>
-									<li>Duis mollis, est non commodo luctus</li>
-									<li>The point of using Lorem Ipsum is thatl</li>
-								</ul>
-							</div>
-							<div class="col-sm-4 insurance-item-img">
-								<img class="img-responsive" src="/dashou/Public/Home/images/insurance/details3.jpg" alt="">
-							</div>
-						</div><!--/ insurance items row end -->
-					</div><!-- Insruance item end -->
-
+					<div class="ts-divider">&nbsp;</div><?php endforeach; endif; ?>
 
 
 				</div><!-- Content Col end -->
-
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-					<div class="sidebar sidebar-right">
-						<div class="widget box solid">
-							<h3 class="widget-title">Product Resources</h3>
-							<ul class="unstyled">
-								<li><i class="fa fa-file-pdf-o"></i> <a href="#">Home Insurance Product Disclosure </a></li>
-								<li><i class="fa fa-file-archive-o"></i><a href="#"> Insurance Product Disclosure Statement</a></li>
-								<li><i class="fa fa-file-powerpoint-o"></i> <a href="#">Code of Practice Sheet</a></li>
-								<li><i class="fa fa-file-text-o"></i> <a href="#">Duty of Disclosure and Approved Locks</a></li>
-								<li><i class="fa fa-file-excel-o"></i> <a href="#">Family Life Cover Product Disclosure</a></li>
-							</ul>
-							<p><a class="btn btn-dark" href="#">Make a Claim</a></p>
-
-						</div><!-- Widget end -->
-
-						<div class="widget box solid">
-							<div class="testimonial-classic">
-								<p class="testimonial-classic-text">Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.</p>
-								<img src="/dashou/Public/Home/images/clients/testimonial1.png" alt="testimonial">
-								<div class="testimonial-classic-author">
-									<h3 class="name">Tahlia Bidmead</h3>
-									<h4 class="desg">Chief Operation Officer</h4>
-								</div>
-							</div>
-						</div><!-- Widget end -->
-
-					</div><!-- Sidebar end -->
-				</div><!-- Sidebar Col end -->
 
 			</div><!-- Main row end -->
 
@@ -398,7 +302,7 @@
 						<p>Phone: (+8) 847-291-4873</p>
 					</div>
 				</div><!--/ Box 2 end -->
-				
+
 				<div class="col-md-4 footer-box three">
 					<i class="fa fa-envelope-o">&nbsp;</i>
 					<div class="footer-box-content">
@@ -407,14 +311,14 @@
 						<p>query@saifway.com</p>
 					</div>
 				</div><!--/ Box 3 end -->
-				
+
 			</div><!--/ Content row end -->
 		</div><!--/ Container end -->
 	</section><!--/ Footer top end -->
 
-   
 
-   
+
+
 
 	<!-- Footer start -->
 	<footer id="footer" class="footer">
@@ -504,7 +408,7 @@
 		</div><!--/ Container end -->
 	</footer><!-- Footer end -->
 
-	
+
 
 	<!-- Javascript Files
 	================================================== -->
@@ -531,7 +435,7 @@
 	<!--<script type="text/javascript" src="/dashou/Public/Home/js/gmap3.min.js"></script>-->
 	<!-- Template custom -->
 	<script type="text/javascript" src="/dashou/Public/Home/js/custom.js"></script>
-	
+
 	</div><!-- Body inner end -->
 </body>
 </html>
