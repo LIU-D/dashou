@@ -54,23 +54,28 @@
 				<td><?php echo ($message["message_question"]); ?></td>
 
 				<?php if($message["message_answer"] == null): ?><td style="color: red">等待回复</td>
-				<?php else: ?>	
+				<?php else: ?>
 				<td><?php echo ($message["message_answer"]); ?></td><?php endif; ?>
-			
-				<td class="f-14"><a title="编辑" href="javascript:;" onclick="admin_role_edit('角色编辑','messageEdit.html','1')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_role_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+
+				<td class="f-14"><a title="回复" href="javascript:;" onclick="message_edit('回复','<?php echo U("Message/messageEdit");?>?id=<?php echo ($message[message_id]); ?>')" style="text-decoration:none">
+					<i class="Hui-iconfont">&#xe6b3;</i></a>
+					<a title="删除" href="javascript:;" onclick="message_del(this,'<?php echo ($message[message_id]); ?>')" class="ml-5" style="text-decoration:none">
+						<i class="Hui-iconfont">&#xe6e2;</i>
+					</a>
+				</td>
 			</tr><?php endforeach; endif; ?>
 		</tbody>
 	</table>
 </div>
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="/dashou/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/dashou/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/dashou/Public/Admin/lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="/dashou/Public/Admin/static/h-ui/js/H-ui.min.js"></script> 
+<script type="text/javascript" src="/dashou/Public/Admin/static/h-ui/js/H-ui.min.js"></script>
 <script type="text/javascript" src="/dashou/Public/Admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="/dashou/Public/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
-<script type="text/javascript" src="/dashou/Public/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="/dashou/Public/Admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="/dashou/Public/Admin/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="/dashou/Public/Admin/lib/laypage/1.2/laypage.js"></script>
 <script type="text/javascript">
 $('.table-sort').dataTable({
@@ -81,20 +86,21 @@ $('.table-sort').dataTable({
 	  {"orderable":false,"aTargets":[0,9]}// 制定列不参与排序
 	]
 });
-/*管理员-角色-添加*/
-function admin_role_add(title,url,w,h){
+
+/*回复*/
+function message_edit(title,url,w,h){
 	layer_show(title,url,w,h);
 }
-/*管理员-角色-编辑*/
-function admin_role_edit(title,url,id,w,h){
-	layer_show(title,url,w,h);
-}
-/*管理员-角色-删除*/
-function admin_role_del(obj,id){
-	layer.confirm('角色删除须谨慎，确认要删除吗？',function(index){
+/*删除*/
+function message_del(obj,id){
+	var url = "<?php echo U('Message/delete');?>";
+	layer.confirm('留言删除须谨慎，确认要删除吗？',function(index){
 		$.ajax({
 			type: 'POST',
-			url: '',
+			url: url,
+			data:{
+				id: id
+			},
 			dataType: 'json',
 			success: function(data){
 				$(obj).parents("tr").remove();
@@ -103,7 +109,7 @@ function admin_role_del(obj,id){
 			error:function(data) {
 				console.log(data.msg);
 			},
-		});		
+		});
 	});
 }
 </script>

@@ -14,14 +14,14 @@
 
 	<!-- Favicons
 	================================================== -->
-	
+
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/dashou/Public/Home/images/favicon/favicon-144x144.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/dashou/Public/Home/images/favicon/favicon-72x72.png">
 	<link rel="apple-touch-icon-precomposed" href="/dashou/Public/Home/images/favicon/favicon-54x54.png">
-	
+
 	<!-- CSS
 	================================================== -->
-	
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="/dashou/Public/Home/css/bootstrap.min.css">
 	<!-- Template styles-->
@@ -45,12 +45,12 @@
     <![endif]-->
 
 </head>
-	
+
 <body>
 
 	<div class="body-inner">
 
-	
+
 	<!-- Header start -->
 	<header id="header" class="header">
 		<div class="container">
@@ -60,7 +60,7 @@
 					<img src="/dashou/Public/Home/images/logo.png" alt="">
 				</a>
 			 </div><!-- logo end -->
-	
+
 				<div class="col-xs-12 col-sm-7 header-right">
 					<ul class="top-info">
 							<li>
@@ -92,7 +92,7 @@
 			</div><!-- Row end -->
 		</div><!-- Container end -->
 	</header><!--/ Header end -->
-	
+
 	<nav class="site-navigation navigation">
 		<div class="container">
 			<div class="row">
@@ -104,17 +104,17 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-	
+
 						<div class="collapse navbar-collapse navbar-responsive-collapse">
 							<ul class="nav navbar-nav">
 								<li class="dropdown ">
 									<a href="<?php echo U('Index/index');?>">首页</a>
 								</li>
-								
+
 								<li class="dropdown">
 								 <a href="<?php echo U('Index/newsList');?>">行业资讯</a>
 								 </li>
-				 
+
 								<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
 										<ul class="dropdown-menu" role="menu">
@@ -122,7 +122,7 @@
 											   <li><a href="<?php echo U('Index/firm');?>">企业客户</a></li>
 										</ul>
 								</li>
-				 
+
 							   <li class="dropdown  active">
 							   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
 								 <ul class="dropdown-menu" role="menu">
@@ -139,7 +139,7 @@
 										  </li>
 								  </ul>
 							   </li>
-		
+
 								<li class="dropdown">
 								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" role="menu">
@@ -149,7 +149,7 @@
 										<li><a href="<?php echo U('Index/joinInfo');?>">递交申请</a></li>
 									</ul>
 								</li>
-										
+
 								<li class="dropdown">
 								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <i class="fa fa-angle-down"></i></a>
 										<ul class="dropdown-menu" role="menu">
@@ -157,17 +157,17 @@
 								   <li><a href="<?php echo U('Index/historyBuss');?>">历史业务</a></li>
 								</ul>
 								</li>
-	
+
 							</ul><!--/ Nav ul end -->
 						</div><!--/ Collapse end -->
-	
+
 					</div><!-- Site Navbar inner end -->
-	
+
 					<div class="find-agent pull-right">
 							<?php if(!isset($_SESSION['name'])): ?><a href="<?php echo U('Index/login');?>">点此 登录</a>
 							<?php else: ?><a href="<?php echo U('Index/logout');?>">你好， <?php echo (session('name')); ?> </a><?php endif; ?>
-						</div>
-	
+					</div>
+
 				</div><!--/ Col end -->
 			</div><!--/ Row end -->
 		</div><!--/ Container end -->
@@ -191,7 +191,7 @@
 	        	</div>
        	</div>
     	</div><!-- Subpage title end -->
-	</div><!-- Banner area end --> 
+	</div><!-- Banner area end -->
 
 
 	<section id="main-container" class="main-container">
@@ -213,7 +213,7 @@
 								margin-bottom: 40px;
 								color: #a6abb0;">
 									<p style="min-height: 80px;text-align: center">等待回复</p>
-									
+
 								</div><!-- Testimonial content end -->
 					</div><!-- End col-md-6 -->
 				<?php else: ?>
@@ -227,7 +227,7 @@
 							</div>
 						</div><!-- Testimonial content end -->
 					</div><!-- End col-md-6 --><?php endif; ?>
-				
+
 
 
 				<div class="col-md-6 col-sm-6">
@@ -240,10 +240,10 @@
 						</div>
 					</div><!-- Testimonial content end -->
 				</div><!-- End col-md-6 -->
-				
-				<div class="gap-60"></div><?php endforeach; endif; ?>	
+
+				<div class="gap-60"></div><?php endforeach; endif; ?>
 			</div><!-- Content row 1 end -->
-			
+
 
 			<div class="gap-60"></div>
 
@@ -252,7 +252,7 @@
 			<form action="<?php echo U('Message/setMessage');?>" method="post" role="form">
 				<div class="col-md-8 col-sm-8">
 					<input type="text" name="question" class="form-control">
-				</div>	
+				</div>
 				<div class="col-md-4 col-sm-4">
 					<button style="width: 100%" class="btn btn-primary solid blank" type="submit">提交</button>
 				</div>
@@ -281,7 +281,7 @@
 						<p>Phone: (+8) 847-291-4873</p>
 					</div>
 				</div><!--/ Box 2 end -->
-				
+
 				<div class="col-md-4 footer-box three">
 					<i class="fa fa-envelope-o">&nbsp;</i>
 					<div class="footer-box-content">
@@ -290,7 +290,7 @@
 						<p>query@saifway.com</p>
 					</div>
 				</div><!--/ Box 3 end -->
-				
+
 			</div><!--/ Content row end -->
 		</div><!--/ Container end -->
 	</section><!--/ Footer top end -->
@@ -383,7 +383,7 @@
 		</div><!--/ Container end -->
 	</footer><!-- Footer end -->
 
-	
+
 
 	<!-- Javascript Files
 	================================================== -->
@@ -410,7 +410,7 @@
 	<!--<script type="text/javascript" src="/dashou/Public/Home/js/gmap3.min.js"></script>-->
 	<!-- Template custom -->
 	<script type="text/javascript" src="/dashou/Public/Home/js/custom.js"></script>
-	
+
 	</div><!-- Body inner end -->
 </body>
 </html>

@@ -60,7 +60,7 @@
 
 				<td class="f-14">
 					<a title="审核" href="javascript:;" onclick="join_ispass('审核','<?php echo U("Join/joinEdit");?>?id=<?php echo ($join[join_id]); ?>')" style="text-decoration:none">
-					<i class="Hui-iconfont">&#xe6df;</i></a>
+					<i class="Hui-iconfont">&#xe692;</i></a>
 					<a title="删除" href="javascript:;" onclick="join_del(this,'<?php echo ($join[join_id]); ?>')" class="ml-5" style="text-decoration:none">
 						<i class="Hui-iconfont">&#xe6e2;</i>
 					</a>

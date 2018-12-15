@@ -12,6 +12,7 @@ class IndexController extends Controller {
 
         $insurance_model = D('Insurance');
         $insurance_list = $insurance_model
+                ->where('insurance_isdel = "已发布"')
                 ->select();
         $this->assign('insurance_list',$insurance_list);
 
