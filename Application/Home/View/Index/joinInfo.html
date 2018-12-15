@@ -221,20 +221,20 @@
 
 					<h3 class="contact-form-title">加入我们</h3>
 
-					<if condition="$join[0] eq null">
+					<if condition="$join eq null">
 
 	    			<form id="contact-form" action="{:U('Join/setJoin')}" method="post" role="form">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>姓名</label>
-								<input class="form-control" name="name" id="name" readonly value="{$user[0][user_name]}" placeholder="" type="text">
+								<input class="form-control" name="name" id="name" readonly value="{$user[user_name]}" placeholder="" type="text">
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label>手机号</label>
-									<input class="form-control" readonly value="{$user[0][user_phone]}" name="phone" id="phone"
+									<input class="form-control" readonly value="{$user[user_phone]}" name="phone" id="phone"
 									placeholder="" type="text">
 								</div>
 							</div>
@@ -250,15 +250,39 @@
 					</form>
 
 					<else/>
-					<div class="gap-40"></div>
-					<div class="gap-40"></div>
-					<div class="row">
-						<div class="col-md-12">
-							<h3 class="text-right">您的申请正在进行审核，</h3>
-							<h3 class="text-right">请静候结果！</h3>
-						</div>
-					</div>
-					</if>
+						<div class="gap-40"></div>
+						<div class="gap-40"></div>
+
+						<if condition="$join['join_ispass'] eq '待审核'">
+							<div class="row">
+								<div class="col-md-12">
+								<h3 class="text-right">您的申请正在进行审核，</h3>
+								<h3 class="text-right">请静候结果！</h3>
+								</div>
+							</div>
+						</if>
+						<if condition="$join['join_ispass'] eq '通过'">
+							<div class="row">
+								<div class="col-md-12">
+								<h2 style="color:red;" class="text-right">恭喜！</h2>
+								<h3 class="text-right">您的申请已通过，</h3>
+								<h3 class="text-right">请前往相应站点办理手续！</h3>
+								</div>
+							</div>
+						</if>
+						<if condition="$join['join_ispass'] eq '未通过'">
+							<div class="row">
+								<div class="col-md-12">
+								<h2 class="text-right">抱歉，</h2>
+								<h3 class="text-right">您的申请未通过！</h3>
+								</div>
+							</div>
+						</if>
+
+
+
+
+				</if>
 				</div><!-- Content col end -->
 
 

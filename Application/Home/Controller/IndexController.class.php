@@ -3,29 +3,6 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-        // $article_model = D('Article');
-        // $img_model = D('Image');
-
-        // $article_list = $article_model
-        //     ->where('article_isdel = "已发布"')
-        //     ->select();
-        // $this->assign('article_list',$article_list);
-
-        // $slide_list = $img_model
-        //     ->where('img_typeid = 1 and img_isdel = "已发布"')
-        //     ->select();
-        // $this ->assign('slide_list',$slide_list);
-
-        // $showbox_list = $img_model
-        //     ->where('img_typeid = 2 and img_isdel = "已发布"')
-        //     ->select();
-        // $this ->assign('showbox_list',$showbox_list);
-
-        // $member_list = $img_model
-        //     ->where('img_typeid = 3 and img_isdel = "已发布"')
-        //     ->select();
-        // $this ->assign('member_list',$member_list);
-
         $news_model = D('News');
         $news_list = $news_model
                 ->where('news_isdel = "已发布"')
@@ -120,7 +97,7 @@ class IndexController extends Controller {
             $this->assign('agent_list',$agent_list);
             $this->display();
         }
-       
+
     }
     public function message(){
         $id = $_SESSION['id'];
@@ -152,13 +129,13 @@ class IndexController extends Controller {
         $user_model = D('User');
         $user = $user_model
                 ->where("user_id='$id'")
-                ->select();
+                ->find();
         $this->assign('user',$user);
 
         $join_model = D('Join');
         $join = $join_model
-                ->where("join_user_id='$id' and join_ispass='待审核'")
-                ->select();
+                ->where("join_user_id='$id'")
+                ->find();
         $this->assign('join',$join);
         $this->display();
     }
@@ -234,6 +211,6 @@ class IndexController extends Controller {
     //     $this->display();
     // }
 
-    
+
 
 }

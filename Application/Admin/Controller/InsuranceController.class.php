@@ -116,7 +116,6 @@ class InsuranceController extends CommonController {
       }
 
       $insurance_model = D('Insurance');
-      $insurance_list = $insurance_model->select();
       $data = array(
           'insurance_id' => I('post.insurance_id'),
           'insurance_title' => I('post.insurance_title'),
