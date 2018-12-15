@@ -65,7 +65,13 @@
 				<td><?php echo ($user["user_birth"]); ?></td>
 				<td><a href="#"><?php echo ($user["user_ismarried"]); ?></a></td>
 				<td><?php echo ($user["user_phone"]); ?></td>
-				<td class="f-14"><a title="编辑" href="javascript:;" onclick="admin_role_edit('角色编辑','userEdit.html','1')" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_role_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+				<td class="f-14">
+					<a title="编辑" href="javascript:;" onclick="user_edit('编辑','<?php echo U("User/userEdit");?>?id=<?php echo ($user[user_id]); ?>')" style="text-decoration:none">
+						<i class="Hui-iconfont">&#xe6df;</i></a>
+						<a title="删除" href="javascript:;" onclick="user_del(this,'<?php echo ($user[user_id]); ?>')" class="ml-5" style="text-decoration:none">
+							<i class="Hui-iconfont">&#xe6e2;</i>
+						</a>
+					</td>
 			</tr><?php endforeach; endif; ?>
 		</tbody>
 	</table>
@@ -99,15 +105,24 @@ function user_add(title,url,w,h){
 	layer.full(index);
 }
 /*编辑*/
-function user_edit(title,url,id,w,h){
-	layer_show(title,url,w,h);
+function user_edit(title,url,w,h){
+	var index = layer.open({
+		type: 2,
+		title: title,
+		content: url
+	});
+	layer.full(index);
 }
 /*删除*/
 function user_del(obj,id){
-	layer.confirm('角色删除须谨慎，确认要删除吗？',function(index){
+	var url = "<?php echo U('User/delete');?>";
+	layer.confirm('删除用户须谨慎，确认要删除吗？',function(index){
 		$.ajax({
 			type: 'POST',
-			url: '',
+			url: url,
+			data:{
+				id: id
+			},
 			dataType: 'json',
 			success: function(data){
 				$(obj).parents("tr").remove();
