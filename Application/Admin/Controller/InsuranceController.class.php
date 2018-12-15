@@ -67,6 +67,7 @@ class InsuranceController extends CommonController {
         $data = array(
             'insurance_title' => I('post.insurance_title'),
             'insurance_categories' => I('post.insurance_categories'),
+            'insurance_customer' => I('post.insurance_customer'),
             'insurance_image' => $img,
             'insurance_content' => I('post.insurance_content')
         );
@@ -120,6 +121,7 @@ class InsuranceController extends CommonController {
           'insurance_id' => I('post.insurance_id'),
           'insurance_title' => I('post.insurance_title'),
           'insurance_categories' => I('post.insurance_categories'),
+          'insurance_customer' => I('post.insurance_customer'),
           'insurance_image' => $img,
           'insurance_content' => I('post.insurance_content')
 

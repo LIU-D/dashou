@@ -7,12 +7,14 @@ class IndexController extends Controller {
         $news_list = $news_model
                 ->where('news_isdel = "已发布"')
                 ->order("news_id desc")
+                ->limit(3)
                 ->select();
         $this->assign('news_list',$news_list);
 
         $insurance_model = D('Insurance');
         $insurance_list = $insurance_model
                 ->where('insurance_isdel = "已发布"')
+                ->limit(9)
                 ->select();
         $this->assign('insurance_list',$insurance_list);
 

@@ -37,8 +37,9 @@
 			<thead>
 				<tr class="text-c">
 					<th width="40"><input name="" type="checkbox" value=""></th>
-					<th width="80">ID</th>
+					<th width="40">ID</th>
 					<th width="100">险种类别</th>
+					<th width="100">客户类别</th>
 					<th width="100">缩略图</th>
 					<th width="150">险种名称</th>
 					<th>险种介绍</th>
@@ -51,6 +52,7 @@
 					<td><input name="" type="checkbox" value=""></td>
 					<td><?php echo ($insurance["insurance_id"]); ?></td>
 					<td><?php echo ($insurance["insurance_categories"]); ?></td>
+					<td><?php echo ($insurance["insurance_customer"]); ?></td>
 					<td><img width="210" class="picture-thumb" src="/dashou<?php echo ($insurance["insurance_image"]); ?>"></td>
 					<td class="text-c"><?php echo ($insurance["insurance_title"]); ?></td>
 					<td class="text-c"><?php echo (stripslashes(htmlspecialchars_decode($insurance["insurance_content"]))); ?></td>
@@ -100,7 +102,7 @@ $('.table-sort').dataTable({
 	"bStateSave": true,//状态保存
 	"aoColumnDefs": [
 	  //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
-	  {"orderable":false,"aTargets":[0,7]}// 制定列不参与排序
+	  {"orderable":false,"aTargets":[0,8]}// 制定列不参与排序
 	]
 });
 

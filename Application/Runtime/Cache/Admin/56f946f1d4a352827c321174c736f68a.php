@@ -43,17 +43,27 @@
 			<div class="formControls col-xs-8 col-sm-9">
 				<select style="font-size:17px" class="select" name="insurance_categories" id="">
 					<option>--请选择--</option>
-						<option value="pet">pet</option>
-						<option value="boat">boat</option>
-						<option value="bike">bike</option>
-						<option value="auto">auto</option>
-						<option value="home">home</option>
-						<option value="cat">cat</option>
-						<option value="life">life</option>
+					<option value="人身保险">人身保险</option>
+					<option value="责任保险">责任保险</option>
+					<option value="人寿保险">人寿保险</option>
+					<option value="工程保险">工程保险</option>
+					<option value="信用保险">信用保险</option>
+					<option value="财产保险">财产保险</option>
         </select>
 			</div>
 		</div>
 
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>客户类别：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<select style="font-size:17px" class="select" name="insurance_customer" id="">
+					<option>--请选择--</option>
+						<option value="个人客户">个人客户</option>
+						<option value="企业客户">企业客户</option>
+				</select>
+			</div>
+		</div>
+		
 		<?php if($insurance["insurance_image"] != null): ?><div class="row cl">
 				<label class="form-label col-xs-4 col-sm-2">原图片：</label>
 				<div class="formControls col-xs-8 col-sm-9">
