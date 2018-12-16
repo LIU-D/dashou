@@ -14,14 +14,14 @@
 
 	<!-- Favicons
 	================================================== -->
-	
+
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/dashou/Public/Home/images/favicon/favicon-144x144.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/dashou/Public/Home/images/favicon/favicon-72x72.png">
 	<link rel="apple-touch-icon-precomposed" href="/dashou/Public/Home/images/favicon/favicon-54x54.png">
-	
+
 	<!-- CSS
 	================================================== -->
-	
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="/dashou/Public/Home/css/bootstrap.min.css">
 	<!-- Template styles-->
@@ -45,12 +45,12 @@
     <![endif]-->
 
 </head>
-	
+
 <body>
 
 	<div class="body-inner">
 
-	
+
 	<!-- Header start -->
 	<header id="header" class="header">
 		<div class="container">
@@ -60,7 +60,7 @@
 					<img src="/dashou/Public/Home/images/logo.png" alt="">
 				</a>
 			 </div><!-- logo end -->
-	
+
 				<div class="col-xs-12 col-sm-7 header-right">
 					<ul class="top-info">
 							<li>
@@ -92,7 +92,7 @@
 			</div><!-- Row end -->
 		</div><!-- Container end -->
 	</header><!--/ Header end -->
-	
+
 	<nav class="site-navigation navigation">
 		<div class="container">
 			<div class="row">
@@ -104,71 +104,67 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-	
+
 						<div class="collapse navbar-collapse navbar-responsive-collapse">
 							<ul class="nav navbar-nav">
 								<li class="dropdown ">
 									<a href="<?php echo U('Index/index');?>">首页</a>
-								</li>
-								
-								<li class="dropdown">
-								 <a href="<?php echo U('Index/newsList');?>">行业资讯</a>
-								 </li>
-				 
-								<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
-										<ul class="dropdown-menu" role="menu">
-											   <li><a href="<?php echo U('Index/personal');?>">个人客户</a></li>
-											   <li><a href="<?php echo U('Index/firm');?>">企业客户</a></li>
-										</ul>
-								</li>
-				 
-							   <li class="dropdown  active">
-							   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
-								 <ul class="dropdown-menu" role="menu">
-										<li><a href="<?php echo U('Index/personalService');?>">个人客户中心</a></li>
-										<li><a href="<?php echo U('Index/firmService');?>">企业客户中心</a></li>
-										<li class="dropdown-submenu">
-										   <a href="#">联系服务人员</a>
-										   <ul class="dropdown-menu">
-											   <li><a href="<?php echo U('Index/searchAgent');?>">查询营业网点</a></li>
-											   <li><a href="<?php echo U('Index/message');?>">在线客服</a></li>
-											 <li><a href="#">智能客服</a></li>
-											 <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
-											  </ul>
-										  </li>
-								  </ul>
-							   </li>
-		
-								<li class="dropdown">
-								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
-									<ul class="dropdown-menu" role="menu">
-											<li><a href="<?php echo U('Index/firmInfo');?>">公司简介</a></li>
-										<li><a href="<?php echo U('Index/outlook');?>">行业前景</a></li>
-										<li><a href="<?php echo U('Index/showAgent');?>">优秀代理点</a></li>
-										<li><a href="<?php echo U('Index/joinInfo');?>">递交申请</a></li>
-									</ul>
-								</li>
-										
-								<li class="dropdown">
-								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <i class="fa fa-angle-down"></i></a>
-										<ul class="dropdown-menu" role="menu">
-								   <li><a href="<?php echo U('Index/personalInfo');?>">个人信息</a></l
-									i>
-								   <li><a href="<?php echo U('Index/historyBuss');?>">历史业务</a></li>
+						</li>
+
+						<li class="dropdown">
+						 <a href="<?php echo U('Index/newsList');?>">行业资讯</a>
+						 </li>
+
+						<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown-menu" role="menu">
+									   <li><a href="<?php echo U('Index/personal');?>">个人客户</a></li>
+									   <li><a href="<?php echo U('Index/firm');?>">企业客户</a></li>
+								</ul>
+						</li>
+
+					   <li class="dropdown  active">
+					   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
+						 <ul class="dropdown-menu" role="menu">
+								<li><a href="<?php echo U('Index/personalService');?>">个人客户中心</a></li>
+								<li><a href="<?php echo U('Index/firmService');?>">企业客户中心</a></li>
+								<li class="dropdown-submenu">
+								   <a href="#">联系服务人员</a>
+								   <ul class="dropdown-menu">
+									   <li><a href="<?php echo U('Index/searchAgent');?>">站点查询</a></li>
+									   <li><a href="<?php echo U('Index/message');?>">留言板</a></li>
+									 <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
+                      				</ul>
+                      			</li>
+		                  </ul>
+		               </li>
+
+						<li class="dropdown">
+						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
+							<ul class="dropdown-menu" role="menu">
+									<li><a href="<?php echo U('Index/firmInfo');?>">公司简介</a></li>
+								<li><a href="<?php echo U('Index/outlook');?>">行业前景</a></li>
+								<li><a href="<?php echo U('Index/showAgent');?>">优秀代理点</a></li>
+								<li><a href="<?php echo U('Index/joinInfo');?>">递交申请</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+						 <a href="<?php echo U('Index/personalInfo');?>">个人中心</a>
+						 </li>
 								</ul>
 								</li>
-	
+
 							</ul><!--/ Nav ul end -->
 						</div><!--/ Collapse end -->
-	
+
 					</div><!-- Site Navbar inner end -->
-	
+
 					<div class="find-agent pull-right">
 							<?php if(!isset($_SESSION['name'])): ?><a href="<?php echo U('Index/login');?>">点此 登录</a>
 							<?php else: ?><a href="<?php echo U('Index/logout');?>">你好， <?php echo (session('name')); ?> </a><?php endif; ?>
 						</div>
-	
+
 				</div><!--/ Col end -->
 			</div><!--/ Row end -->
 		</div><!--/ Container end -->
@@ -181,18 +177,18 @@
 	        	<div class="row">
 	        		<div class="col-xs-12">
 	        			<div class="banner-heading">
-	        				<h1 class="banner-title">Faq</h1>
+	        				<h1 class="banner-title">电话查询</h1>
 	        			</div>
 			        	<ul class="breadcrumb">
-			            <li>Home</li>
-			            <li>Company Pages</li>
-			            <li><a href="#"> Faq</a></li>
+			            <li><a href="<?php echo U('Index/index');?>">首页</a></li>
+			            <li>客服中心</li>
+			            <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
 		          	</ul>
 	        		</div>
 	        	</div>
        	</div>
     	</div><!-- Subpage title end -->
-	</div><!-- Banner area end --> 
+	</div><!-- Banner area end -->
 
 
 	<section id="main-container" class="main-container">
@@ -200,9 +196,7 @@
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
-					<h3 class="page-title">Get Instant Help</h2>
-					<p>Master cleanse selvage 3 wolf moon retro. Hella post-ironic before they sold out pitchfork gastropub dreamcatcher. Flannel celiac lomo, kale chips venmo microdosing you probably haven't heard of them four loko cliche cred butcher. Hammock banh mi forage shoreditch austin raw denim.</p>
-
+					<h3 class="page-title">大寿保险客户服务专线语音流程</h2>
 					<div class="gap-30">&nbsp;</div>
 
 
@@ -214,37 +208,37 @@
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 					<div class="sidebar sidebar-right">
 						<div class="widget">
-							<h3 class="widget-title">Contact us</h3>
+							<h3 class="widget-title">联系我们</h3>
 
 							<div class="contact-info-box">
 								<i class="fa fa-map-marker">&nbsp;</i>
 								<div class="contact-info-box-content">
-									<h4>Address</h4>
-									<p>SaifWay Center, 3021 Horizon Circle Tukwila, WA-98000.</p>
+									<h4>总部</h4>
+									<p>后市万黎水内路 A1230， 大寿大厦 北京, 中国.</p>
 								</div>
 							</div>
 
 							<div class="contact-info-box">
 								<i class="fa fa-phone">&nbsp;</i>
 								<div class="contact-info-box-content">
-									<h4>Phone</h4>
-									<p>+88 0123 4567 890</p>
-									<p>+88 0231 3421 453</p>
+									<h4>客服中心</h4>
+									<p>中国: (+86) 847-291-4353</p>
+									<p>其他: (+86) 237-2325-4855</p>
 								</div>
 							</div>
 
 							<div class="contact-info-box">
 								<i class="fa fa-envelope">&nbsp;</i>
 								<div class="contact-info-box-content">
-									<h4>Email</h4>
-									<p>support@saifway.com</p>
-									<p>info@saifway.com</p>
+									<h4>邮件地址</h4>
+									<p>support@dashou.com</p>
+									<p>info@dashou .com</p>
 								</div>
 							</div>
 
 						</div><!-- Widget end -->
 
-	
+
 
 					</div><!-- Sidebar end -->
 				</div><!-- Sidebar Col end -->
@@ -260,36 +254,36 @@
 				<div class="col-md-4 footer-box one">
 					<i class="fa fa-map-marker">&nbsp;</i>
 					<div class="footer-box-content">
-						<h3>Head Office</h3>
-						<p>SaifWay Center, 3021 Horizon Circle Tukwila, WA-98000.</p>
+						<h3>公司总部</h3>
+						<p>后市万黎水内路 A1230， 大寿大厦 北京, 中国.</p>
 					</div>
 				</div><!--/ Box 1 end -->
 
 				<div class="col-md-4 footer-box two">
 					<i class="fa fa-phone">&nbsp;</i>
 					<div class="footer-box-content">
-						<h3>Call Center</h3>
-						<p>Mobile: (+8) 847-291-4353</p>
-						<p>Phone: (+8) 847-291-4873</p>
+						<h3>客服中心</h3>
+						<p>中国: (+86) 847-291-4353</p>
+						<p>其他: (+86) 237-2325-4855</p>
 					</div>
 				</div><!--/ Box 2 end -->
-				
+
 				<div class="col-md-4 footer-box three">
 					<i class="fa fa-envelope-o">&nbsp;</i>
 					<div class="footer-box-content">
-						<h3>Email</h3>
-						<p>info@saifway.com</p>
-						<p>query@saifway.com</p>
+						<h3>邮件地址</h3>
+						<p>info@dashou.com</p>
+						<p>query@dashou.com</p>
 					</div>
 				</div><!--/ Box 3 end -->
-				
+
 			</div><!--/ Content row end -->
 		</div><!--/ Container end -->
 	</section><!--/ Footer top end -->
 
-   
 
-   
+
+
 
 	<!-- Footer start -->
 	<footer id="footer" class="footer">
@@ -300,35 +294,35 @@
 						<img src="/dashou/Public/Home/images/footer-logo.png" alt="">
 					</div>
 
-					<p>Saifway Insurance company Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat.</p>
-					<p>We are a awward winning multinational company. We believe in quality and standard worldwide.</p>
-					<p><strong>Mon/Friday</strong> 10.00 - 13.00 / 14.00 - 18.00</p>
+					<p>大寿秉持“成己为人 成人达己”的企业文化核心理念，努力推进“创新驱动 综合经营
+						国际一流”发展战略，增强发展动力、扩大经营布局、服务国家大局，加快转型升级、提质增效。</p>
+					<p>以“建设国际一流金融保险集团”为企业愿景，薪火相传，砥砺奋进。</p>
+					<p><strong>工作日（周一至周六）</strong> 09.00 - 13.00 / 14.00 - 20.00</p>
 				</div><!-- About us end -->
 
 				<div class="col-md-4 col-sm-12 footer-widget">
-					<h3 class="widget-title">Important Links</h3>
+					<h3 class="widget-title">有关链接</h3>
 
 					<ul class="list-arrow">
-						<li><a href="#">Get insurance</a></li>
-						<li><a href="#">Manage Insurance</a></li>
-						<li><a href="#">Learn insurance</a></li>
-						<li><a href="#">Products &amp; services</a></li>
-						<li><a href="#">Why SaifWay</a></li>
-						<li><a href="#">How claims work</a></li>
-						<li><a href="#">Why use an adviser?</a></li>
-						<li><a href="#">The risk</a></li>
-						<li><a href="#">Underinsurance</a></li>
-						<li><a href="#">Manage Insurance</a></li>
-						<li><a href="#">Learn insurance</a></li>
-						<li><a href="#">Insurance Quotes</a></li>
-						<li><a href="#">Product Disclosure</a></li>
+						<li><a href="#">了解保险种类</a></li>
+						<li><a href="#">管理保单</a></li>
+						<li><a href="#">申请保险</a></li>
+						<li><a href="#">产品和服务</a></li>
+						<li><a href="#">了解运转</a></li>
+						<li><a href="#">提供建议</a></li>
+						<li><a href="#">投资风险</a></li>
+						<li><a href="#">最新资讯</a></li>
+						<li><a href="#">获取报价</a></li>
+						<li><a href="#">了解我们</a></li>
+						<li><a href="#">前景介绍</a></li>
+						<li><a href="#">公司简介</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-4 col-sm-12 footer-widget">
-					<h3 class="widget-title">Subscribe with us</h3>
+					<h3 class="widget-title">与我们联系</h3>
 					<div class="newsletter-introtext">
-						Subscribe with our newsletters and receive news about our discounts.
+						发送邮件与我们沟通获得最新信息。
 					</div>
 					<form action="#" method="post" id="newsletter-form" class="newsletter-form">
 						<div class="form-group">
@@ -338,7 +332,7 @@
 					</form>
 
 					<div class="footer-social">
-						<h3 class="widget-title">Stay Connected</h3>
+						<h3 class="widget-title">关注我们</h3>
 						<ul>
 							<li><a href="#"><i class="fa fa-rss"></i></a></li>
 							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -354,7 +348,7 @@
 			<div class="row copyright">
 				<div class="col-xs-12 col-sm-5">
 					<div class="copyright-info">
-						<span>Copyright © 2016 Saifway. All Rights Reserved.</span>
+						<span>Copyright © 2016 Dasho. All Rights Reserved.</span>
 					</div>
 				</div>
 
@@ -362,7 +356,7 @@
 					<div class="footer-menu">
 						<ul class="nav unstyled">
 							<li><a href="#">About</a></li>
-							<li><a href="#">© Saifway</a></li>
+							<li><a href="#">© Dasho</a></li>
 							<li><a href="#">Legal</a></li>
 							<li><a href="#">Privacy Statement</a></li>
 						</ul>
@@ -379,7 +373,7 @@
 		</div><!--/ Container end -->
 	</footer><!-- Footer end -->
 
-	
+
 
 	<!-- Javascript Files
 	================================================== -->
@@ -406,7 +400,7 @@
 	<!--<script type="text/javascript" src="/dashou/Public/Home/js/gmap3.min.js"></script>-->
 	<!-- Template custom -->
 	<script type="text/javascript" src="/dashou/Public/Home/js/custom.js"></script>
-	
+
 	</div><!-- Body inner end -->
 </body>
 </html>

@@ -131,7 +131,7 @@
 								<li class="dropdown-submenu">
 								   <a href="#">联系服务人员</a>
 								   <ul class="dropdown-menu">
-									   <li><a href="<?php echo U('Index/searchAgent');?>">查询营业网点</a></li>
+									   <li><a href="<?php echo U('Index/searchAgent');?>">站点查询</a></li>
 									   <li><a href="<?php echo U('Index/message');?>">留言板</a></li>
 									 <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
                       				</ul>
@@ -170,7 +170,7 @@
 		</div><!--/ Container end -->
 	</nav><!--/ Navigation end -->
 
-	<div id="banner-area" class="banner-area" style="background-image:url(/dashou/Public/Home/images/banner/banner2.jpg)">
+	<div id="banner-area" class="banner-area" style="background-image:url(/dashou/Public/Home/images/banner/banner7.jpg)">
 		<!-- Subpage title start -->
 		<div class="banner-text text-center">
      		<div class="container">
