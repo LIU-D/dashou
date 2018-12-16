@@ -196,7 +196,7 @@
 			<div class="row text-center">
 				<h2 class="title">
 					You Have Dreams
-					<span class="title-head">We Have Opportunities</span>
+					<span class="title-head">优质的服务</span>
 				</h2>
 			</div><!--/ Title row end -->
 
@@ -209,9 +209,10 @@
 				         </span>
 				      </div>
 				      <div class="ts-service-info">
-				         <h3>Internships &amp; Early Career</h3>
-				         <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like you. Our workplace has been recognized time and again.</p>
-				      </div>
+				         <h3>热情、友善、细心</h3>
+				         <p>我们的服务人员全力配合您的需求，热情并且具有耐心，用专业的技能水平
+								 提供一流的服务，想您所想，您的需求是重中之重。</p>
+							</div>
 				   </div>
 				</div><!-- Col 1 end -->
 
@@ -223,9 +224,9 @@
 				         </span>
 				      </div>
 				      <div class="ts-service-info">
-				         <h3>Working Professionals</h3>
-				         <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like you. Our workplace has been recognized time and again.</p>
-				      </div>
+				         <h3>经验丰富、团结</h3>
+				         <p>团队专业且工作经验丰富，对行业发展及未来规划有很深刻的理解，成员团结互助，工作无障碍且愉快。</p>
+							</div>
 				   </div>
 				</div><!-- Col 2 end -->
 
@@ -237,9 +238,9 @@
 				         </span>
 				      </div>
 				      <div class="ts-service-info">
-				         <h3>Recruiting Is Key</h3>
-				         <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking team looking for talent like you. Our workplace has been recognized time and again.</p>
-				      </div>
+				         <h3>高效且有序</h3>
+				         <p>业务体系结构清晰，丰富经验为基础，各个环节任务细致且整体有序，突发情况能够及时有效地解决。</p>
+							</div>
 				   </div>
 				</div><!-- Col 3 end -->
 
@@ -248,35 +249,26 @@
 			<div class="gap-30"></div>
 
 			<div class="row">
-				<h3>Opening Positions : </h3>
+				<h3>优秀代理点: </h3>
 				<table class="table table-striped career-table">
 				   <thead>
 				      <tr>
-				         <th>Requisition Title</th>
-				         <th>Location</th>
-				         <th>Remote Worker Option</th>
-				         <th>Actions</th>
+				         <th>名称</th>
+				         <th>地址</th>
+						 <th>联系电话</th>
+						 <th>负责人</th>
 				      </tr>
 				   </thead>
 				   <tbody>
-				      <tr>
-				         <th scope="row"><a href="career-single.html">Risk Manager</a></th>
-				         <td>United States</td>
-				         <td>No</td>
-				         <td><a class="btn btn-primary" href="career-single.html">Apply</a></td>
-				      </tr>
-				      <tr>
-				         <th scope="row"><a href="career-single.html">Assistant Director</a></th>
-				         <td>United States-Washington</td>
-				         <td>Yes</td>
-				         <td><a class="btn btn-primary" href="career-single.html">Apply</a></td>
-				      </tr>
-				      <tr>
-				         <th scope="row"><a href="career-single.html"> Manager, Print Production</a></th>
-				         <td>Multiple Locations</td>
-				         <td>Yes</td>
-				         <td><a class="btn btn-primary" href="career-single.html">Apply</a></td>
-				      </tr>
+
+					<?php if(is_array($agent_list)): foreach($agent_list as $key=>$agent): ?><tr>
+				         <th scope="row"><a href="#"><?php echo ($agent["agent_name"]); ?></a></th>
+				         <td><?php echo ($agent["agent_address"]); ?></td>
+				         <td><?php echo ($agent["agent_phone"]); ?></td>
+				         <td><?php echo ($agent["agent_master"]); ?></td>
+					  </tr><?php endforeach; endif; ?>
+
+
 				   </tbody>
 				</table>
 			</div><!-- Content row 2 end -->

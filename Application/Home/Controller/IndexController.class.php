@@ -135,7 +135,12 @@ class IndexController extends Controller {
         $this->display();
     }
     public function showAgent(){
-        $this->display();
+
+          $agent_model = D('Agent');
+          $agent_list = $agent_model
+              ->select();
+          $this->assign('agent_list',$agent_list);
+          $this->display();
     }
     public function joinInfo(){
         $id = $_SESSION['id'];
