@@ -5,7 +5,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-   <title>Saifway - Insurance Agency Html Template</title>
+   <title>优秀代理点  -  大寿保险公司</title>
 
 
 	<!-- Mobile Specific Metas
@@ -132,25 +132,25 @@
 									 <a href="#">联系服务人员</a>
 									 <ul class="dropdown-menu">
 										 <li><a href="<?php echo U('Index/searchAgent');?>">站点查询</a></li>
-										 <li><a href="<?php echo U('Index/message');?>">留言板</a></li>
-									 <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
-															</ul>
-														</li>
-											</ul>
-									 </li>
+										 <li><a href="<?php echo U('Main/message');?>">留言板</a></li>
+ 									<li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
+ 														 </ul>
+ 													 </li>
+ 										 </ul>
+ 									</li>
 
-						<li class="dropdown  active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown-menu" role="menu">
-									<li><a href="<?php echo U('Index/firmInfo');?>">公司简介</a></li>
-								<li><a href="<?php echo U('Index/outlook');?>">行业前景</a></li>
-								<li><a href="<?php echo U('Index/showAgent');?>">优秀代理点</a></li>
-								<li><a href="<?php echo U('Index/joinInfo');?>">递交申请</a></li>
-							</ul>
-						</li>
+ 					 <li class="dropdown">
+ 						 <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
+ 						 <ul class="dropdown-menu" role="menu">
+ 								 <li><a href="<?php echo U('Index/firmInfo');?>">公司简介</a></li>
+ 							 <li><a href="<?php echo U('Index/outlook');?>">行业前景</a></li>
+ 							 <li><a href="<?php echo U('Index/showAgent');?>">优秀代理点</a></li>
+ 							 <li><a href="<?php echo U('Main/joinInfo');?>">递交申请</a></li>
+ 						 </ul>
+ 					 </li>
 
-						<li class="dropdown">
-						 <a href="<?php echo U('Index/personalInfo');?>">个人中心</a>
+ 					 <li class="dropdown">
+ 						<a href="<?php echo U('Main/personalInfo');?>">个人中心</a>
 						 </li>
 								</ul>
 								</li>

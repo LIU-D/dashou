@@ -34,7 +34,11 @@ class IndexController extends Controller {
         //5.调用UsersModel中的checkLogin方法检测用户和密码是否正确
         //如果正确返回true，反之返回false
         if ($user_model->checkLogin($phone,$pwd)){
-            if($phone == 'admin') $this->success('登陆成功！',U('Admin/Index/index'),2);
+            if($pwd == '123') {
+              session(null);
+              $this->error('该用户未被激活，请前往当地站点激活！',U('login'),2);
+            }
+            else if($phone == 'admin') $this->success('登陆成功！',U('Admin/Index/index'),2);
             else $this->success('登陆成功！',U('index'),2);
         }else{
             $this->error('用户名或密码错误，请重新登录！',U('login'),2);

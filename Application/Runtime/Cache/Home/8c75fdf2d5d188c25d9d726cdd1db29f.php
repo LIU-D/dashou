@@ -5,7 +5,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-   <title>SaifWay - Insurance Agency Html Template</title>
+   <title>个人中心  -  大寿保险公司</title>
 
 
 	<!-- Mobile Specific Metas
