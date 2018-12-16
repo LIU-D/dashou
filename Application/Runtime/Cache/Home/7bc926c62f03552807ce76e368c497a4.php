@@ -181,7 +181,7 @@
 								</div>
 								<ul class="breadcrumb">
 									<li><a href="<?php echo U('Index/index');?>">首页</a></li>
-									<li>客服中心</li>
+									<li>服务中心</li>
 									<li><a href="<?php echo U('Index/message');?>">留言板</a></li>
 		          	</ul>
 	        		</div>

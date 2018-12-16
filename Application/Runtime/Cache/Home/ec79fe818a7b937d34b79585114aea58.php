@@ -132,7 +132,7 @@
 								<li class="dropdown-submenu">
 								   <a href="#">联系服务人员</a>
 								   <ul class="dropdown-menu">
-									   <li><a href="<?php echo U('Index/searchAgent');?>">查询营业网点</a></li>
+									   <li><a href="<?php echo U('Index/searchAgent');?>">站点查询</a></li>
 									   <li><a href="<?php echo U('Index/message');?>">留言板</a></li>
 									 <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
                       				</ul>
@@ -177,11 +177,11 @@
 	        	<div class="row">
 	        		<div class="col-xs-12">
 	        			<div class="banner-heading">
-	        				<h1 class="banner-title">资讯</h1>
+	        				<h1 class="banner-title">行业资讯</h1>
 	        			</div>
 			        	<ul class="breadcrumb">
 									<li><a href="<?php echo U('Index/index');?>">首页</a></li>
-			            <li><a href="<?php echo U('Index/newsList');?>">资讯列表</a></li>
+			            <li><a href="<?php echo U('Index/newsList');?>">行业资讯</a></li>
 		          	</ul>
 	        		</div>
 	        	</div>

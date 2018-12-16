@@ -181,7 +181,7 @@
 	        			</div>
 			        	<ul class="breadcrumb">
 			            <li><a href="<?php echo U('Index/index');?>">首页</a></li>
-			            <li>客服中心</li>
+			            <li>服务中心</li>
 			            <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
 		          	</ul>
 	        		</div>
@@ -232,7 +232,7 @@
 								<div class="contact-info-box-content">
 									<h4>邮件地址</h4>
 									<p>support@dashou.com</p>
-									<p>info@dashou .com</p>
+									<p>info@dashou.com</p>
 								</div>
 							</div>
 
