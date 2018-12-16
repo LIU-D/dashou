@@ -100,12 +100,12 @@
 								   <a href="#">联系服务人员</a>
 								   <ul class="dropdown-menu">
 									   <li><a href="<?php echo U('Index/searchAgent');?>">站点查询</a></li>
-									   <li><a href="<?php echo U('Index/message');?>">留言板</a></li>
+										 <li><a href="<?php echo U('Main/message');?>">留言板</a></li>
 									 <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
-                </ul>
-              	</li>
-		         </ul>
-		         </li>
+                      				</ul>
+                      			</li>
+		                  </ul>
+		               </li>
 
 						<li class="dropdown">
 						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
@@ -113,12 +113,12 @@
 									<li><a href="<?php echo U('Index/firmInfo');?>">公司简介</a></li>
 								<li><a href="<?php echo U('Index/outlook');?>">行业前景</a></li>
 								<li><a href="<?php echo U('Index/showAgent');?>">优秀代理点</a></li>
-								<li><a href="<?php echo U('Index/joinInfo');?>">递交申请</a></li>
+								<li><a href="<?php echo U('Main/joinInfo');?>">递交申请</a></li>
 							</ul>
 						</li>
 
 						<li class="dropdown">
-						 <a href="<?php echo U('Index/personalInfo');?>">个人中心</a>
+						 <a href="<?php echo U('Main/personalInfo');?>">个人中心</a>
 						 </li>
 
 

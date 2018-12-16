@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -15,33 +15,33 @@
 	<!-- Favicons
 	================================================== -->
 
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="__PUBLIC__/Home/images/favicon/favicon-144x144.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="__PUBLIC__/Home/images/favicon/favicon-72x72.png">
-	<link rel="apple-touch-icon-precomposed" href="__PUBLIC__/Home/images/favicon/favicon-54x54.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/dashou/Public/Home/images/favicon/favicon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/dashou/Public/Home/images/favicon/favicon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="/dashou/Public/Home/images/favicon/favicon-54x54.png">
 
 	<!-- CSS
 	================================================== -->
 
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/bootstrap.min.css">
 	<!-- Template styles-->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/style.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/style.css">
 	<!-- Responsive styles-->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/responsive.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/responsive.css">
 	<!-- FontAwesome -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/font-awesome.min.css">
 	<!-- Animation -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/animate.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/animate.css">
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/owl.carousel.css">
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/owl.theme.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/owl.carousel.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/owl.theme.css">
 	<!-- Colorbox -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/colorbox.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/colorbox.css">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
-      <script src="__PUBLIC__/Home/js/html5shiv.js"></script>
-      <script src="__PUBLIC__/Home/js/respond.min.js"></script>
+      <script src="/dashou/Public/Home/js/html5shiv.js"></script>
+      <script src="/dashou/Public/Home/js/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -57,7 +57,7 @@
 				<div class="row">
 					<div class="logo col-xs-12 col-sm-3">
 					<a href="index.html">
-						<img src="__PUBLIC__/Home/images/logo.png" alt="">
+						<img src="/dashou/Public/Home/images/logo.png" alt="">
 					</a>
 				 </div><!-- logo end -->
 
@@ -108,32 +108,32 @@
 							<div class="collapse navbar-collapse navbar-responsive-collapse">
 								<ul class="nav navbar-nav">
 									<li class="dropdown ">
-										<a href="{:U('Index/index')}">首页</a>
+										<a href="<?php echo U('Index/index');?>">首页</a>
 							</li>
 
 							<li class="dropdown">
-							 <a href="{:U('Index/newsList')}">行业资讯</a>
+							 <a href="<?php echo U('Index/newsList');?>">行业资讯</a>
 							 </li>
 
 							<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" role="menu">
-											 <li><a href="{:U('Index/personal')}">个人客户</a></li>
-											 <li><a href="{:U('Index/firm')}">企业客户</a></li>
+										   <li><a href="<?php echo U('Index/personal');?>">个人客户</a></li>
+										   <li><a href="<?php echo U('Index/firm');?>">企业客户</a></li>
 									</ul>
 							</li>
 
-							 <li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
+						   <li class="dropdown">
+						   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
 							 <ul class="dropdown-menu" role="menu">
-									<li><a href="{:U('Index/personalService')}">个人客户中心</a></li>
-									<li><a href="{:U('Index/firmService')}">企业客户中心</a></li>
+									<li><a href="<?php echo U('Index/personalService');?>">个人客户中心</a></li>
+									<li><a href="<?php echo U('Index/firmService');?>">企业客户中心</a></li>
 									<li class="dropdown-submenu">
-										 <a href="#">联系服务人员</a>
-										 <ul class="dropdown-menu">
-											 <li><a href="{:U('Index/searchAgent')}">站点查询</a></li>
-											 <li><a href="{:U('Main/message')}">留言板</a></li>
-										 <li><a href="{:U('Index/call')}">电话查询</a></li>
+									   <a href="#">联系服务人员</a>
+									   <ul class="dropdown-menu">
+										   <li><a href="<?php echo U('Index/searchAgent');?>">站点查询</a></li>
+											 <li><a href="<?php echo U('Main/message');?>">留言板</a></li>
+										 <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
 	                      				</ul>
 	                      			</li>
 			                  </ul>
@@ -142,15 +142,16 @@
 							<li class="dropdown">
 							  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
 								<ul class="dropdown-menu" role="menu">
-										<li><a href="{:U('Index/firmInfo')}">公司简介</a></li>
-									<li><a href="{:U('Index/outlook')}">行业前景</a></li>
-									<li><a href="{:U('Index/showAgent')}">优秀代理点</a></li>
-									<li><a href="{:U('Main/joinInfo')}">递交申请</a></li>
+										<li><a href="<?php echo U('Index/firmInfo');?>">公司简介</a></li>
+									<li><a href="<?php echo U('Index/outlook');?>">行业前景</a></li>
+									<li><a href="<?php echo U('Index/showAgent');?>">优秀代理点</a></li>
+									<li><a href="<?php echo U('Main/joinInfo');?>">递交申请</a></li>
 								</ul>
 							</li>
 
 							<li class="dropdown">
-							 <a href="{:U('Main/personalInfo')}">个人中心</a>
+							 <a href="<?php echo U('Main/personalInfo');?>">个人中心</a>
+							 </li>
 									</ul>
 									</li>
 
@@ -160,46 +161,130 @@
 						</div><!-- Site Navbar inner end -->
 
 						<div class="find-agent pull-right">
-								<if condition="!isset($_SESSION['name'])"><a href="{:U('Index/login')}">点此 登录</a>
-								<else /><a href="{:U('Index/logout')}">你好， {$Think.session.name} </a>
-								</if>
-						</div>
+								<?php if(!isset($_SESSION['name'])): ?><a  href="<?php echo U('Index/login');?>">点此 登录</a>
+								<?php else: ?><a href="<?php echo U('Index/logout');?>">你好， <?php echo (session('name')); ?> </a><?php endif; ?>
+							</div>
 
 					</div><!--/ Col end -->
 				</div><!--/ Row end -->
 			</div><!--/ Container end -->
 		</nav><!--/ Navigation end -->
 
-
+		<div id="banner-area" class="banner-area" style="background-image:url(/dashou/Public/Home/images/banner/banner3.jpg)">
+			<!-- Subpage title start -->
+			<div class="banner-text text-center">
+					<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="banner-heading">
+										<h1 class="banner-title">递交申请</h1>
+		        			</div>
+				        	<ul class="breadcrumb">
+				            <li><a href="<?php echo U('Index/index');?>">首页</a></li>
+				            <li>加入我们</li>
+				            <li><a href="<?php echo U('Index/joinInfo');?>">递交申请</a></li>
+									</ul>
+								</div>
+							</div>
+					</div>
+				</div><!-- Subpage title end -->
+		</div><!-- Banner area end -->
 
 	<section id="main-container" class="main-container">
 		<div class="container">
 			<div class="row">
 
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 
-					<h3 class="contact-form-title">Information</h3>
+				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 
-	    			<form id="contact-form" action="{:U('check')}" method="post" role="form">
-						<div class="form-group">
-							<label>手机号： </label>
-							<input class="form-control" type="text" name="phone" id="phone" placeholder="" rows="10" required>
+					<h3 class="contact-form-title">加入我们</h3>
+
+					<?php if($join == null): ?><form id="contact-form" action="<?php echo U('Join/setJoin');?>" method="post" role="form">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>姓名</label>
+								<input class="form-control" name="name" id="name" readonly value="<?php echo ($user[user_name]); ?>" placeholder="" type="text">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>手机号</label>
+									<input class="form-control" readonly value="<?php echo ($user[user_phone]); ?>" name="phone" id="phone"
+									placeholder="" type="text">
+								</div>
+							</div>
+
 						</div>
 						<div class="form-group">
-							<label>密&nbsp;&nbsp;&nbsp;&nbsp;码： </label>
-							<input class="form-control" type="password" name="password" id="password" placeholder="" rows="10" required>
+							<label>申请说明</label>
+							<textarea class="form-control" name="content" id="content" placeholder="" rows="10" required></textarea>
 						</div>
-						<div ><br>
-							<button style="width: 360px;" class="btn btn-primary solid blank" type="submit">登录</button>
+						<div class="text-right"><br>
+							<button class="btn btn-primary solid blank" type="submit">提交申请</button>
 						</div>
 					</form>
 
+					<?php else: ?>
+						<div class="gap-40"></div>
+						<div class="gap-40"></div>
+
+						<?php if($join['join_ispass'] == '待审核'): ?><div class="row">
+								<div class="col-md-12">
+								<h3 class="text-right">您的申请正在进行审核，</h3>
+								<h3 class="text-right">请静候结果！</h3>
+								</div>
+							</div><?php endif; ?>
+						<?php if($join['join_ispass'] == '通过'): ?><div class="row">
+								<div class="col-md-12">
+								<h2 style="color:red;" class="text-right">恭喜！</h2>
+								<h3 class="text-right">您的申请已通过，</h3>
+								<h3 class="text-right">请前往相应站点办理手续！</h3>
+								</div>
+							</div><?php endif; ?>
+						<?php if($join['join_ispass'] == '未通过'): ?><div class="row">
+								<div class="col-md-12">
+								<h2 class="text-right">抱歉，</h2>
+								<h3 class="text-right">您的申请未通过！</h3>
+								</div>
+							</div><?php endif; endif; ?>
 				</div><!-- Content col end -->
 
-				<div style="height: 303px;overflow: hidden;" class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-					<img src="__PUBLIC__/Home/images/news/news4.jpg" class="img-responsive" alt="">
-				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="sidebar sidebar-right">
+						<div class="widget">
+							<h3 class="widget-title">联系我们</h3>
 
+							<div class="contact-info-box">
+								<i class="fa fa-map-marker">&nbsp;</i>
+								<div class="contact-info-box-content">
+									<h4>总部</h4>
+									<p>后市万黎水内路 A1230， 大寿大厦 北京, 中国.</p>
+								</div>
+							</div>
+
+							<div class="contact-info-box">
+								<i class="fa fa-phone">&nbsp;</i>
+								<div class="contact-info-box-content">
+									<h4>客服中心</h4>
+									<p>中国: (+86) 847-291-4353</p>
+									<p>其他: (+86) 237-2325-4855</p>
+								</div>
+							</div>
+
+							<div class="contact-info-box">
+								<i class="fa fa-envelope">&nbsp;</i>
+								<div class="contact-info-box-content">
+									<h4>邮件地址</h4>
+									<p>support@dashou.com</p>
+									<p>info@dashou.com</p>
+								</div>
+							</div>
+
+						</div><!-- Widget end -->
+
+					</div><!-- Sidebar end -->
+				</div><!-- Sidebar Col end -->
 			</div><!-- Content row -->
 		</div><!-- Conatiner end -->
 	</section><!-- Main container end -->
@@ -248,7 +333,7 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-12 footer-widget footer-about">
 					<div class="footer-logo">
-						<img src="__PUBLIC__/Home/images/footer-logo.png" alt="">
+						<img src="/dashou/Public/Home/images/footer-logo.png" alt="">
 					</div>
 
 					<p>大寿秉持“成己为人 成人达己”的企业文化核心理念，努力推进“创新驱动 综合经营
@@ -336,27 +421,27 @@
 	================================================== -->
 
 	<!-- initialize jQuery Library -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.js"></script>
 	<!-- Bootstrap jQuery -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/bootstrap.min.js"></script>
 	<!-- Owl Carousel -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/owl.carousel.min.js"></script>
 	<!-- Counter -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.counterup.min.js"></script>
 	<!-- Waypoints -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/waypoints.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/waypoints.min.js"></script>
 	<!-- Color box -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.colorbox.js"></script>
 	<!-- Isotope -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/isotope.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/Home/js/ini.isotope.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/isotope.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/ini.isotope.js"></script>
 	<!-- Google Map API Key Source -->
 	<!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
 	<!-- For Google Map -->
 	<!-- Doc http://www.mkyong.com/google-maps/google-maps-api-hello-world-example/ -->
-	<!--<script type="text/javascript" src="__PUBLIC__/Home/js/gmap3.min.js"></script>-->
+	<!--<script type="text/javascript" src="/dashou/Public/Home/js/gmap3.min.js"></script>-->
 	<!-- Template custom -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/custom.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/custom.js"></script>
 
 	</div><!-- Body inner end -->
 </body>

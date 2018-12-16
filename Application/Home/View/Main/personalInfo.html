@@ -5,7 +5,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-   <title>Saifway - Insurance Agency Html Template</title>
+   <title>SaifWay - Insurance Agency Html Template</title>
 
 
 	<!-- Mobile Specific Metas
@@ -49,6 +49,7 @@
 <body>
 
 	<div class="body-inner">
+
 
 
 	<!-- Header start -->
@@ -109,51 +110,49 @@
 							<ul class="nav navbar-nav">
 								<li class="dropdown ">
 									<a href="{:U('Index/index')}">首页</a>
-						</li>
-
-						<li class="dropdown">
-						 <a href="{:U('Index/newsList')}">行业资讯</a>
-						 </li>
-
-						<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
-								<ul class="dropdown-menu" role="menu">
-									   <li><a href="{:U('Index/personal')}">个人客户</a></li>
-									   <li><a href="{:U('Index/firm')}">企业客户</a></li>
-								</ul>
-						</li>
-
-					   <li class="dropdown">
-					   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
-						 <ul class="dropdown-menu" role="menu">
-								<li><a href="{:U('Index/personalService')}">个人客户中心</a></li>
-								<li><a href="{:U('Index/firmService')}">企业客户中心</a></li>
-								<li class="dropdown-submenu">
-								   <a href="#">联系服务人员</a>
-								   <ul class="dropdown-menu">
-									   <li><a href="{:U('Index/searchAgent')}">站点查询</a></li>
-										 <li><a href="{:U('Main/message')}">留言板</a></li>
-									 <li><a href="{:U('Index/call')}">电话查询</a></li>
-                      				</ul>
-                      			</li>
-		                  </ul>
-		               </li>
-
-						<li class="dropdown">
-						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown-menu" role="menu">
-									<li><a href="{:U('Index/firmInfo')}">公司简介</a></li>
-								<li><a href="{:U('Index/outlook')}">行业前景</a></li>
-								<li><a href="{:U('Index/showAgent')}">优秀代理点</a></li>
-								<li><a href="{:U('Main/joinInfo')}">递交申请</a></li>
-							</ul>
-						</li>
-
-						<li class="dropdown">
-						 <a href="{:U('Main/personalInfo')}">个人中心</a>
-						 </li>
-								</ul>
 								</li>
+
+								<li class="dropdown">
+								 <a href="{:U('Index/newsList')}">行业资讯</a>
+								 </li>
+
+								<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
+										<ul class="dropdown-menu" role="menu">
+											   <li><a href="{:U('Index/personal')}">个人客户</a></li>
+											   <li><a href="{:U('Index/firm')}">企业客户</a></li>
+										</ul>
+								</li>
+
+							   <li class="dropdown">
+							   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
+								 <ul class="dropdown-menu" role="menu">
+										<li><a href="{:U('Index/personalService')}">个人客户中心</a></li>
+										<li><a href="{:U('Index/firmService')}">企业客户中心</a></li>
+										<li class="dropdown-submenu">
+										   <a href="#">联系服务人员</a>
+										   <ul class="dropdown-menu">
+											   <li><a href="{:U('Index/searchAgent')}">站点查询</a></li>
+												 <li><a href="{:U('Main/message')}">留言板</a></li>
+											 <li><a href="{:U('Index/call')}">电话查询</a></li>
+		                      				</ul>
+		                      			</li>
+				                  </ul>
+				               </li>
+
+								<li class="dropdown">
+								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
+									<ul class="dropdown-menu" role="menu">
+											<li><a href="{:U('Index/firmInfo')}">公司简介</a></li>
+										<li><a href="{:U('Index/outlook')}">行业前景</a></li>
+										<li><a href="{:U('Index/showAgent')}">优秀代理点</a></li>
+										<li><a href="{:U('Main/joinInfo')}">递交申请</a></li>
+									</ul>
+								</li>
+
+								<li class="dropdown">
+								 <a href="{:U('Main/personalInfo')}">个人中心</a>
+								 </li>
 
 							</ul><!--/ Nav ul end -->
 						</div><!--/ Collapse end -->
@@ -161,29 +160,28 @@
 					</div><!-- Site Navbar inner end -->
 
 					<div class="find-agent pull-right">
-							<if condition="!isset($_SESSION['name'])"><a href="{:U('Index/login')}">点此 登录</a>
-							<else /><a href="{:U('Index/logout')}">你好， {$Think.session.name} </a>
-							</if>
-						</div>
+						<if condition="!isset($_SESSION['name'])"><a href="{:U('Index/login')}">点此 登录</a>
+						<else /><a href="{:U('Index/logout')}">你好， {$Think.session.name} </a>
+						</if>
+					</div>
 
 				</div><!--/ Col end -->
 			</div><!--/ Row end -->
 		</div><!--/ Container end -->
 	</nav><!--/ Navigation end -->
 
-	<div id="banner-area" class="banner-area" style="background-image:url(__PUBLIC__/Home/images/banner/banner13.jpg)">
+	<div id="banner-area" class="banner-area" style="background-image:url(__PUBLIC__/Home/images/banner/banner4.jpg)">
 		<!-- Subpage title start -->
 		<div class="banner-text text-center">
      		<div class="container">
 	        	<div class="row">
 	        		<div class="col-xs-12">
 	        			<div class="banner-heading">
-									<h1 class="banner-title">行业前景</h1>
-								</div>
-								<ul class="breadcrumb">
-									<li><a href="{:U('Index/index')}">首页</a></li>
-									<li>加入我们</li>
-									<li><a href="{:U('Index/outlook')}">行业前景</a></li>
+	        				<h1 class="banner-title">个人中心</h1>
+	        			</div>
+			        	<ul class="breadcrumb">
+			            <li><a href="{:U('Index/index')}">首页</a></li>
+			            <li><a href="{:U('Index/personalInfo')}">个人中心</a></li>
 		          	</ul>
 	        		</div>
 	        	</div>
@@ -192,115 +190,237 @@
 	</div><!-- Banner area end -->
 
 
+
+
 	<section id="main-container" class="main-container">
 		<div class="container">
+
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-xs-12">
+				<div class="col-md-12">
+					<h2 class="title">
+						Information
+						<span class="title-head">{$policy_list[0].user_name}</span>
+					</h2>
+					<table style="text-align: center;font-size:17px;" class="table table-striped career-table">
+							<tbody>
+							   <tr>
+									  <td scope="row"><a href="#">性别</a></td>
+									  <td>{$policy_list[0].user_gender}</td>
+								</tr>
+								<tr>
+									  <td scope="row"><a href="#">民族</a></td>
+									  <td>{$policy_list[0].user_nationality}</td>
+								</tr>
+								<tr>
+									<td scope="row"><a href="#">职业</a></td>
+									<td>{$policy_list[0].user_profession}</td>
+								</tr>
+								<tr>
+									<td scope="row"><a href="#">婚否</a></td>
+									<td>{$policy_list[0].user_ismarried}</td>
+								</tr>
+								<tr>
+									<td scope="row"><a href="#">身份证号</a></td>
+									<td>{$policy_list[0].user_idcard}</td>
+								</tr>
+								<tr>
+									<td scope="row"><a href="#">出生日期</a></td>
+									<td>{$policy_list[0].user_birth}</td>
+								</tr>
+								<tr>
+									<td scope="row"><a href="#">手机号码</a></td>
+									<td>{$policy_list[0].user_phone}</td>
+								</tr>
+							</tbody>
+						 </table>
+				</div>
 
-					<div class="text-center about-us-intro">
-						<h2>作为行业领头公司超过20年</h2>
-						<p>2003年，业务范围全面涵盖寿险、财产险、养老保险（企业年金）、 资产管理、另类投资、海外业务、电子商务等多个领域，
-							并通过资本运作参股了多家银行、证券公司等其他金融和非金融机构。</p>
-					</div>
+				<div class="ts-divider">&nbsp;</div>
+				<div class="col-md-12">
+					<h2 class="title">
+						Historical business
+						<span class="title-head">历史业务</span>
+					</h2>
+				</div>
 
-					<div class="gap-40">&nbsp;</div>
+				<foreach name="policy_list" item="policy">
 
-					<div class="row solid-row">
-						<div class="col-md-6 about-text">
-							<h3 class="page-content-title-classic">行业前景展望</h3>
-							<p>从行业发展的政策环境来看，我国在推进保险行业快速发展的政策制定上不遗余力。在过去三年
-								当中先后推进完成了人身险中传统寿险、分红险、万能险三大险种的市场化费率改革和商业车险费率改革，使人身险保费增速空间得到释放
-								，财产险费率拟定更加科学。在促进保险产品回归保障主业的思路指引下，监管层在2016年又出台了健康险税收优惠政策，并在2017年7月1日由试点地区向全国铺开。</p>
-								<p>落实国家支持保险和养老服务业发展的相关财税政策，加快个人税收递延型商业养老保险试点，支持商业养老保险机构参与基本养老保险基金管理。商业养老保险
-									制度的建设完善，有望在未来5年给保险行业带来千亿级别的保费增量，给保险机构的产品结构和盈利方式带来一定改变。</p>
+				<div  class="col-md-12" style="min-height: 200px;background-image:url(/dashou/Public/Home/images/banner/banner{$key+5}.jpg)">
+					<div class="banner-text text-center">
+						<div class="container">
+						   <div class="row">
+							   <div class="col-xs-12">
+								   <div class="banner-heading">
+									   <h1 class="banner-title"style="line-height: 100px;">{$policy.insurance_title}</h1>
+								   </div>
+							   </div>
+						   </div>
+					  </div>
+				   </div>
+				</div>
+				<div class="col-md-6">
+					<h3></h3>
+					<div class="panel-group" id="accordion">
+		              	<div class="panel panel-default">
+			                <div class="panel-heading">
+				                <h4 class="panel-title">
+				                	<a data-toggle="collapse" data-parent="#accordion" href="#{$key}_collapse" class="collapsed">{$policy.insurance_title}</a>
+				                </h4>
+			                </div>
+			                <div id="{$key}_collapse" class="panel-collapse collapse">
+			                  <div class="panel-body">
+			                    <p>{$policy.insurance_content}</p>
+			                  </div>
+			                </div>
+		              	</div><!--/ Panel 1 end-->
+
+
+	            	</div><!--/ Accordion end -->
+
+
+		         <div class="gap-40"></div>
+
+		         <!-- Counter Strat -->
+
+		         <h3>参保金额</h3>
+
+					<div class="ts_counter elements no-padding">
+						<div class="row text-center">
+							<div class="ts-facts-wrapper">
+								<div class="ts-facts">
+									<div class="ts-facts-icon">
+										<i class="fa fa-line-chart"></i>
+									</div>
+									<div class="ts-facts-content">
+										<h1 class="ts-facts-num">￥ <span class="counterUp">{$policy.policy_money}</span></h1>
+										<h3 class="ts-facts-title">{$policy.policy_begin}  至  {$policy.policy_end}</h3>
+
+									</div>
+								</div><!--/ Facts 1 end -->
+							</div>
 						</div>
-						<div class="col-md-6 about-img"><img src="__PUBLIC__/Home/images/pages/about-box1.jpg" alt="">
-						</div>
-					</div><!-- Solid row end -->
-
-					<div class="row solid-row last">
-						<div class="col-md-6 about-img"><img src="__PUBLIC__/Home/images/pages/about-box2.jpg" alt="">
-						</div>
-						<div class="col-md-6 about-text">
-							<h3 class="page-content-title-classic">我们的优势</h3>
-							<p>大寿保险公司具备人力资源和社会保障部颁发的企业年金基金受托人、账户管理人和投资管理人三项资格，与大寿保险资产管理有限公司的企业年
-								金基金投资管理人资格一起，形成大寿保险“三位一体”的企业年金服务架构体系和完整服务链，为各类企业客户降低了管理成本，提高管理效率，防范了管理风险
-								。</p>
-								<p>通过大寿保险强大的专业力量和服务网络优势，客户能够享受大寿保险为其量身定做的一揽子整体企业年金解决方案、多样化的产品选择和全国范围内“点
-								对点”稳定便利、统一无差异的优质服务。</p>
-						</div><!-- Col end -->
-					</div><!-- Solid row end -->
+				   </div><!--/ Counter end -->
 
 
-				</div><!-- Content Col end -->
+				</div><!--/ Col end -->
 
-			</div><!-- Main row end -->
+				<div class="col-md-6">
+					<h3>  </h3>
+					<div class="featured-tab pages clearfix">
+						<ul class="nav nav-tabs col-sm-12 col-xs-12">
+						  	<li class="active">
+						  		<a style="min-width: 270px;" class="animated fadeIn" href="#{$key}_{$policy.policyto_idcard}" data-toggle="tab">
+						  			<span class="tab-head">
+										<i class="fa fa-globe pull-left">&nbsp;</i>
+										<span class="tab-text-title">被保险人</span>
+									</span>
+						  		</a>
+						  	</li>
+						 	<li>
+							  	<a style="min-width: 270px;" class="animated fadeIn" href="#{$key}_{$policy.beneficiary_idcard}" data-toggle="tab">
+							  		<span class="tab-head">
+										<i class="fa fa-android pull-left">&nbsp;</i>
+										<span class="tab-text-title">受益人</span>
+									</span>
+							  	</a>
+							</li>
 
+						</ul>
+						<div class="tab-content col-sm-12 col-xs-12">
+					        <div class="tab-pane active animated fadeInRight" id="{$key}_{$policy.policyto_idcard}">
+					        	<div class="tab-wrapper">
+									<table style="text-align: center;font-size:17px;" class="table table-striped career-table">
+										<tbody>
+											<tr>
+												<td scope="row"><a href="#">姓名</a></td>
+												<td>{$policy.policyto_name}</td>
+											</tr>
+										   <tr>
+											  	<td scope="row"><a href="#">性别</a></td>
+											  	<td>{$policy.policyto_gender}</td>
+											</tr>
+											<tr>
+											  	<td scope="row"><a href="#">民族</a></td>
+											  	<td>{$policy.policyto_nationality}</td>
+											</tr>
+											<tr>
+												<td scope="row"><a href="#">职业</a></td>
+												<td>{$policy.policyto_profession}</td>
+											</tr>
+											<tr>
+												<td scope="row"><a href="#">婚否</a></td>
+												<td>{$policy.policyto_ismarried}</td>
+											</tr>
+											<tr>
+												<td scope="row"><a href="#">身份证号</a></td>
+												<td>{$policy.policyto_idcard}</td>
+											</tr>
+											<tr>
+												<td scope="row"><a href="#">出生日期</a></td>
+												<td>{$policy.policyto_birth}</td>
+											</tr>
+											<tr>
+												<td scope="row"><a href="#">手机号码</a></td>
+												<td>{$policy.policyto_phone}</td>
+											</tr>
+										</tbody>
+									</table>
+					        	</div>
+							</div>
+
+					        <div class="tab-pane animated fadeInLeft" id="{$key}_{$policy.beneficiary_idcard}">
+								<table style="text-align: center;font-size:17px;" class="table table-striped career-table">
+									<tbody>
+										<tr>
+											<td scope="row"><a href="#">姓名</a></td>
+											<td>{$policy.beneficiary_name}</td>
+										</tr>
+										<tr>
+										  	<td scope="row"><a href="#">性别</a></td>
+										  	<td>{$policy.beneficiary_gender}</td>
+										</tr>
+										<tr>
+										  	<td scope="row"><a href="#">民族</a></td>
+										  	<td>{$policy.beneficiary_nationality}</td>
+										</tr>
+										<tr>
+											<td scope="row"><a href="#">职业</a></td>
+											<td>{$policy.beneficiary_profession}</td>
+										</tr>
+										<tr>
+											<td scope="row"><a href="#">婚否</a></td>
+											<td>{$policy.beneficiary_ismarried}</td>
+										</tr>
+										<tr>
+											<td scope="row"><a href="#">身份证号</a></td>
+											<td>{$policy.beneficiary_idcard}</td>
+										</tr>
+										<tr>
+											<td scope="row"><a href="#">出生日期</a></td>
+											<td>{$policy.beneficiary_birth}</td>
+										</tr>
+										<tr>
+											<td scope="row"><a href="#">手机号码</a></td>
+											<td>{$policy.beneficiary_phone}</td>
+										</tr>
+									</tbody>
+								</table>
+					        </div>
+
+						</div><!-- tab content -->
+		    		</div><!-- Featured tab end -->
+
+		    		 <div class="gap-40"></div>
+
+
+				</div><!-- Col end -->
+
+				<div class="gap-40"></div>
+				</foreach>
+			</div><!-- Content row -->
 		</div><!-- Conatiner end -->
 	</section><!-- Main container end -->
 
-
-	<section id="content-bottom" class="content-bottom">
-		<div class="container">
-			<div class="row text-center">
-				<h3 class="title">
-					We Have Thoughts
-					<span class="title-head">我们坚持</span>
-				</h3>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6">
-				   <div class="ts-service-box">
-				      <span class="ts-service-icon"><i class="fa fa-paper-plane"></i></span>
-				      <div class="ts-service-box-content">
-				         <h3>合理蓝图</h3>
-				         <p>不拘泥于眼下，放眼于未来，合理规划不断发展</p>
-				         <a href="#">Read More </a>
-				      </div>
-				   </div>
-				</div>
-
-				<div class="col-md-6">
-				   <div class="ts-service-box">
-				      <span class="ts-service-icon"><i class="fa fa-diamond"></i></span>
-				      <div class="ts-service-box-content">
-				         <h3>竞争价值</h3>
-				         <p>高质量优质服务是我们的竞争优势，提高自身价值</p>
-				         <a href="#">Read More </a>
-				      </div>
-				   </div>
-				</div>
-			</div><!-- Content bottom row 1 end -->
-
-			<div class="gap-20"></div>
-
-			<div class="row">
-				<div class="col-md-6">
-				   <div class="ts-service-box">
-				      <span class="ts-service-icon"><i class="fa fa-anchor"></i></span>
-				      <div class="ts-service-box-content">
-				         <h3>使命意识</h3>
-				         <p>不断完善，自我更新适应社会发展，承担应付的责任，具有使命感。</p>
-				         <a href="#">Read More </a>
-				      </div>
-				   </div>
-				</div>
-
-				<div class="col-md-6">
-				   <div class="ts-service-box">
-				      <span class="ts-service-icon"><i class="fa fa-language"></i></span>
-				      <div class="ts-service-box-content">
-				         <h3>品牌效应</h3>
-				         <p>长久的行业内打拼，不断积累的经验强化我们的品牌，使客户放心。</p>
-				         <a href="#">Read More </a>
-				      </div>
-				   </div>
-				</div>
-			</div><!-- Content bottom row 1 end -->
-
-		</div><!-- Container end -->
-	</section><!-- Content bottom end -->
 
 
 	<section class="footer-top no-padding">

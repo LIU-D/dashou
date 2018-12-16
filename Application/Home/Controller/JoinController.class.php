@@ -1,7 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class JoinController extends Controller {
+class MainController extends Controller {
     public function setjoin(){
         if(IS_POST){
             $join_user_id = $_SESSION['id'];

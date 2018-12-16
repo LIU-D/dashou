@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -15,33 +15,33 @@
 	<!-- Favicons
 	================================================== -->
 
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="__PUBLIC__/Home/images/favicon/favicon-144x144.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="__PUBLIC__/Home/images/favicon/favicon-72x72.png">
-	<link rel="apple-touch-icon-precomposed" href="__PUBLIC__/Home/images/favicon/favicon-54x54.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/dashou/Public/Home/images/favicon/favicon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/dashou/Public/Home/images/favicon/favicon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="/dashou/Public/Home/images/favicon/favicon-54x54.png">
 
 	<!-- CSS
 	================================================== -->
 
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/bootstrap.min.css">
 	<!-- Template styles-->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/style.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/style.css">
 	<!-- Responsive styles-->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/responsive.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/responsive.css">
 	<!-- FontAwesome -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/font-awesome.min.css">
 	<!-- Animation -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/animate.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/animate.css">
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/owl.carousel.css">
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/owl.theme.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/owl.carousel.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/owl.theme.css">
 	<!-- Colorbox -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/colorbox.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/colorbox.css">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
-      <script src="__PUBLIC__/Home/js/html5shiv.js"></script>
-      <script src="__PUBLIC__/Home/js/respond.min.js"></script>
+      <script src="/dashou/Public/Home/js/html5shiv.js"></script>
+      <script src="/dashou/Public/Home/js/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -58,7 +58,7 @@
 			<div class="row">
 				<div class="logo col-xs-12 col-sm-3">
 				<a href="index.html">
-					<img src="__PUBLIC__/Home/images/logo.png" alt="">
+					<img src="/dashou/Public/Home/images/logo.png" alt="">
 				</a>
 			 </div><!-- logo end -->
 
@@ -109,49 +109,49 @@
 						<div class="collapse navbar-collapse navbar-responsive-collapse">
 							<ul class="nav navbar-nav">
 								<li class="dropdown ">
-									<a href="{:U('Index/index')}">首页</a>
+									<a href="<?php echo U('Index/index');?>">首页</a>
 								</li>
 
 								<li class="dropdown">
-								 <a href="{:U('Index/newsList')}">行业资讯</a>
+								 <a href="<?php echo U('Index/newsList');?>">行业资讯</a>
 								 </li>
 
 								<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
 										<ul class="dropdown-menu" role="menu">
-											   <li><a href="{:U('Index/personal')}">个人客户</a></li>
-											   <li><a href="{:U('Index/firm')}">企业客户</a></li>
+											   <li><a href="<?php echo U('Index/personal');?>">个人客户</a></li>
+											   <li><a href="<?php echo U('Index/firm');?>">企业客户</a></li>
 										</ul>
 								</li>
 
 							   <li class="dropdown">
 							   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
 								 <ul class="dropdown-menu" role="menu">
-										<li><a href="{:U('Index/personalService')}">个人客户中心</a></li>
-										<li><a href="{:U('Index/firmService')}">企业客户中心</a></li>
+										<li><a href="<?php echo U('Index/personalService');?>">个人客户中心</a></li>
+										<li><a href="<?php echo U('Index/firmService');?>">企业客户中心</a></li>
 										<li class="dropdown-submenu">
 										   <a href="#">联系服务人员</a>
 										   <ul class="dropdown-menu">
-											   <li><a href="{:U('Index/searchAgent')}">站点查询</a></li>
-											   <li><a href="{:U('Index/message')}">留言板</a></li>
-											 <li><a href="{:U('Index/call')}">电话查询</a></li>
-											  </ul>
-										  </li>
-								  </ul>
-							   </li>
+											   <li><a href="<?php echo U('Index/searchAgent');?>">站点查询</a></li>
+												 <li><a href="<?php echo U('Main/message');?>">留言板</a></li>
+											 <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
+		                      				</ul>
+		                      			</li>
+				                  </ul>
+				               </li>
 
 								<li class="dropdown">
 								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
 									<ul class="dropdown-menu" role="menu">
-											<li><a href="{:U('Index/firmInfo')}">公司简介</a></li>
-										<li><a href="{:U('Index/outlook')}">行业前景</a></li>
-										<li><a href="{:U('Index/showAgent')}">优秀代理点</a></li>
-										<li><a href="{:U('Index/joinInfo')}">递交申请</a></li>
+											<li><a href="<?php echo U('Index/firmInfo');?>">公司简介</a></li>
+										<li><a href="<?php echo U('Index/outlook');?>">行业前景</a></li>
+										<li><a href="<?php echo U('Index/showAgent');?>">优秀代理点</a></li>
+										<li><a href="<?php echo U('Main/joinInfo');?>">递交申请</a></li>
 									</ul>
 								</li>
 
-								<li class="dropdown active">
-								 <a href="{:U('Index/personalInfo')}">个人中心</a>
+								<li class="dropdown">
+								 <a href="<?php echo U('Main/personalInfo');?>">个人中心</a>
 								 </li>
 
 							</ul><!--/ Nav ul end -->
@@ -160,9 +160,8 @@
 					</div><!-- Site Navbar inner end -->
 
 					<div class="find-agent pull-right">
-						<if condition="!isset($_SESSION['name'])"><a href="{:U('Index/login')}">点此 登录</a>
-						<else /><a href="{:U('Index/logout')}">你好， {$Think.session.name} </a>
-						</if>
+						<?php if(!isset($_SESSION['name'])): ?><a href="<?php echo U('Index/login');?>">点此 登录</a>
+						<?php else: ?><a href="<?php echo U('Index/logout');?>">你好， <?php echo (session('name')); ?> </a><?php endif; ?>
 					</div>
 
 				</div><!--/ Col end -->
@@ -170,7 +169,7 @@
 		</div><!--/ Container end -->
 	</nav><!--/ Navigation end -->
 
-	<div id="banner-area" class="banner-area" style="background-image:url(__PUBLIC__/Home/images/banner/banner4.jpg)">
+	<div id="banner-area" class="banner-area" style="background-image:url(/dashou/Public/Home/images/banner/banner4.jpg)">
 		<!-- Subpage title start -->
 		<div class="banner-text text-center">
      		<div class="container">
@@ -180,8 +179,8 @@
 	        				<h1 class="banner-title">个人中心</h1>
 	        			</div>
 			        	<ul class="breadcrumb">
-			            <li><a href="{:U('Index/index')}">首页</a></li>
-			            <li><a href="{:U('Index/personalInfo')}">个人中心</a></li>
+			            <li><a href="<?php echo U('Index/index');?>">首页</a></li>
+			            <li><a href="<?php echo U('Index/personalInfo');?>">个人中心</a></li>
 		          	</ul>
 	        		</div>
 	        	</div>
@@ -199,37 +198,37 @@
 				<div class="col-md-12">
 					<h2 class="title">
 						Information
-						<span class="title-head">{$policy_list[0].user_name}</span>
+						<span class="title-head"><?php echo ($policy_list[0]["user_name"]); ?></span>
 					</h2>
 					<table style="text-align: center;font-size:17px;" class="table table-striped career-table">
 							<tbody>
 							   <tr>
 									  <td scope="row"><a href="#">性别</a></td>
-									  <td>{$policy_list[0].user_gender}</td>
+									  <td><?php echo ($policy_list[0]["user_gender"]); ?></td>
 								</tr>
 								<tr>
 									  <td scope="row"><a href="#">民族</a></td>
-									  <td>{$policy_list[0].user_nationality}</td>
+									  <td><?php echo ($policy_list[0]["user_nationality"]); ?></td>
 								</tr>
 								<tr>
 									<td scope="row"><a href="#">职业</a></td>
-									<td>{$policy_list[0].user_profession}</td>
+									<td><?php echo ($policy_list[0]["user_profession"]); ?></td>
 								</tr>
 								<tr>
 									<td scope="row"><a href="#">婚否</a></td>
-									<td>{$policy_list[0].user_ismarried}</td>
+									<td><?php echo ($policy_list[0]["user_ismarried"]); ?></td>
 								</tr>
 								<tr>
 									<td scope="row"><a href="#">身份证号</a></td>
-									<td>{$policy_list[0].user_idcard}</td>
+									<td><?php echo ($policy_list[0]["user_idcard"]); ?></td>
 								</tr>
 								<tr>
 									<td scope="row"><a href="#">出生日期</a></td>
-									<td>{$policy_list[0].user_birth}</td>
+									<td><?php echo ($policy_list[0]["user_birth"]); ?></td>
 								</tr>
 								<tr>
 									<td scope="row"><a href="#">手机号码</a></td>
-									<td>{$policy_list[0].user_phone}</td>
+									<td><?php echo ($policy_list[0]["user_phone"]); ?></td>
 								</tr>
 							</tbody>
 						 </table>
@@ -243,15 +242,13 @@
 					</h2>
 				</div>
 
-				<foreach name="policy_list" item="policy">
-
-				<div  class="col-md-12" style="min-height: 200px;background-image:url(/dashou/Public/Home/images/banner/banner{$key+5}.jpg)">
+				<?php if(is_array($policy_list)): foreach($policy_list as $key=>$policy): ?><div  class="col-md-12" style="min-height: 200px;background-image:url(/dashou/Public/Home/images/banner/banner<?php echo ($key+5); ?>.jpg)">
 					<div class="banner-text text-center">
 						<div class="container">
 						   <div class="row">
 							   <div class="col-xs-12">
 								   <div class="banner-heading">
-									   <h1 class="banner-title"style="line-height: 100px;">{$policy.insurance_title}</h1>
+									   <h1 class="banner-title"style="line-height: 100px;"><?php echo ($policy["insurance_title"]); ?></h1>
 								   </div>
 							   </div>
 						   </div>
@@ -264,12 +261,12 @@
 		              	<div class="panel panel-default">
 			                <div class="panel-heading">
 				                <h4 class="panel-title">
-				                	<a data-toggle="collapse" data-parent="#accordion" href="#{$key}_collapse" class="collapsed">{$policy.insurance_title}</a>
+				                	<a data-toggle="collapse" data-parent="#accordion" href="#<?php echo ($key); ?>_collapse" class="collapsed"><?php echo ($policy["insurance_title"]); ?></a>
 				                </h4>
 			                </div>
-			                <div id="{$key}_collapse" class="panel-collapse collapse">
+			                <div id="<?php echo ($key); ?>_collapse" class="panel-collapse collapse">
 			                  <div class="panel-body">
-			                    <p>{$policy.insurance_content}</p>
+			                    <p><?php echo ($policy["insurance_content"]); ?></p>
 			                  </div>
 			                </div>
 		              	</div><!--/ Panel 1 end-->
@@ -292,8 +289,8 @@
 										<i class="fa fa-line-chart"></i>
 									</div>
 									<div class="ts-facts-content">
-										<h1 class="ts-facts-num">￥ <span class="counterUp">{$policy.policy_money}</span></h1>
-										<h3 class="ts-facts-title">{$policy.policy_begin}  至  {$policy.policy_end}</h3>
+										<h1 class="ts-facts-num">￥ <span class="counterUp"><?php echo ($policy["policy_money"]); ?></span></h1>
+										<h3 class="ts-facts-title"><?php echo ($policy["policy_begin"]); ?>  至  <?php echo ($policy["policy_end"]); ?></h3>
 
 									</div>
 								</div><!--/ Facts 1 end -->
@@ -309,7 +306,7 @@
 					<div class="featured-tab pages clearfix">
 						<ul class="nav nav-tabs col-sm-12 col-xs-12">
 						  	<li class="active">
-						  		<a style="min-width: 270px;" class="animated fadeIn" href="#{$key}_{$policy.policyto_idcard}" data-toggle="tab">
+						  		<a style="min-width: 270px;" class="animated fadeIn" href="#<?php echo ($key); ?>_<?php echo ($policy["policyto_idcard"]); ?>" data-toggle="tab">
 						  			<span class="tab-head">
 										<i class="fa fa-globe pull-left">&nbsp;</i>
 										<span class="tab-text-title">被保险人</span>
@@ -317,7 +314,7 @@
 						  		</a>
 						  	</li>
 						 	<li>
-							  	<a style="min-width: 270px;" class="animated fadeIn" href="#{$key}_{$policy.beneficiary_idcard}" data-toggle="tab">
+							  	<a style="min-width: 270px;" class="animated fadeIn" href="#<?php echo ($key); ?>_<?php echo ($policy["beneficiary_idcard"]); ?>" data-toggle="tab">
 							  		<span class="tab-head">
 										<i class="fa fa-android pull-left">&nbsp;</i>
 										<span class="tab-text-title">受益人</span>
@@ -327,81 +324,81 @@
 
 						</ul>
 						<div class="tab-content col-sm-12 col-xs-12">
-					        <div class="tab-pane active animated fadeInRight" id="{$key}_{$policy.policyto_idcard}">
+					        <div class="tab-pane active animated fadeInRight" id="<?php echo ($key); ?>_<?php echo ($policy["policyto_idcard"]); ?>">
 					        	<div class="tab-wrapper">
 									<table style="text-align: center;font-size:17px;" class="table table-striped career-table">
 										<tbody>
 											<tr>
 												<td scope="row"><a href="#">姓名</a></td>
-												<td>{$policy.policyto_name}</td>
+												<td><?php echo ($policy["policyto_name"]); ?></td>
 											</tr>
 										   <tr>
 											  	<td scope="row"><a href="#">性别</a></td>
-											  	<td>{$policy.policyto_gender}</td>
+											  	<td><?php echo ($policy["policyto_gender"]); ?></td>
 											</tr>
 											<tr>
 											  	<td scope="row"><a href="#">民族</a></td>
-											  	<td>{$policy.policyto_nationality}</td>
+											  	<td><?php echo ($policy["policyto_nationality"]); ?></td>
 											</tr>
 											<tr>
 												<td scope="row"><a href="#">职业</a></td>
-												<td>{$policy.policyto_profession}</td>
+												<td><?php echo ($policy["policyto_profession"]); ?></td>
 											</tr>
 											<tr>
 												<td scope="row"><a href="#">婚否</a></td>
-												<td>{$policy.policyto_ismarried}</td>
+												<td><?php echo ($policy["policyto_ismarried"]); ?></td>
 											</tr>
 											<tr>
 												<td scope="row"><a href="#">身份证号</a></td>
-												<td>{$policy.policyto_idcard}</td>
+												<td><?php echo ($policy["policyto_idcard"]); ?></td>
 											</tr>
 											<tr>
 												<td scope="row"><a href="#">出生日期</a></td>
-												<td>{$policy.policyto_birth}</td>
+												<td><?php echo ($policy["policyto_birth"]); ?></td>
 											</tr>
 											<tr>
 												<td scope="row"><a href="#">手机号码</a></td>
-												<td>{$policy.policyto_phone}</td>
+												<td><?php echo ($policy["policyto_phone"]); ?></td>
 											</tr>
 										</tbody>
 									</table>
 					        	</div>
 							</div>
 
-					        <div class="tab-pane animated fadeInLeft" id="{$key}_{$policy.beneficiary_idcard}">
+					        <div class="tab-pane animated fadeInLeft" id="<?php echo ($key); ?>_<?php echo ($policy["beneficiary_idcard"]); ?>">
 								<table style="text-align: center;font-size:17px;" class="table table-striped career-table">
 									<tbody>
 										<tr>
 											<td scope="row"><a href="#">姓名</a></td>
-											<td>{$policy.beneficiary_name}</td>
+											<td><?php echo ($policy["beneficiary_name"]); ?></td>
 										</tr>
 										<tr>
 										  	<td scope="row"><a href="#">性别</a></td>
-										  	<td>{$policy.beneficiary_gender}</td>
+										  	<td><?php echo ($policy["beneficiary_gender"]); ?></td>
 										</tr>
 										<tr>
 										  	<td scope="row"><a href="#">民族</a></td>
-										  	<td>{$policy.beneficiary_nationality}</td>
+										  	<td><?php echo ($policy["beneficiary_nationality"]); ?></td>
 										</tr>
 										<tr>
 											<td scope="row"><a href="#">职业</a></td>
-											<td>{$policy.beneficiary_profession}</td>
+											<td><?php echo ($policy["beneficiary_profession"]); ?></td>
 										</tr>
 										<tr>
 											<td scope="row"><a href="#">婚否</a></td>
-											<td>{$policy.beneficiary_ismarried}</td>
+											<td><?php echo ($policy["beneficiary_ismarried"]); ?></td>
 										</tr>
 										<tr>
 											<td scope="row"><a href="#">身份证号</a></td>
-											<td>{$policy.beneficiary_idcard}</td>
+											<td><?php echo ($policy["beneficiary_idcard"]); ?></td>
 										</tr>
 										<tr>
 											<td scope="row"><a href="#">出生日期</a></td>
-											<td>{$policy.beneficiary_birth}</td>
+											<td><?php echo ($policy["beneficiary_birth"]); ?></td>
 										</tr>
 										<tr>
 											<td scope="row"><a href="#">手机号码</a></td>
-											<td>{$policy.beneficiary_phone}</td>
+											<td><?php echo ($policy["beneficiary_phone"]); ?></td>
 										</tr>
 									</tbody>
 								</table>
@@ -415,8 +412,7 @@
 
 				</div><!-- Col end -->
 
-				<div class="gap-40"></div>
-				</foreach>
+				<div class="gap-40"></div><?php endforeach; endif; ?>
 			</div><!-- Content row -->
 		</div><!-- Conatiner end -->
 	</section><!-- Main container end -->
@@ -466,7 +462,7 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-12 footer-widget footer-about">
 					<div class="footer-logo">
-						<img src="__PUBLIC__/Home/images/footer-logo.png" alt="">
+						<img src="/dashou/Public/Home/images/footer-logo.png" alt="">
 					</div>
 
 					<p>大寿秉持“成己为人 成人达己”的企业文化核心理念，努力推进“创新驱动 综合经营
@@ -554,27 +550,27 @@
 	================================================== -->
 
 	<!-- initialize jQuery Library -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.js"></script>
 	<!-- Bootstrap jQuery -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/bootstrap.min.js"></script>
 	<!-- Owl Carousel -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/owl.carousel.min.js"></script>
 	<!-- Counter -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.counterup.min.js"></script>
 	<!-- Waypoints -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/waypoints.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/waypoints.min.js"></script>
 	<!-- Color box -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.colorbox.js"></script>
 	<!-- Isotope -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/isotope.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/Home/js/ini.isotope.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/isotope.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/ini.isotope.js"></script>
 	<!-- Google Map API Key Source -->
 	<!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
 	<!-- For Google Map -->
 	<!-- Doc http://www.mkyong.com/google-maps/google-maps-api-hello-world-example/ -->
-	<!--<script type="text/javascript" src="__PUBLIC__/Home/js/gmap3.min.js"></script>-->
+	<!--<script type="text/javascript" src="/dashou/Public/Home/js/gmap3.min.js"></script>-->
 	<!-- Template custom -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/custom.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/custom.js"></script>
 
 	</div><!-- Body inner end -->
 </body>

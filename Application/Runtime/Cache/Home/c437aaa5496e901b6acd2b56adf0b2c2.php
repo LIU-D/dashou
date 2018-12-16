@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -15,33 +15,33 @@
 	<!-- Favicons
 	================================================== -->
 
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="__PUBLIC__/Home/images/favicon/favicon-144x144.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="__PUBLIC__/Home/images/favicon/favicon-72x72.png">
-	<link rel="apple-touch-icon-precomposed" href="__PUBLIC__/Home/images/favicon/favicon-54x54.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/dashou/Public/Home/images/favicon/favicon-144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/dashou/Public/Home/images/favicon/favicon-72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="/dashou/Public/Home/images/favicon/favicon-54x54.png">
 
 	<!-- CSS
 	================================================== -->
 
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/bootstrap.min.css">
 	<!-- Template styles-->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/style.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/style.css">
 	<!-- Responsive styles-->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/responsive.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/responsive.css">
 	<!-- FontAwesome -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/font-awesome.min.css">
 	<!-- Animation -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/animate.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/animate.css">
 	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/owl.carousel.css">
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/owl.theme.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/owl.carousel.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/owl.theme.css">
 	<!-- Colorbox -->
-	<link rel="stylesheet" href="__PUBLIC__/Home/css/colorbox.css">
+	<link rel="stylesheet" href="/dashou/Public/Home/css/colorbox.css">
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
-      <script src="__PUBLIC__/Home/js/html5shiv.js"></script>
-      <script src="__PUBLIC__/Home/js/respond.min.js"></script>
+      <script src="/dashou/Public/Home/js/html5shiv.js"></script>
+      <script src="/dashou/Public/Home/js/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -57,7 +57,7 @@
 			<div class="row">
 				<div class="logo col-xs-12 col-sm-3">
 				<a href="index.html">
-					<img src="__PUBLIC__/Home/images/logo.png" alt="">
+					<img src="/dashou/Public/Home/images/logo.png" alt="">
 				</a>
 			 </div><!-- logo end -->
 
@@ -108,32 +108,32 @@
 						<div class="collapse navbar-collapse navbar-responsive-collapse">
 							<ul class="nav navbar-nav">
 								<li class="dropdown ">
-									<a href="{:U('Index/index')}">首页</a>
+									<a href="<?php echo U('Index/index');?>">首页</a>
 						</li>
 
 						<li class="dropdown">
-						 <a href="{:U('Index/newsList')}">行业资讯</a>
+						 <a href="<?php echo U('Index/newsList');?>">行业资讯</a>
 						 </li>
 
 						<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">业务介绍 <i class="fa fa-angle-down"></i></a>
 								<ul class="dropdown-menu" role="menu">
-									   <li><a href="{:U('Index/personal')}">个人客户</a></li>
-									   <li><a href="{:U('Index/firm')}">企业客户</a></li>
+									   <li><a href="<?php echo U('Index/personal');?>">个人客户</a></li>
+									   <li><a href="<?php echo U('Index/firm');?>">企业客户</a></li>
 								</ul>
 						</li>
 
-					   <li class="dropdown">
+					   <li class="dropdown  active">
 					   <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务中心 <i class="fa fa-angle-down"></i></a>
 						 <ul class="dropdown-menu" role="menu">
-								<li><a href="{:U('Index/personalService')}">个人客户中心</a></li>
-								<li><a href="{:U('Index/firmService')}">企业客户中心</a></li>
+								<li><a href="<?php echo U('Index/personalService');?>">个人客户中心</a></li>
+								<li><a href="<?php echo U('Index/firmService');?>">企业客户中心</a></li>
 								<li class="dropdown-submenu">
 								   <a href="#">联系服务人员</a>
 								   <ul class="dropdown-menu">
-									   <li><a href="{:U('Index/searchAgent')}">站点查询</a></li>
-										 <li><a href="{:U('Main/message')}">留言板</a></li>
-									 <li><a href="{:U('Index/call')}">电话查询</a></li>
+									   <li><a href="<?php echo U('Index/searchAgent');?>">站点查询</a></li>
+										 <li><a href="<?php echo U('Main/message');?>">留言板</a></li>
+									 <li><a href="<?php echo U('Index/call');?>">电话查询</a></li>
                       				</ul>
                       			</li>
 		                  </ul>
@@ -142,15 +142,15 @@
 						<li class="dropdown">
 						  <a href="#" class="dropdown-toggle" data-toggle="dropdown">加入我们 <i class="fa fa-angle-down"></i></a>
 							<ul class="dropdown-menu" role="menu">
-									<li><a href="{:U('Index/firmInfo')}">公司简介</a></li>
-								<li><a href="{:U('Index/outlook')}">行业前景</a></li>
-								<li><a href="{:U('Index/showAgent')}">优秀代理点</a></li>
-								<li><a href="{:U('Main/joinInfo')}">递交申请</a></li>
+									<li><a href="<?php echo U('Index/firmInfo');?>">公司简介</a></li>
+								<li><a href="<?php echo U('Index/outlook');?>">行业前景</a></li>
+								<li><a href="<?php echo U('Index/showAgent');?>">优秀代理点</a></li>
+								<li><a href="<?php echo U('Main/joinInfo');?>">递交申请</a></li>
 							</ul>
 						</li>
 
 						<li class="dropdown">
-						 <a href="{:U('Main/personalInfo')}">个人中心</a>
+						 <a href="<?php echo U('Main/personalInfo');?>">个人中心</a>
 						 </li>
 								</ul>
 								</li>
@@ -161,29 +161,28 @@
 					</div><!-- Site Navbar inner end -->
 
 					<div class="find-agent pull-right">
-							<if condition="!isset($_SESSION['name'])"><a href="{:U('Index/login')}">点此 登录</a>
-							<else /><a href="{:U('Index/logout')}">你好， {$Think.session.name} </a>
-							</if>
-						</div>
+							<?php if(!isset($_SESSION['name'])): ?><a href="<?php echo U('Index/login');?>">点此 登录</a>
+							<?php else: ?><a href="<?php echo U('Index/logout');?>">你好， <?php echo (session('name')); ?> </a><?php endif; ?>
+					</div>
 
 				</div><!--/ Col end -->
 			</div><!--/ Row end -->
 		</div><!--/ Container end -->
 	</nav><!--/ Navigation end -->
 
-	<div id="banner-area" class="banner-area" style="background-image:url(__PUBLIC__/Home/images/banner/banner13.jpg)">
+	<div id="banner-area" class="banner-area" style="background-image:url(/dashou/Public/Home/images/banner/banner9.jpg)">
 		<!-- Subpage title start -->
 		<div class="banner-text text-center">
      		<div class="container">
 	        	<div class="row">
 	        		<div class="col-xs-12">
 	        			<div class="banner-heading">
-									<h1 class="banner-title">行业前景</h1>
+									<h1 class="banner-title">留言板</h1>
 								</div>
 								<ul class="breadcrumb">
-									<li><a href="{:U('Index/index')}">首页</a></li>
-									<li>加入我们</li>
-									<li><a href="{:U('Index/outlook')}">行业前景</a></li>
+									<li><a href="<?php echo U('Index/index');?>">首页</a></li>
+									<li>服务中心</li>
+									<li><a href="<?php echo U('Index/message');?>">留言板</a></li>
 		          	</ul>
 	        		</div>
 	        	</div>
@@ -194,114 +193,71 @@
 
 	<section id="main-container" class="main-container">
 		<div class="container">
+			<div class="row text-center">
+				<h2 class="title">
+					We are Helpful
+					<span class="title-head">与我们交流</span>
+				</h2>
+			</div><!--/ Title row end -->
+
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-xs-12">
 
-					<div class="text-center about-us-intro">
-						<h2>作为行业领头公司超过20年</h2>
-						<p>2003年，业务范围全面涵盖寿险、财产险、养老保险（企业年金）、 资产管理、另类投资、海外业务、电子商务等多个领域，
-							并通过资本运作参股了多家银行、证券公司等其他金融和非金融机构。</p>
-					</div>
+				<?php if(is_array($message_list)): foreach($message_list as $key=>$message): if($message["message_answer"] == null): ?><div class="col-md-6 col-sm-6">
+								<div style="padding: 30px 30px 15px 30px;
+								border-width: 1px;
+								border-style: solid;
+								border-color: #ddd;
+								margin-bottom: 40px;
+								color: #a6abb0;">
+									<p style="min-height: 80px;text-align: center">等待回复</p>
 
-					<div class="gap-40">&nbsp;</div>
+								</div><!-- Testimonial content end -->
+					</div><!-- End col-md-6 -->
+				<?php else: ?>
+				<div class="col-md-6 col-sm-6">
+						<div class="testimonial-classic">
+							<img src="/dashou/Public/Home/images/clients/testimonial1.png" alt="testimonial">
+							<p style="min-height: 80px" class="testimonial-classic-text"><?php echo ($message["message_answer"]); ?></p>
+							<div class="testimonial-classic-author">
+								<h3 class="name">客服人员</h3>
+								<h4 class="desg">&nbsp; </h4>
+							</div>
+						</div><!-- Testimonial content end -->
+					</div><!-- End col-md-6 --><?php endif; ?>
 
-					<div class="row solid-row">
-						<div class="col-md-6 about-text">
-							<h3 class="page-content-title-classic">行业前景展望</h3>
-							<p>从行业发展的政策环境来看，我国在推进保险行业快速发展的政策制定上不遗余力。在过去三年
-								当中先后推进完成了人身险中传统寿险、分红险、万能险三大险种的市场化费率改革和商业车险费率改革，使人身险保费增速空间得到释放
-								，财产险费率拟定更加科学。在促进保险产品回归保障主业的思路指引下，监管层在2016年又出台了健康险税收优惠政策，并在2017年7月1日由试点地区向全国铺开。</p>
-								<p>落实国家支持保险和养老服务业发展的相关财税政策，加快个人税收递延型商业养老保险试点，支持商业养老保险机构参与基本养老保险基金管理。商业养老保险
-									制度的建设完善，有望在未来5年给保险行业带来千亿级别的保费增量，给保险机构的产品结构和盈利方式带来一定改变。</p>
+
+
+				<div class="col-md-6 col-sm-6">
+					<div class="testimonial-classic">
+						<img src="/dashou/Public/Home/images/clients/testimonial2.png" alt="testimonial">
+						<p style="min-height: 80px" class="testimonial-classic-text"><?php echo ($message["message_question"]); ?></p>
+						<div class="testimonial-classic-author">
+							<h3 class="name">我</h3>
+							<h4 class="desg">&nbsp; </h4>
 						</div>
-						<div class="col-md-6 about-img"><img src="__PUBLIC__/Home/images/pages/about-box1.jpg" alt="">
-						</div>
-					</div><!-- Solid row end -->
+					</div><!-- Testimonial content end -->
+				</div><!-- End col-md-6 -->
 
-					<div class="row solid-row last">
-						<div class="col-md-6 about-img"><img src="__PUBLIC__/Home/images/pages/about-box2.jpg" alt="">
-						</div>
-						<div class="col-md-6 about-text">
-							<h3 class="page-content-title-classic">我们的优势</h3>
-							<p>大寿保险公司具备人力资源和社会保障部颁发的企业年金基金受托人、账户管理人和投资管理人三项资格，与大寿保险资产管理有限公司的企业年
-								金基金投资管理人资格一起，形成大寿保险“三位一体”的企业年金服务架构体系和完整服务链，为各类企业客户降低了管理成本，提高管理效率，防范了管理风险
-								。</p>
-								<p>通过大寿保险强大的专业力量和服务网络优势，客户能够享受大寿保险为其量身定做的一揽子整体企业年金解决方案、多样化的产品选择和全国范围内“点
-								对点”稳定便利、统一无差异的优质服务。</p>
-						</div><!-- Col end -->
-					</div><!-- Solid row end -->
+				<div class="gap-60"></div><?php endforeach; endif; ?>
+			</div><!-- Content row 1 end -->
 
 
-				</div><!-- Content Col end -->
+			<div class="gap-60"></div>
 
-			</div><!-- Main row end -->
+		<div class="row">
+			<h3>留言咨询: </h3>
+			<form action="<?php echo U('Message/setMessage');?>" method="post" role="form">
+				<div class="col-md-8 col-sm-8">
+					<input type="text" name="question" class="form-control">
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<button style="width: 100%" class="btn btn-primary solid blank" type="submit">提交</button>
+				</div>
+			</form>
+		</div>
 
 		</div><!-- Conatiner end -->
 	</section><!-- Main container end -->
-
-
-	<section id="content-bottom" class="content-bottom">
-		<div class="container">
-			<div class="row text-center">
-				<h3 class="title">
-					We Have Thoughts
-					<span class="title-head">我们坚持</span>
-				</h3>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6">
-				   <div class="ts-service-box">
-				      <span class="ts-service-icon"><i class="fa fa-paper-plane"></i></span>
-				      <div class="ts-service-box-content">
-				         <h3>合理蓝图</h3>
-				         <p>不拘泥于眼下，放眼于未来，合理规划不断发展</p>
-				         <a href="#">Read More </a>
-				      </div>
-				   </div>
-				</div>
-
-				<div class="col-md-6">
-				   <div class="ts-service-box">
-				      <span class="ts-service-icon"><i class="fa fa-diamond"></i></span>
-				      <div class="ts-service-box-content">
-				         <h3>竞争价值</h3>
-				         <p>高质量优质服务是我们的竞争优势，提高自身价值</p>
-				         <a href="#">Read More </a>
-				      </div>
-				   </div>
-				</div>
-			</div><!-- Content bottom row 1 end -->
-
-			<div class="gap-20"></div>
-
-			<div class="row">
-				<div class="col-md-6">
-				   <div class="ts-service-box">
-				      <span class="ts-service-icon"><i class="fa fa-anchor"></i></span>
-				      <div class="ts-service-box-content">
-				         <h3>使命意识</h3>
-				         <p>不断完善，自我更新适应社会发展，承担应付的责任，具有使命感。</p>
-				         <a href="#">Read More </a>
-				      </div>
-				   </div>
-				</div>
-
-				<div class="col-md-6">
-				   <div class="ts-service-box">
-				      <span class="ts-service-icon"><i class="fa fa-language"></i></span>
-				      <div class="ts-service-box-content">
-				         <h3>品牌效应</h3>
-				         <p>长久的行业内打拼，不断积累的经验强化我们的品牌，使客户放心。</p>
-				         <a href="#">Read More </a>
-				      </div>
-				   </div>
-				</div>
-			</div><!-- Content bottom row 1 end -->
-
-		</div><!-- Container end -->
-	</section><!-- Content bottom end -->
-
 
 	<section class="footer-top no-padding">
 		<div class="container">
@@ -346,7 +302,7 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-12 footer-widget footer-about">
 					<div class="footer-logo">
-						<img src="__PUBLIC__/Home/images/footer-logo.png" alt="">
+						<img src="/dashou/Public/Home/images/footer-logo.png" alt="">
 					</div>
 
 					<p>大寿秉持“成己为人 成人达己”的企业文化核心理念，努力推进“创新驱动 综合经营
@@ -434,27 +390,27 @@
 	================================================== -->
 
 	<!-- initialize jQuery Library -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.js"></script>
 	<!-- Bootstrap jQuery -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/bootstrap.min.js"></script>
 	<!-- Owl Carousel -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/owl.carousel.min.js"></script>
 	<!-- Counter -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.counterup.min.js"></script>
 	<!-- Waypoints -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/waypoints.min.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/waypoints.min.js"></script>
 	<!-- Color box -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/jquery.colorbox.js"></script>
 	<!-- Isotope -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/isotope.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/Home/js/ini.isotope.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/isotope.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/ini.isotope.js"></script>
 	<!-- Google Map API Key Source -->
 	<!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
 	<!-- For Google Map -->
 	<!-- Doc http://www.mkyong.com/google-maps/google-maps-api-hello-world-example/ -->
-	<!--<script type="text/javascript" src="__PUBLIC__/Home/js/gmap3.min.js"></script>-->
+	<!--<script type="text/javascript" src="/dashou/Public/Home/js/gmap3.min.js"></script>-->
 	<!-- Template custom -->
-	<script type="text/javascript" src="__PUBLIC__/Home/js/custom.js"></script>
+	<script type="text/javascript" src="/dashou/Public/Home/js/custom.js"></script>
 
 	</div><!-- Body inner end -->
 </body>
