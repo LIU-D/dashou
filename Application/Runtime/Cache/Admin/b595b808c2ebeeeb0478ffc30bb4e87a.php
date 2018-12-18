@@ -33,19 +33,7 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" href="<?php echo U('Index/index');?>"> 大寿保险</a>
 			<a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
-			<nav class="nav navbar-nav">
-				<ul class="cl">
-					<li class="dropDown dropDown_hover"><a href="javascript:;" class="dropDown_A"><i class="Hui-iconfont">&#xe600;</i> 新增 <i class="Hui-iconfont">&#xe6d5;</i></a>
-						<ul class="dropDown-menu menu radius box-shadow">
-							<li><a href="javascript:;" onclick="article_add('添加资讯','<?php echo U("Article/index");?>')"><i class="Hui-iconfont">&#xe616;</i> 资讯</a></li>
-							<li><a href="javascript:;" onclick="picture_add('添加轮播图','<?php echo U("Image/listSlide");?>')"><i class="Hui-iconfont">&#xe613;</i> 轮播图</a></li>
-                            <li><a href="javascript:;" onclick="picture_add('添加展示图片','<?php echo U("Image/listShowbox");?>')"><i class="Hui-iconfont">&#xe613;</i> 展示图片</a></li>
-                            <li><a href="javascript:;" onclick="picture_add('添加人员图片','<?php echo U("Image/listMember");?>')"><i class="Hui-iconfont">&#xe613;</i> 人员图片</a></li>
 
-					</ul>
-				</li>
-			</ul>
-		</nav>
 		<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
 			<ul class="cl">
 				<li>欢迎您， </li>
