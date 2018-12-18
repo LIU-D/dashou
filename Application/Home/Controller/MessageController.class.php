@@ -13,9 +13,9 @@ class MessageController extends Controller {
                 'message_question' => $message_question
             );
             if($message_model->add($data)){
-                $this->success('提交成功！',U('Index/message'),2);
+                $this->success('提交成功！',U('Main/message'),2);
             }else{
-                $this->error('提交失败！',U('Index/message'),2);
+                $this->error('提交失败！',U('Main/message'),2);
             }
         }else{
             $this->display();

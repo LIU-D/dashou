@@ -61,6 +61,20 @@ class UserController extends CommonController {
       $this->display();
     }
 
+    function userPolicy(){
+      $id = I('get.id');
+      $model = M();
+
+      $policy_list = $model
+              ->field('policy.*, user.*, policyto.user_name as policyto_name, policyto.user_idcard as policyto_idcard, policyto.user_gender as policyto_gender, policyto.user_nationality as policyto_nationality, policyto.user_profession as policyto_profession, policyto.user_birth as policyto_birth, policyto.user_ismarried as policyto_ismarried, policyto.user_phone as policyto_phone, beneficiary.user_name as beneficiary_name, beneficiary.user_idcard as beneficiary_idcard, beneficiary.user_gender as beneficiary_gender, beneficiary.user_nationality as beneficiary_nationality, beneficiary.user_profession as beneficiary_profession, beneficiary.user_birth as beneficiary_birth, beneficiary.user_ismarried as beneficiary_ismarried, beneficiary.user_phone as beneficiary_phone, insurance.*')
+              ->table('ds_policy as policy, ds_user as user, ds_user as policyto, ds_user as beneficiary, ds_insurance as insurance')
+              ->where("user.user_id = policy.policy_user_id and policyto.user_id = policy.policy_to_id and beneficiary.user_id = policy.policy_beneficiary_id and insurance.insurance_id = policy.policy_insurance_id and policy.policy_user_id='$id'")
+              ->select();
+      //dump($policy_list);
+      $this->assign('policy_list',$policy_list);
+      $this->display();
+    }
+
     public function update(){
         $pwd = I('post.user_pwd');
         if($pwd != ''){

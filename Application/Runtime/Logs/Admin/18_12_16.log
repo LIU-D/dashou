@@ -1647,3 +1647,298 @@ INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
 
+[ 2018-12-16T21:09:45+08:00 ] ::1 /dashou/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2018-12-16T21:09:45+08:00 ] ::1 /dashou/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2018-12-16T21:10:35+08:00 ] ::1 /dashou/index.php/Admin/News/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ds_news`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 76 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 72 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 79 行.
+NOTIC: [2] Use of undefined constant news_id - assumed 'news_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\36087655c6ab8580337cdc45b35a926d.php 第 82 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2018-12-16T21:10:39+08:00 ] ::1 /dashou/index.php/Admin/Insurance/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ds_insurance`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 68 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 76 行.
+NOTIC: [2] Use of undefined constant insurance_id - assumed 'insurance_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e5b38b73134b0bda5029e72e2f4df515.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2018-12-16T21:11:13+08:00 ] ::1 /dashou/index.php/Admin/Join/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `ds_join` [ RunTime:0.0005s ]
+SQL: SELECT j.*,u.* FROM ds_join as j,ds_user as u WHERE ( u.user_id = j.join_user_id ) ORDER BY join_id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+NOTIC: [2] Use of undefined constant join_id - assumed 'join_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0dc0d8597da1868afe33b1bb97be0021.php 第 62 行.
+NOTIC: [2] Use of undefined constant join_id - assumed 'join_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0dc0d8597da1868afe33b1bb97be0021.php 第 64 行.
+NOTIC: [2] Use of undefined constant join_id - assumed 'join_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0dc0d8597da1868afe33b1bb97be0021.php 第 62 行.
+NOTIC: [2] Use of undefined constant join_id - assumed 'join_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0dc0d8597da1868afe33b1bb97be0021.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2018-12-16T21:11:26+08:00 ] ::1 /dashou/index.php/Admin/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `ds_message` [ RunTime:0.0006s ]
+SQL: SELECT message.*,user.* FROM ds_message as message,ds_user as user WHERE ( user.user_id = message.message_user_id ) ORDER BY message_id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001764s ]
+
+[ 2018-12-16T21:11:36+08:00 ] ::1 /dashou/index.php/Admin/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `ds_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ds_user` WHERE ( user_id > 1 )  [ RunTime:0.0109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+NOTIC: [2] Use of undefined constant user_id - assumed 'user_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [2] Use of undefined constant user_id - assumed 'user_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 71 行.
+NOTIC: [2] Use of undefined constant user_id - assumed 'user_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [2] Use of undefined constant user_id - assumed 'user_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 71 行.
+NOTIC: [2] Use of undefined constant user_id - assumed 'user_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [2] Use of undefined constant user_id - assumed 'user_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 71 行.
+NOTIC: [2] Use of undefined constant user_id - assumed 'user_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [2] Use of undefined constant user_id - assumed 'user_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 71 行.
+NOTIC: [2] Use of undefined constant user_id - assumed 'user_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 69 行.
+NOTIC: [2] Use of undefined constant user_id - assumed 'user_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 71 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2018-12-16T21:18:10+08:00 ] ::1 /dashou/index.php/Admin/Message/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `ds_message` [ RunTime:0.0006s ]
+SQL: SELECT message.*,user.* FROM ds_message as message,ds_user as user WHERE ( user.user_id = message.message_user_id ) ORDER BY message_id desc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 60 行.
+NOTIC: [2] Use of undefined constant message_id - assumed 'message_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\e1ad611a04673ac9fc78d17e28cd370b.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2018-12-16T21:18:12+08:00 ] ::1 /dashou/index.php/Admin/Join/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `ds_join` [ RunTime:0.0006s ]
+SQL: SELECT j.*,u.* FROM ds_join as j,ds_user as u WHERE ( u.user_id = j.join_user_id ) ORDER BY join_id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+NOTIC: [2] Use of undefined constant join_id - assumed 'join_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0dc0d8597da1868afe33b1bb97be0021.php 第 62 行.
+NOTIC: [2] Use of undefined constant join_id - assumed 'join_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0dc0d8597da1868afe33b1bb97be0021.php 第 64 行.
+NOTIC: [2] Use of undefined constant join_id - assumed 'join_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0dc0d8597da1868afe33b1bb97be0021.php 第 62 行.
+NOTIC: [2] Use of undefined constant join_id - assumed 'join_id' (this will throw an Error in a future version of PHP) D:\Software\Apache24\htdocs\dashou\Application\Runtime\Cache\Admin\0dc0d8597da1868afe33b1bb97be0021.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2018-12-16T21:19:44+08:00 ] ::1 /dashou/index.php/Admin/Join/joinEdit.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `ds_join` [ RunTime:0.0017s ]
+SQL: SELECT j.*,u.* FROM ds_join as j,ds_user as u WHERE ( u.user_id = j.join_user_id and j.join_id = '3' ) LIMIT 1   [ RunTime:0.0171s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
