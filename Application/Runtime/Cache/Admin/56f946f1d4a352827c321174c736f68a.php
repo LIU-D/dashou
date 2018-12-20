@@ -63,7 +63,7 @@
 				</select>
 			</div>
 		</div>
-		
+
 		<?php if($insurance["insurance_image"] != null): ?><div class="row cl">
 				<label class="form-label col-xs-4 col-sm-2">原图片：</label>
 				<div class="formControls col-xs-8 col-sm-9">
@@ -100,7 +100,7 @@
 				</script>
 				<!-- style给定宽度可以影响编辑器的最终宽度-->
 				<script type="text/plain" id="myEditor" style="width:100%;height:380px;" name="insurance_content">
-					<?php echo ($insurance['insurance_content']); ?>
+					<?php echo (stripslashes(htmlspecialchars_decode($insurance['insurance_content']))); ?>
 				</script>
 			</div>
 		</div>

@@ -80,7 +80,7 @@
 				</script>
 				<!-- style给定宽度可以影响编辑器的最终宽度-->
 				<script type="text/plain" id="myEditor" style="width:100%;height:380px;" name="news_content">
-					<?php echo ($news['news_content']); ?>
+					<?php echo (stripslashes(htmlspecialchars_decode($news['news_content']))); ?>
 				</script>
 			</div>
 		</div>

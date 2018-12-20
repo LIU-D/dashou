@@ -63,7 +63,7 @@
 				</select>
 			</div>
 		</div>
-		
+
 		<if condition="$insurance.insurance_image neq null">
 			<div class="row cl">
 				<label class="form-label col-xs-4 col-sm-2">原图片：</label>
@@ -102,7 +102,7 @@
 				</script>
 				<!-- style给定宽度可以影响编辑器的最终宽度-->
 				<script type="text/plain" id="myEditor" style="width:100%;height:380px;" name="insurance_content">
-					{$insurance['insurance_content']}
+					{$insurance['insurance_content']|htmlspecialchars_decode|stripslashes}
 				</script>
 			</div>
 		</div>

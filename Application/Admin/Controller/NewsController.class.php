@@ -17,7 +17,6 @@ class NewsController extends CommonController {
 
     public function newsEdit(){
       $id = I('get.id');
-      dump($id);
 
 
       $news = D('News')
