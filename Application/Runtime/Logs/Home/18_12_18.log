@@ -2417,3 +2417,27 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001213s ]
 
+[ 2018-12-18T20:12:35+08:00 ] ::1 /dashou/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000261s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026613s ]
+SQL: SHOW COLUMNS FROM `ds_news` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `ds_news` WHERE ( news_isdel = "已发布" ) ORDER BY news_id desc LIMIT 3   [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `ds_insurance` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ds_insurance` WHERE ( insurance_isdel = "已发布" ) LIMIT 9   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.016327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.016360s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.325190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.325223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.025757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025779s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.036360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.036389s ]
+
